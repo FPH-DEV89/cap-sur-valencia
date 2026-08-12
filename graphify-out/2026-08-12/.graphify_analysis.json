@@ -1,0 +1,327 @@
+{
+  "communities": {
+    "0": [
+      "design_brief_emoji_system",
+      "design_brief_migration_plan",
+      "design_brief_olive",
+      "design_brief_olive_light",
+      "index_countdown",
+      "index_epargne",
+      "index_page",
+      "mega_prompt_ai_slop_test",
+      "mega_prompt_document",
+      "mega_prompt_frontend_dev",
+      "mega_prompt_redacteur",
+      "pages_administration_page",
+      "pages_administration_sand_dark",
+      "pages_budget_banques_en_ligne",
+      "pages_budget_page",
+      "pages_checklists_diplomatie_gouv_fr",
+      "pages_checklists_service_public_fr",
+      "pages_ecoles_ceice_gva_es",
+      "pages_ecoles_page",
+      "pages_ecoles_telematricula_es",
+      "pages_emploi_infojobs_net",
+      "pages_emploi_labora_gva_es",
+      "pages_emploi_page",
+      "pages_quartiers_page",
+      "pages_ressources_agenciatributaria_gob_es",
+      "pages_ressources_page",
+      "pages_ressources_seg_social_gob_es",
+      "pages_sante_page",
+      "pages_scolarite_page"
+    ],
+    "1": [
+      "design_brief_accent",
+      "design_brief_azulejo_pattern",
+      "design_brief_buttons",
+      "design_brief_charcoal_light",
+      "design_brief_esp_red",
+      "design_brief_golden",
+      "design_brief_links",
+      "design_brief_med_blue",
+      "design_brief_med_blue_deep",
+      "design_brief_mudejar_star",
+      "design_brief_navbar",
+      "design_brief_sun_gold",
+      "design_brief_sun_gold_deep",
+      "design_brief_terracotta",
+      "index_navbar",
+      "mega_prompt_med_blue",
+      "mega_prompt_spain_red",
+      "mega_prompt_sun_gold",
+      "pages_checklists_terracotta_light"
+    ],
+    "2": [
+      "css_style_stylesheet",
+      "design_brief_charcoal",
+      "design_brief_contrast_architecture",
+      "design_brief_crimson_text",
+      "design_brief_dm_serif_display",
+      "design_brief_document",
+      "design_brief_google_fonts",
+      "design_brief_playfair_display",
+      "design_brief_sol_mediterraneo",
+      "design_brief_source_serif_4",
+      "design_brief_validation_checklist",
+      "mega_prompt_anti_slop_rules",
+      "mega_prompt_charcoal",
+      "mega_prompt_graphiste_motion",
+      "mega_prompt_lora",
+      "mega_prompt_playfair_display",
+      "mega_prompt_ui_ux_designer"
+    ],
+    "3": [
+      "pages_administration_certificado_digital",
+      "pages_administration_demarches",
+      "pages_administration_dgt_es",
+      "pages_administration_empadronamiento",
+      "pages_administration_labora",
+      "pages_administration_modelo_030",
+      "pages_administration_nie",
+      "pages_administration_valencia_es",
+      "pages_checklists_page",
+      "pages_sante_carte_sip",
+      "pages_sante_ceam",
+      "pages_sante_convenio_especial",
+      "pages_sante_securite_sociale",
+      "pages_sante_strategie"
+    ],
+    "4": [
+      "js_main",
+      "js_main_animatecounter",
+      "js_main_counterobserver",
+      "js_main_initbudgetcalculator",
+      "js_main_initquartierfilter",
+      "js_main_navbar",
+      "js_main_navlinks",
+      "js_main_navoverlay",
+      "js_main_navtoggle",
+      "js_main_observer",
+      "js_main_observeroptions",
+      "js_main_updatecountdown"
+    ],
+    "5": [
+      "design_brief_cards",
+      "design_brief_cream",
+      "design_brief_sand",
+      "design_brief_sections",
+      "design_brief_sunset_glow",
+      "design_brief_surface",
+      "design_brief_surface_alt",
+      "design_brief_warm_white",
+      "design_brief_warm_white_alt",
+      "mega_prompt_surface",
+      "mega_prompt_warm_white"
+    ],
+    "6": [
+      "design_brief_footer",
+      "design_brief_hero",
+      "design_brief_slate_deep",
+      "design_brief_sunset_gradient",
+      "design_brief_wave_pattern",
+      "index_hero",
+      "mega_prompt_spanish_flag_texture",
+      "mega_prompt_valencia_flag_texture"
+    ],
+    "7": [
+      "index_budget_calculator",
+      "index_quartier_filter",
+      "mega_prompt_qa_tester",
+      "pages_budget_calculator",
+      "pages_quartiers_filter"
+    ],
+    "8": [
+      "index_timeline",
+      "pages_checklists_pre_depart"
+    ],
+    "9": [
+      "design_brief_esp_red_dark"
+    ],
+    "10": [
+      "design_brief_grain_texture"
+    ],
+    "11": [
+      "design_brief_med_blue_light"
+    ],
+    "12": [
+      "design_brief_slate_surface"
+    ],
+    "13": [
+      "design_brief_sun_gold_light"
+    ],
+    "14": [
+      "index_art_de_vivre"
+    ],
+    "15": [
+      "index_heritage"
+    ],
+    "16": [
+      "js_quartier_filter"
+    ],
+    "17": [
+      "mega_prompt_charcoal_light"
+    ],
+    "18": [
+      "mega_prompt_jetbrains_mono"
+    ],
+    "19": [
+      "mega_prompt_med_light"
+    ],
+    "20": [
+      "mega_prompt_spain_red_dark"
+    ],
+    "21": [
+      "mega_prompt_sun_light"
+    ],
+    "22": [
+      "pages_administration_conseils"
+    ],
+    "23": [
+      "pages_checklists_arrivee"
+    ],
+    "24": [
+      "pages_quartiers_grid"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1921182266009852,
+    "1": 0.11695906432748537,
+    "2": 0.13970588235294118,
+    "3": 0.2857142857142857,
+    "4": 0.18181818181818182,
+    "5": 0.18181818181818182,
+    "6": 0.2857142857142857,
+    "7": 0.4,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0
+  },
+  "gods": [
+    {
+      "id": "pages_checklists_page",
+      "label": "Guide Checklists d'expatriation",
+      "degree": 24
+    },
+    {
+      "id": "pages_ressources_page",
+      "label": "Guide Ressources & Contacts",
+      "degree": 21
+    },
+    {
+      "id": "mega_prompt_document",
+      "label": "Mega-Prompt \u2014 Refonte Maxpatrie v4",
+      "degree": 20
+    },
+    {
+      "id": "design_brief_document",
+      "label": "Design Brief v3 \u2014 Soleil M\u00e9diterran\u00e9en",
+      "degree": 19
+    },
+    {
+      "id": "index_page",
+      "label": "Page d'accueil Maxpatrie (index.html)",
+      "degree": 15
+    },
+    {
+      "id": "pages_administration_page",
+      "label": "Guide Administration",
+      "degree": 15
+    },
+    {
+      "id": "pages_sante_page",
+      "label": "Guide Sant\u00e9 & S\u00e9curit\u00e9 Sociale",
+      "degree": 15
+    },
+    {
+      "id": "pages_budget_page",
+      "label": "Guide Budget & Co\u00fbt de la Vie",
+      "degree": 14
+    },
+    {
+      "id": "pages_emploi_page",
+      "label": "Guide Emploi & Carri\u00e8re",
+      "degree": 14
+    },
+    {
+      "id": "pages_ecoles_page",
+      "label": "Guide \u00c9coles par quartier",
+      "degree": 13
+    }
+  ],
+  "surprises": [
+    {
+      "source": "CSS token MegaPrompt --sun-gold",
+      "target": "CSS token --sun-gold",
+      "source_files": [
+        "MEGA_PROMPT.md",
+        "DESIGN_BRIEF.md"
+      ],
+      "confidence": "AMBIGUOUS",
+      "relation": "semantically_similar_to",
+      "why": "ambiguous connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `CSS token MegaPrompt --sun-gold` unexpectedly reaches hub `CSS token --sun-gold`"
+    },
+    {
+      "source": "CSS token MegaPrompt --med-blue",
+      "target": "CSS token --med-blue",
+      "source_files": [
+        "MEGA_PROMPT.md",
+        "DESIGN_BRIEF.md"
+      ],
+      "confidence": "AMBIGUOUS",
+      "relation": "semantically_similar_to",
+      "why": "ambiguous connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `CSS token MegaPrompt --med-blue` unexpectedly reaches hub `CSS token --med-blue`"
+    },
+    {
+      "source": "CSS token MegaPrompt --spain-red",
+      "target": "CSS token --esp-red",
+      "source_files": [
+        "MEGA_PROMPT.md",
+        "DESIGN_BRIEF.md"
+      ],
+      "confidence": "AMBIGUOUS",
+      "relation": "semantically_similar_to",
+      "why": "ambiguous connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "CSS token MegaPrompt --warm-white",
+      "target": "CSS token --warm-white",
+      "source_files": [
+        "MEGA_PROMPT.md",
+        "DESIGN_BRIEF.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `CSS token MegaPrompt --warm-white` unexpectedly reaches hub `CSS token --warm-white`"
+    },
+    {
+      "source": "CSS token MegaPrompt --surface",
+      "target": "Legacy token --surface (remplac\u00e9)",
+      "source_files": [
+        "MEGA_PROMPT.md",
+        "DESIGN_BRIEF.md"
+      ],
+      "confidence": "AMBIGUOUS",
+      "relation": "semantically_similar_to",
+      "why": "ambiguous connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    }
+  ],
+  "tokens": {
+    "input": 60447,
+    "output": 57478
+  }
+}

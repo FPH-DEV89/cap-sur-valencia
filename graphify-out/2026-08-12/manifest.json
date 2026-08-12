@@ -1,0 +1,72 @@
+{
+  "js/main.js": {
+    "mtime": 1785333412.7721124,
+    "ast_hash": "0a1f21737c9684e793be042de2825a19",
+    "semantic_hash": "0a1f21737c9684e793be042de2825a19"
+  },
+  "js/quartier-filter.js": {
+    "mtime": 1785573549.4822462,
+    "ast_hash": "ce62c5beba670a9da29bb5cd69c420c0",
+    "semantic_hash": "ce62c5beba670a9da29bb5cd69c420c0"
+  },
+  "DESIGN_BRIEF.md": {
+    "mtime": 1785344823.7586787,
+    "ast_hash": "ddf220d952a69eee473302c7a55c631a",
+    "semantic_hash": "ddf220d952a69eee473302c7a55c631a"
+  },
+  "MEGA_PROMPT.md": {
+    "mtime": 1785349924.2186947,
+    "ast_hash": "f20362f22a82d92582fc3fbc2f56acff",
+    "semantic_hash": "f20362f22a82d92582fc3fbc2f56acff"
+  },
+  "index.html": {
+    "mtime": 1785572110.5430703,
+    "ast_hash": "94e462d9378e928c11eda47f99e1d1fd",
+    "semantic_hash": "94e462d9378e928c11eda47f99e1d1fd"
+  },
+  "pages/administration.html": {
+    "mtime": 1785572117.4140177,
+    "ast_hash": "a2933f10112a368978e55fa6f7aacdbd",
+    "semantic_hash": "a2933f10112a368978e55fa6f7aacdbd"
+  },
+  "pages/budget.html": {
+    "mtime": 1785572117.2910185,
+    "ast_hash": "638a01253c0973ab1aba0fe0522d8943",
+    "semantic_hash": "638a01253c0973ab1aba0fe0522d8943"
+  },
+  "pages/checklists.html": {
+    "mtime": 1785572117.4730172,
+    "ast_hash": "e0357ea0cfa7d5275f158f6616300efc",
+    "semantic_hash": "e0357ea0cfa7d5275f158f6616300efc"
+  },
+  "pages/ecoles.html": {
+    "mtime": 1785572117.5330167,
+    "ast_hash": "256d4e150e5864ea0485bea5212288aa",
+    "semantic_hash": "256d4e150e5864ea0485bea5212288aa"
+  },
+  "pages/emploi.html": {
+    "mtime": 1785572117.503017,
+    "ast_hash": "eedfb60bc0cd1863a4324b6ec8595669",
+    "semantic_hash": "eedfb60bc0cd1863a4324b6ec8595669"
+  },
+  "pages/quartiers.html": {
+    "mtime": 1785573595.4839613,
+    "ast_hash": "c9f0452a725f433966534c5d9640ad9d",
+    "semantic_hash": "c9f0452a725f433966534c5d9640ad9d"
+  },
+  "pages/ressources.html": {
+    "mtime": 1785572117.4440174,
+    "ast_hash": "b266e86345b8593ceb5946b8f0ae61f3",
+    "semantic_hash": "b266e86345b8593ceb5946b8f0ae61f3"
+  },
+  "pages/sante.html": {
+    "mtime": 1785572117.384018,
+    "ast_hash": "746dbcf4d438e2fe9a961824c47bb979",
+    "semantic_hash": "746dbcf4d438e2fe9a961824c47bb979"
+  },
+  "pages/scolarite.html": {
+    "mtime": 1785572117.3210182,
+    "ast_hash": "38146868b610e54a0d37b0d5bff71832",
+    "semantic_hash": "38146868b610e54a0d37b0d5bff71832"
+  }
+}
