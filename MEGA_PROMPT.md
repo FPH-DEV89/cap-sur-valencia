@@ -1,4 +1,4 @@
-# 🎨 Mega-Prompt — Refonte Maxpatrie v4
+# 🎨 Mega-Prompt — Refonte Cap sur Valencia v4
 
 > **Projet :** Site d'expatriation familiale à Valencia  
 > **Tonalité :** Humain, chaleureux, zéro AI-slop  
@@ -9,7 +9,7 @@
 
 ## 📋 Brief produit
 
-Tu refonds intégralement le site **Maxpatrie** — le journal de bord d'une famille française de 5 personnes (Florian, 35 ans, logisticien, sa femme, une fille de 6 ans, des jumeaux de 4 ans) qui prépare son expatriation à **Valencia pour l'été 2028**.
+Tu refonds intégralement le site **Cap sur Valencia** — le journal de bord d'une famille française de 5 personnes (Florian, 35 ans, logisticien, sa femme, une fille de 6 ans, des jumeaux de 4 ans) qui prépare son expatriation à **Valencia pour l'été 2028**.
 
 Le contenu texte est déjà écrit (ton humain, tutoiement, contractions) dans `/opt/data/maxpatrie-site/pages/*.html`. Ne pas réécrire le fond — uniquement le contenant visuel.
 
@@ -92,7 +92,7 @@ Le site doit RESPIRER l'Espagne et Valencia. Deux drapeaux doivent apparaître e
 6. **Guide complet** — Liste éditoriale des 9 pages, PAS une grille monotone
 
 7. **Footer** — Fond : drapeau de Valencia en aquarelle subtile
-   - 🇪🇸 Maxpatrie + 🥘🍊🏖️
+   - 🇪🇸 Cap sur Valencia + 🥘🍊🏖️
    - Liens vers toutes les pages
    - "¡Hasta pronto! ☀️"
 

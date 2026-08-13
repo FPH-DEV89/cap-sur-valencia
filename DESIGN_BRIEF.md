@@ -1,11 +1,11 @@
-# Maxpatrie — Design Brief v3
+# Cap sur Valencia — Design Brief v3
 ## Direction « Soleil Méditerranéen » ☀️
 
 ---
 
 ### 🎯 Contexte & Problème
 
-Le site Maxpatrie (expatriation familiale à Valencia) utilise actuellement une palette **Terracotta / Slate** qui donne un rendu « tout rouge » — fonds rouges, boutons rouges, liens rouges. Le site respire la terre cuite et l'argile, mais pas l'Espagne vivante, solaire et maritime que le client veut incarner.
+Le site Cap sur Valencia (expatriation familiale à Valencia) utilise actuellement une palette **Terracotta / Slate** qui donne un rendu « tout rouge » — fonds rouges, boutons rouges, liens rouges. Le site respire la terre cuite et l'argile, mais pas l'Espagne vivante, solaire et maritime que le client veut incarner.
 
 **Ce qu'on perd :** l'identité terracotta qui était forte mais étouffante.
 **Ce qu'on gagne :** une direction chaleureuse ET lumineuse, qui évoque Valencia sans tomber dans le cliché touristique.
