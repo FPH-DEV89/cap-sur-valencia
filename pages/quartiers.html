@@ -7,10 +7,16 @@
   <meta name="description" content="Guide complet des quartiers de Valencia pour une famille avec enfants : Benimaclet, Patraix, Ruzafa, El Cabanyal… Prix, transports, écoles, ambiance. Par un futur expatrié.">
   <meta name="keywords" content="quartiers Valencia, où vivre Valencia, Benimaclet, Patraix, Ruzafa, El Cabanyal, Alboraya, famille Valencia">
   <link rel="canonical" href="https://fph-dev89.github.io/cap-sur-valencia/pages/quartiers.html">
+  <!-- Open Graph & Social Cards -->
   <meta property="og:title" content="Quartiers de Valencia — Où vivre ? | Cap sur Valencia">
-  <meta property="og:description" content="Guide complet des quartiers de Valencia pour une famille avec enfants. Prix, transports, écoles, ambiance.">
+  <meta property="og:description" content="Guide complet des quartiers de Valencia pour une famille avec enfants : Benimaclet, Patraix, Ruzafa, El Cabanyal, Alboraya… Prix, transports, écoles, ambiance.">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fph-dev89.github.io/cap-sur-valencia/pages/quartiers.html">
+  <meta property="og:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/quartiers-plage.jpg">
   <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/quartiers-plage.jpg">
+
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -18,19 +24,19 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
     <div class="container">
-      <a href="/" class="nav-logo">
+      <a href="../index.html" class="nav-logo">
         <span class="emoji">🇪🇸</span> Cap sur Valencia
       </a>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="/#histoire">Notre histoire</a></li>
-        <li><a href="/#timeline">Le plan</a></li>
-        <li><a href="/#budget">Budget</a></li>
-        <li><a href="/#quartiers">Quartiers</a></li>
-        <li><a href="/#guide">Guide complet</a></li>
-        <li><a href="/#guide" class="nav-cta">Explorer ▼</a></li>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#guide">Guide complet</a></li>
+        <li><a href="scolarite.html">Scolarité</a></li>
+        <li><a href="budget.html">Budget</a></li>
+        <li><a href="quartiers.html">Quartiers</a></li>
+        <li><a href="sante.html">Santé</a></li>
       </ul>
     </div>
   </nav>
@@ -52,13 +58,13 @@
   <main class="section content-body">
     <div class="container">
 
-      <!-- Filtre interactif -->
-      <div class="filter-bar" style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem;">
-        <button class="filter-btn active" data-filter="all">🌍 Tous</button>
-        <button class="filter-btn" data-filter="famille">👨‍👩‍👧‍👦 Famille</button>
-        <button class="filter-btn" data-filter="branche">🍸 Branché</button>
+      <!-- Filtre interactif (US-05) -->
+      <div class="filter-bar" style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2.5rem;">
+        <button class="filter-btn active" data-filter="all">🌍 Tous les quartiers</button>
+        <button class="filter-btn" data-filter="famille">👨‍👩‍👧‍👦 Top Famille</button>
+        <button class="filter-btn" data-filter="centre">🏙️ Centre &amp; Branché</button>
         <button class="filter-btn" data-filter="bord-de-mer">🌊 Bord de mer</button>
-        <button class="filter-btn" data-filter="economique">💰 Économique</button>
+        <button class="filter-btn" data-filter="economique">💰 Banlieue &amp; Économique</button>
       </div>
 
       <!-- 🥇 Top 3 famille -->
@@ -69,12 +75,12 @@
 
         <!-- Benimaclet -->
         <div class="quartier-card featured fade-in" data-category="famille" data-quartier="benimaclet">
-          <div style="display: flex; justify-content: space-between; align-items: start;">
+          <div class="quartier-header">
             <h3>Benimaclet</h3>
-            <span style="background: var(--golden); color: white; padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.7rem; font-weight: 700;">❤️ Coup de cœur</span>
+            <span class="quartier-badge">❤️ Coup de cœur</span>
           </div>
           <div class="quartier-price">950 – 1 300 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Un ancien village qui s'est fait bouffer par la ville mais qui a refusé de perdre son âme. Des maisons basses colorées, des ruelles en damier, une place qui devient piétonne le week-end. Les gamins jouent au foot pendant que les parents prennent un vermouth en terrasse. Métro L3 qui te pose au centre en 6 minutes. Le tram file à la plage. Les écoles publiques ont bonne réputation. Et en 15 minutes à pied t'es sur le lit du Turia pour le vélo.
           </p>
           <div class="quartier-meta">
@@ -85,26 +91,29 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">9/10</div>
+              <div class="score-value" style="color: #6d9e38;">9/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">8/10</div>
+              <div class="score-value" style="color: var(--navy);">8/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">8/10</div>
+              <div class="score-value" style="color: var(--terracotta);">8/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui veut de la vie, se sentir dans un vrai quartier, et pouvoir tout faire à pied.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui veut de la vie, se sentir dans un vrai quartier, et pouvoir tout faire à pied.</p>
         </div>
 
         <!-- Patraix -->
         <div class="quartier-card fade-in" data-category="famille" data-quartier="patraix">
-          <h3>Patraix</h3>
+          <div class="quartier-header">
+            <h3>Patraix</h3>
+            <span class="quartier-badge">⭐ Top famille</span>
+          </div>
           <div class="quartier-price">900 – 1 200 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Le quartier que personne connaît et que tout le monde adore après y avoir mis les pieds. Des ruelles piétonnes, des placettes avec des orangers, des vieux qui discutent à l'ombre. Les loyers sont les plus doux de la ville pour du T4 bien placé. C'est calme mais pas mort — bars à tapas, glaciers, ciné de quartier. L'école Doctor Olóriz est une pépite. Le parc de Patraix est un ancien couvent transformé en jardin public. Juste magnifique.
           </p>
           <div class="quartier-meta">
@@ -115,26 +124,29 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">9/10</div>
+              <div class="score-value" style="color: #6d9e38;">9/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">7/10</div>
+              <div class="score-value" style="color: var(--navy);">7/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">9/10</div>
+              <div class="score-value" style="color: var(--terracotta);">9/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui cherche le calme sans s'exiler, maxi rapport qualité-prix.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui cherche le calme sans s'exiler, maxi rapport qualité-prix.</p>
         </div>
 
         <!-- Campanar -->
         <div class="quartier-card fade-in" data-category="famille" data-quartier="campanar">
-          <h3>Campanar</h3>
+          <div class="quartier-header">
+            <h3>Campanar</h3>
+            <span class="quartier-badge">🏥 Santé &amp; Famille</span>
+          </div>
           <div class="quartier-price">1 000 – 1 400 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Le cocon résidentiel. Plus moderne que Benimaclet, moins villageois que Patraix. Immeubles récents, rues larges où la poussette roule sans stress. L'atout numéro un : l'hôpital La Fe — un des plus grands d'Espagne — avec un service pédiatrique de référence. À côté t'as le Bioparc (le zoo sans barrières, les gamins hurlent de joie), le parc de Cabecera (location de barques sur le lac), et le centre commercial Nuevo Centro.
           </p>
           <div class="quartier-meta">
@@ -145,19 +157,19 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">8/10</div>
+              <div class="score-value" style="color: #6d9e38;">8/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">7/10</div>
+              <div class="score-value" style="color: var(--navy);">7/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">7/10</div>
+              <div class="score-value" style="color: var(--terracotta);">7/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui veut de l'espace, du moderne, et la santé à deux pas.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui veut de l'espace, du moderne, et la santé à deux pas.</p>
         </div>
       </div>
 
@@ -167,10 +179,13 @@
       <div class="grid-3" style="margin-bottom:3rem;">
 
         <!-- Ruzafa -->
-        <div class="quartier-card fade-in" data-category="branche" data-quartier="ruzafa">
-          <h3>Ruzafa</h3>
+        <div class="quartier-card fade-in" data-category="centre branche" data-quartier="ruzafa">
+          <div class="quartier-header">
+            <h3>Ruzafa</h3>
+            <span class="quartier-badge">🍸 Branché &amp; Nuit</span>
+          </div>
           <div class="quartier-price">1 200 – 1 600 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Ruzafa c'est le Marais de Valencia. Bars à cocktails, brunchs vegan, galeries d'art, friperies vintage. Le marché central est magnifique, les façades modernistes aussi. <strong>MAIS</strong> — et c'est un gros mais — le soir ça braille. Les ruelles étroites résonnent, les terrasses débordent jusqu'à 2h du mat' le week-end. Avec des petits, vise un appart sur cour intérieure. Avec des ados, ils vont kiffer leur life. Les écoles publiques sont correctes sans être exceptionnelles.
           </p>
           <div class="quartier-meta">
@@ -181,26 +196,29 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">5/10</div>
+              <div class="score-value" style="color: #6d9e38;">5/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">9/10</div>
+              <div class="score-value" style="color: var(--navy);">9/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">5/10</div>
+              <div class="score-value" style="color: var(--terracotta);">5/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> couple sans enfants OU famille avec ados qui rêvent d'indépendance.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> couple sans enfants OU famille avec ados qui rêvent d'indépendance.</p>
         </div>
 
         <!-- Ensanche / Gran Vía -->
-        <div class="quartier-card fade-in" data-category="famille" data-quartier="ensanche">
-          <h3>Ensanche / Gran Vía</h3>
+        <div class="quartier-card fade-in" data-category="centre famille" data-quartier="ensanche">
+          <div class="quartier-header">
+            <h3>Ensanche / Gran Vía</h3>
+            <span class="quartier-badge">🏛️ Centre Chic</span>
+          </div>
           <div class="quartier-price">1 300 – 1 800 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Grandes avenues, immeubles haussmanniens, boutiques chics, cafés en terrasse où le café con leche coûte 2,50 € au lieu de 1,50 €. C'est beau, propre, central. Tu marches partout. Les gares du Nord et Joaquín Sorolla (AVE vers Madrid) sont à deux pas. Les écoles concertadas (semi-privées) sont excellentes. Le prix pique, et les apparts sont moins spacieux qu'ailleurs, mais si ton budget suit, fonce.
           </p>
           <div class="quartier-meta">
@@ -211,26 +229,29 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">7/10</div>
+              <div class="score-value" style="color: #6d9e38;">7/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">10/10</div>
+              <div class="score-value" style="color: var(--navy);">10/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">4/10</div>
+              <div class="score-value" style="color: var(--terracotta);">4/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> budget confortable, envie d'être au cœur de tout.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> budget confortable, envie d'être au cœur de tout.</p>
         </div>
 
         <!-- El Carmen -->
-        <div class="quartier-card fade-in" data-category="branche" data-quartier="el-carmen">
-          <h3>El Carmen</h3>
+        <div class="quartier-card fade-in" data-category="centre branche" data-quartier="el-carmen">
+          <div class="quartier-header">
+            <h3>El Carmen</h3>
+            <span class="quartier-badge">🎨 Historique &amp; Fêtes</span>
+          </div>
           <div class="quartier-price">1 000 – 1 400 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Le quartier historique. Ruelles médiévales, street art, bars de nuit. Magnifique en journée, folklorique le soir. Avec des enfants ? Les trottoirs sont étroits, les poussettes coincent, et le samedi soir c'est enterrement de vie de garçon en terrasse. Les écoles sont rares et les familles ont progressivement fui vers Benimaclet. Pour un couple sans enfants qui veut vivre dans une carte postale, c'est magique. Pour nous, c'est niet.
           </p>
           <div class="quartier-meta">
@@ -241,32 +262,42 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">3/10</div>
+              <div class="score-value" style="color: #6d9e38;">3/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">6/10</div>
+              <div class="score-value" style="color: var(--navy);">6/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">6/10</div>
+              <div class="score-value" style="color: var(--terracotta);">6/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> célibataire ou jeune couple fêtard. Pas pour une famille de 5.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> célibataire ou jeune couple fêtard. Pas pour une famille de 5.</p>
         </div>
       </div>
 
       <!-- 🌊 Bord de mer -->
       <h2>Bord de mer et banlieues proches</h2>
+      <p style="color: #3d3d3d;">Vivre les pieds dans le sable ou à 15 minutes de métro de la Méditerranée : le vrai luxe valencien au quotidien.</p>
+
+      <!-- Photo Plage Malvarrosa (US-06) -->
+      <figure class="content-photo fade-in">
+        <img src="../assets/img/quartiers-plage.jpg" alt="Vaste plage de la Malvarrosa avec promenade et palmiers au bord de la Méditerranée à Valencia" loading="lazy" width="1200" height="800">
+        <figcaption>🏖️ La plage de la Malvarrosa et la Patacona : de vastes étendues de sable fin et des terrasses ouvertes toute l'année à 15 minutes du centre.</figcaption>
+      </figure>
 
       <div class="grid-3" style="margin-bottom:3rem;">
 
         <!-- El Cabanyal -->
         <div class="quartier-card fade-in" data-category="bord-de-mer" data-quartier="el-cabanyal">
-          <h3>El Cabanyal</h3>
+          <div class="quartier-header">
+            <h3>El Cabanyal</h3>
+            <span class="quartier-badge">🌊 Bord de Mer</span>
+          </div>
           <div class="quartier-price">1 000 – 1 400 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Ancien quartier de pêcheurs en pleine renaissance. Les maisons colorées avec leurs azulejos sont dingues. T'es à 5 minutes de la plage de las Arenas. Le tram te met au centre en 15 minutes. Mais c'est encore contrasté — une rue rénovée, la suivante en chantier. Certains coins craignent la nuit. Pour une famille, c'est un pari sur l'avenir. Dans 5 ans ça vaudra de l'or, mais aujourd'hui faut choisir sa rue au millimètre près.
           </p>
           <div class="quartier-meta">
@@ -277,26 +308,29 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">6/10</div>
+              <div class="score-value" style="color: #6d9e38;">6/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">7/10</div>
+              <div class="score-value" style="color: var(--navy);">7/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">7/10</div>
+              <div class="score-value" style="color: var(--terracotta);">7/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> famille aventurière, amoureuse de la mer, prête à jouer les pionniers.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> famille aventurière, amoureuse de la mer, prête à jouer les pionniers.</p>
         </div>
 
         <!-- Alboraya -->
-        <div class="quartier-card fade-in" data-category="bord-de-mer" data-quartier="alboraya">
-          <h3>Alboraya</h3>
+        <div class="quartier-card fade-in" data-category="bord-de-mer famille" data-quartier="alboraya">
+          <div class="quartier-header">
+            <h3>Alboraya</h3>
+            <span class="quartier-badge">🏖️ Plage &amp; Calme</span>
+          </div>
           <div class="quartier-price">800 – 1 100 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Si tu veux la plage SANS le prix du bord de mer, c'est ici. Techniquement une ville à part, collée à Valencia, métro L3 au centre en 12 minutes. La plage de la Patacona est immense, propre, familiale — notre plus gros coup de cœur « qualité de vie ». Les loyers sont doux, les apparts plus grands. La vie culturelle, c'est pas Ruzafa — tes soirées seront Netflix plutôt que concerts. Mais avec trois gamins, c'est peut-être exactement ce que tu cherches.
           </p>
           <div class="quartier-meta">
@@ -307,26 +341,29 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">8/10</div>
+              <div class="score-value" style="color: #6d9e38;">8/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">6/10</div>
+              <div class="score-value" style="color: var(--navy);">6/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">9/10</div>
+              <div class="score-value" style="color: var(--terracotta);">9/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui veut la plage au quotidien et le calme absolu.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> famille qui veut la plage au quotidien et le calme absolu.</p>
         </div>
 
         <!-- Burjassot -->
         <div class="quartier-card fade-in" data-category="economique" data-quartier="burjassot">
-          <h3>Burjassot</h3>
+          <div class="quartier-header">
+            <h3>Burjassot</h3>
+            <span class="quartier-badge">💰 Économique · Campus</span>
+          </div>
           <div class="quartier-price">700 – 950 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Banlieue ouest, populaire, campus universitaire. Les loyers sont les plus bas du coin pour du T4. Métro L1+L2 au centre en 15 minutes. C'est vivant sans être huppé. Si ton budget est serré, c'est un bon plan temporaire. Quatre chambres à 750 €, le temps de trouver tes marques et un taf correct. Bon réseau scolaire. Pas glamour, mais efficace.
           </p>
           <div class="quartier-meta">
@@ -337,34 +374,37 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">6/10</div>
+              <div class="score-value" style="color: #6d9e38;">6/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">7/10</div>
+              <div class="score-value" style="color: var(--navy);">7/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">10/10</div>
+              <div class="score-value" style="color: var(--terracotta);">10/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
-          <p style="font-size:0.8rem;color:var(--charcoal-light);margin-top:0.5rem;"><strong>Pour qui :</strong> arrivée économique, plan temporaire, ou priorité à l'épargne.</p>
+          <p style="font-size:0.8rem;color:#555555;margin-top:0.5rem;"><strong>Pour qui :</strong> arrivée économique, plan temporaire, ou priorité à l'épargne.</p>
         </div>
       </div>
 
       <!-- 🏡 Vraie banlieue -->
       <h2>La vraie banlieue : Mislata, Torrent, Paterna</h2>
-      <p>Des T4 entre <strong>750 et 1 100 €</strong>. Mislata est la plus proche, collée à Valencia. Torrent te file une maison avec jardin pour le prix d'un appart en ville. Paterna a des zones pavillonnaires hyper calmes. Toutes sont desservies par le métro. Parfait si t'as une voiture et que tu veux de l'espace sans te ruiner.</p>
-      <p style="font-size:0.9rem;color:var(--charcoal-light);margin-bottom:2rem;"><strong>Pour qui :</strong> famille avec bagnole, envie d'espace, jardin, et budget maîtrisé.</p>
+      <p style="color: #3d3d3d;">Des T4 entre <strong>750 et 1 100 €</strong>. Mislata est la plus proche, collée à Valencia. Torrent te file une maison avec jardin pour le prix d'un appart en ville. Paterna a des zones pavillonnaires hyper calmes. Toutes sont desservies par le métro. Parfait si t'as une voiture et que tu veux de l'espace sans te ruiner.</p>
+      <p style="font-size:0.9rem;color:#555555;margin-bottom:2rem;"><strong>Pour qui :</strong> famille avec bagnole, envie d'espace, jardin, et budget maîtrisé.</p>
 
       <div class="grid-3" style="margin-bottom:3rem;">
 
         <!-- Mislata -->
         <div class="quartier-card fade-in" data-category="economique" data-quartier="mislata">
-          <h3>Mislata</h3>
+          <div class="quartier-header">
+            <h3>Mislata</h3>
+            <span class="quartier-badge">🚇 Banlieue Proche</span>
+          </div>
           <div class="quartier-price">750 – 950 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Littéralement collée à Valencia. Une extension naturelle de la ville avec des loyers bien plus doux. Métro direct, commerces, services municipaux complets. Le meilleur compromis banlieue/proximité. Pas sexy, mais diablement pratique.
           </p>
           <div class="quartier-meta">
@@ -374,25 +414,28 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">7/10</div>
+              <div class="score-value" style="color: #6d9e38;">7/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">8/10</div>
+              <div class="score-value" style="color: var(--navy);">8/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">9/10</div>
+              <div class="score-value" style="color: var(--terracotta);">9/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
         </div>
 
         <!-- Torrent -->
-        <div class="quartier-card fade-in" data-category="economique" data-quartier="torrent">
-          <h3>Torrent</h3>
+        <div class="quartier-card fade-in" data-category="economique famille" data-quartier="torrent">
+          <div class="quartier-header">
+            <h3>Torrent</h3>
+            <span class="quartier-badge">🏡 Espace &amp; Jardin</span>
+          </div>
           <div class="quartier-price">750 – 1 000 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Pour 900 € t'as une maison avec jardin. Vraie vie de banlieue, de l'espace pour les enfants, métro vers le centre. Le rêve si tu télétravailles ou si t'as une voiture. Moins bien desservi que Mislata, mais le cadre de vie compense large.
           </p>
           <div class="quartier-meta">
@@ -402,15 +445,15 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">8/10</div>
+              <div class="score-value" style="color: #6d9e38;">8/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">5/10</div>
+              <div class="score-value" style="color: var(--navy);">5/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">9/10</div>
+              <div class="score-value" style="color: var(--terracotta);">9/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
@@ -418,9 +461,12 @@
 
         <!-- Paterna -->
         <div class="quartier-card fade-in" data-category="economique" data-quartier="paterna">
-          <h3>Paterna</h3>
+          <div class="quartier-header">
+            <h3>Paterna</h3>
+            <span class="quartier-badge">🌳 Calme Pavillonnaire</span>
+          </div>
           <div class="quartier-price">800 – 1 100 €</div>
-          <p style="font-size: 0.9rem; color: var(--charcoal-light); margin-bottom: 1rem;">
+          <p style="font-size: 0.9rem; color: #3d3d3d; margin-bottom: 1rem;">
             Zones pavillonnaires ultra calmes. Idéal pour famille nombreuse qui veut du silence et de la verdure. Métro pour le centre. Résidentiel, propre, un poil ennuyeux — mais après 12 ans de logistique dans le bruit, l'ennui c'est un luxe.
           </p>
           <div class="quartier-meta">
@@ -430,15 +476,15 @@
           </div>
           <div class="quartier-score">
             <div class="score-item">
-              <div class="score-value" style="color: var(--olive);">7/10</div>
+              <div class="score-value" style="color: #6d9e38;">7/10</div>
               <div class="score-label">Famille</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--med-blue);">5/10</div>
+              <div class="score-value" style="color: var(--navy);">5/10</div>
               <div class="score-label">Transports</div>
             </div>
             <div class="score-item">
-              <div class="score-value" style="color: var(--golden);">8/10</div>
+              <div class="score-value" style="color: var(--terracotta);">8/10</div>
               <div class="score-label">Budget</div>
             </div>
           </div>
@@ -448,8 +494,8 @@
       <!-- 🚇 Transports -->
       <h2>Se déplacer sans se ruiner</h2>
       <div class="highlight-box">
-        <p style="margin-bottom:0.5rem;">Les transports valenciens sont <strong>efficaces et abordables</strong>. Sérieux, venant de France, ça fait bizarre :</p>
-        <ul style="margin-bottom:0;">
+        <p style="margin-bottom:0.5rem; color: #1a1a1a;">Les transports valenciens sont <strong>efficaces et abordables</strong>. Sérieux, venant de France, ça fait bizarre :</p>
+        <ul style="margin-bottom:0; color: #3d3d3d;">
           <li><strong>Ticket simple</strong> : 1,50 €. Dépannage.</li>
           <li><strong>Bonobús 10 trajets</strong> : 8,50 €. Bus uniquement.</li>
           <li><strong>SUMA 10</strong> : ~10 € les 10 trajets métro + bus + trains de banlieue (Cercanías). Le meilleur deal pour usage occasionnel.</li>
@@ -508,21 +554,21 @@
         </div>
         <div>
           <h4>Le projet</h4>
-          <p><a href="/#histoire">Notre histoire</a></p>
-          <p><a href="/#timeline">Le planning</a></p>
+          <p><a href="../index.html#histoire">Notre histoire</a></p>
+          <p><a href="../index.html#timeline">Le planning</a></p>
           <p><a href="ecoles.html">Écoles par quartier</a></p>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Cap sur Valencia — Fait avec ❤️ et beaucoup de cafés</span>
-        <span>Valencia · Été 2028</span>
+        <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>
   </footer>
 
   <script src="../js/main.js"></script>
   <script>
-    // Filtre interactif des quartiers
+    // Filtre interactif des quartiers (US-05)
     (function() {
       const filterBtns = document.querySelectorAll('.filter-btn');
       const cards = document.querySelectorAll('.quartier-card[data-category]');
@@ -534,12 +580,13 @@
           const filter = btn.dataset.filter;
 
           cards.forEach(card => {
-            if (filter === 'all' || card.dataset.category === filter) {
+            const categories = card.dataset.category ? card.dataset.category.split(' ') : [];
+            if (filter === 'all' || categories.includes(filter)) {
               card.style.display = '';
               card.style.opacity = '0';
               card.style.transform = 'translateY(12px)';
               requestAnimationFrame(() => {
-                card.style.transition = 'all 0.4s var(--ease-out)';
+                card.style.transition = 'all 0.3s var(--ease-out)';
                 card.style.opacity = '1';
                 card.style.transform = 'translateY(0)';
               });
@@ -555,25 +602,26 @@
   <!-- Style pour les boutons de filtre -->
   <style>
     .filter-btn {
-      padding: 0.6rem 1.4rem;
-      border: 2px solid var(--sand-dark);
-      background: var(--white);
+      padding: 0.55rem 1.3rem;
+      border: 1.5px solid rgba(0, 22, 38, 0.15);
+      background: var(--bg-white);
       border-radius: 50px;
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-family: var(--font-body);
-      color: var(--charcoal-light);
-      transition: all 0.3s var(--ease-out);
+      color: #3d3d3d;
+      transition: all 0.25s var(--ease-out);
     }
     .filter-btn:hover {
       border-color: var(--terracotta);
       color: var(--terracotta);
+      background: var(--bg-beige-light);
     }
     .filter-btn.active {
       border-color: var(--terracotta);
       background: var(--terracotta);
-      color: var(--white);
+      color: #ffffff;
     }
   </style>
 </body>

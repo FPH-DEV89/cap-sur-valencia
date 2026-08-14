@@ -8,11 +8,19 @@
   <meta name="keywords" content="expatriation, Valencia, famille, Espagne, vivre à Valencia, expat, français à Valencia, scolarité espagnole, coût de la vie Valencia">
   <link rel="canonical" href="https://fph-dev89.github.io/cap-sur-valencia/">
 
-  <!-- Open Graph -->
+  <!-- Open Graph & Social Cards -->
   <meta property="og:title" content="Cap sur Valencia — Une famille française à Valencia">
   <meta property="og:description" content="On part vivre à Valencia avec nos 3 enfants. Budget, écoles, quartiers, démarches — le guide complet.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fph-dev89.github.io/cap-sur-valencia/">
+  <meta property="og:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/hero-ciudad-arte.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1066">
   <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cap sur Valencia — Une famille française à Valencia">
+  <meta name="twitter:description" content="On part vivre à Valencia avec nos 3 enfants. Budget, écoles, quartiers, démarches — le guide complet.">
+  <meta name="twitter:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/hero-ciudad-arte.jpg">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -37,7 +45,7 @@
       border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     }
     .navbar.scrolled {
-      background: rgba(251, 251, 226, 0.94);
+      background: rgba(251, 251, 226, 0.96);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       padding: 0.4rem 0;
@@ -46,10 +54,10 @@
     }
     .navbar .nav-logo {
       font-family: var(--font-heading);
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: #001626;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       text-decoration: none;
     }
     .navbar .nav-logo .flag {
@@ -57,46 +65,49 @@
       margin-right: 0.3rem;
     }
     .nav-links a {
-      color: #555555;
-      font-weight: 500;
+      color: #3d3d3d;
+      font-weight: 600;
       font-size: 0.95rem;
       transition: color 0.2s ease;
     }
     .nav-links a:hover {
-      color: #001626;
+      color: #924b26;
     }
     .nav-toggle span {
       background: #001626;
     }
 
-    /* --- HERO VALENCIA — Dégradé rose → jaune/orangé + photo overlay --- */
+    /* --- HERO VALENCIA — Dégradé sunset + vraie photo Ciudad de las Artes (US-01) --- */
     .hero-valencia {
       position: relative;
-      min-height: 100vh;
+      min-height: 92vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       overflow: hidden;
-      padding: 6rem 2rem 4rem;
+      padding: 5.5rem 1.5rem 3.5rem;
       background: linear-gradient(165deg, #e8b4b8 0%, #e8a098 20%, #e09860 42%, #e8a850 60%, #f0c060 78%, #fdf0c8 100%);
     }
-    /* Photo overlay — Valencia cityscape / maison */
+    /* Photo overlay réelle — Ciudad de las Artes y las Ciencias */
     .hero-valencia .hero-photo-overlay {
       position: absolute;
       inset: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="%23e8b4b8" stop-opacity="0.9"/><stop offset="100%" stop-color="%23fdf0c8" stop-opacity="0.2"/></linearGradient></defs><rect width="1200" height="800" fill="url(%23sky)"/><g opacity="0.12"><!-- Maison valencienne --><rect x="250" y="420" width="700" height="3" fill="%23924b26"/><rect x="280" y="380" width="140" height="40" rx="2" fill="%23924b26"/><rect x="480" y="340" width="160" height="80" rx="2" fill="%23924b26"/><rect x="700" y="360" width="150" height="60" rx="2" fill="%23924b26"/><rect x="310" y="390" width="40" height="40" rx="15" fill="%23fbfbe2"/><rect x="520" y="355" width="40" height="40" rx="15" fill="%23fbfbe2"/><rect x="560" y="355" width="40" height="40" rx="15" fill="%23fbfbe2"/><!-- Tour --><rect x="850" y="300" width="60" height="120" rx="3" fill="%23924b26"/><circle cx="880" cy="320" r="10" fill="%23fbfbe2"/><!-- Palmiers --><rect x="150" y="400" width="6" height="80" rx="3" fill="%23924b26"/><circle cx="153" cy="395" r="30" fill="%238BC34A" opacity="0.3"/><rect x="1000" y="380" width="5" height="70" rx="3" fill="%23924b26"/><circle cx="1002" cy="375" r="28" fill="%238BC34A" opacity="0.3"/></g></svg>') center/cover no-repeat;
+      background: url('assets/img/hero-ciudad-arte.jpg') center 35%/cover no-repeat;
       pointer-events: none;
       z-index: 0;
-      opacity: 0.40;
+      opacity: 0.55;
+      mix-blend-mode: normal;
+      filter: contrast(1.06) saturate(1.08);
     }
     .hero-valencia::before {
       content: '';
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 80% 85%, rgba(255, 255, 255, 0.28) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 50% at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 55%);
+        radial-gradient(ellipse 80% 60% at 80% 85%, rgba(255, 255, 255, 0.40) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 50% at 20% 30%, rgba(255, 255, 255, 0.30) 0%, transparent 55%),
+        linear-gradient(180deg, rgba(251, 251, 226, 0.15) 0%, rgba(255, 255, 255, 0.20) 50%, rgba(251, 251, 226, 0.50) 100%);
       pointer-events: none;
       z-index: 0;
     }
@@ -105,7 +116,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      opacity: 0.04;
+      opacity: 0.02;
       pointer-events: none;
       z-index: 0;
       background: repeating-linear-gradient(45deg, #924b26 0px, #924b26 1px, transparent 1px, transparent 20px),
@@ -114,100 +125,114 @@
     .hero-valencia .hero-inner {
       position: relative;
       z-index: 1;
-      max-width: 850px;
+      max-width: 820px;
     }
     .hero-valencia .hero-badge {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(8px);
-      border: 1px solid rgba(0, 0, 0, 0.10);
+      border: 1px solid rgba(0, 22, 38, 0.12);
       color: #001626;
       padding: 0.4rem 1.4rem;
       border-radius: 50px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-bottom: 1.8rem;
-      letter-spacing: 0.02em;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
     .hero-valencia h1 {
-      font-size: clamp(3.5rem, 9vw, 7rem);
+      font-size: clamp(3.2rem, 8.5vw, 6.5rem);
       font-family: var(--font-heading);
       font-weight: 700;
       color: #001626;
       line-height: 1.05;
-      margin-bottom: 0.5rem;
-      text-shadow: 0 2px 20px rgba(255, 255, 255, 0.40);
+      margin-bottom: 0.3rem;
+      text-shadow: 0 2px 18px rgba(255, 255, 255, 0.60);
       letter-spacing: -0.02em;
     }
     .hero-valencia .hero-subtitle {
-      font-size: clamp(1.2rem, 2.8vw, 1.7rem);
-      color: rgba(0, 22, 38, 0.72);
-      font-weight: 300;
-      margin-bottom: 0.8rem;
+      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+      color: #001626;
+      font-weight: 400;
+      margin-bottom: 1rem;
       font-style: italic;
+      text-shadow: 0 1px 12px rgba(255, 255, 255, 0.55);
     }
     .hero-valencia .hero-lead {
-      font-size: 1.05rem;
-      color: rgba(0, 22, 38, 0.68);
-      max-width: 650px;
-      margin: 0 auto 1rem;
+      font-size: 1.08rem;
+      color: #1a1a1a;
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
       line-height: 1.7;
-    }
-    .hero-valencia .hero-context {
-      font-size: 0.95rem;
-      color: rgba(0, 22, 38, 0.60);
-      max-width: 620px;
-      margin: 0 auto 1.8rem;
-      line-height: 1.65;
+      font-weight: 400;
+      text-shadow: 0 1px 12px rgba(255, 255, 255, 0.55);
     }
     .hero-valencia .hero-countdown {
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0.4rem;
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(6px);
+      padding: 0.4rem 1.2rem;
+      border-radius: 50px;
+      border: 1px solid rgba(0, 22, 38, 0.08);
     }
     .hero-valencia .countdown-label {
-      color: rgba(0, 22, 38, 0.60);
-      font-size: 0.95rem;
+      color: #001626;
+      font-size: 0.92rem;
+      font-weight: 600;
     }
     .hero-valencia .countdown-value {
       font-family: var(--font-heading);
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       color: #924b26;
-      margin: 0 0.2rem;
+      margin: 0 0.15rem;
+      font-variant-numeric: tabular-nums;
     }
     .hero-valencia .btn-primary {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: #924b26;
       color: #ffffff;
       font-weight: 700;
-      font-size: 1.05rem;
-      padding: 0.9rem 2.6rem;
+      font-size: 1rem;
+      padding: 0.85rem 2.4rem;
       border-radius: 50px;
       text-decoration: none;
       transition: all 0.25s ease;
-      box-shadow: 0 4px 18px rgba(146, 75, 38, 0.30);
+      box-shadow: 0 4px 16px rgba(146, 75, 38, 0.30);
     }
     .hero-valencia .btn-primary:hover {
       background: #6e381c;
       transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(146, 75, 38, 0.40);
+      box-shadow: 0 6px 22px rgba(146, 75, 38, 0.40);
       color: #ffffff;
     }
     .hero-valencia .btn-outline-white {
-      display: inline-block;
-      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.50);
+      backdrop-filter: blur(4px);
       color: #001626;
       font-weight: 600;
       font-size: 1rem;
       padding: 0.85rem 2.4rem;
       border-radius: 50px;
       text-decoration: none;
-      border: 2px solid rgba(0, 22, 38, 0.30);
+      border: 2px solid #001626;
       transition: all 0.25s ease;
     }
     .hero-valencia .btn-outline-white:hover {
       border-color: #001626;
-      background: rgba(0, 22, 38, 0.05);
-      color: #001626;
+      background: #001626;
+      color: #ffffff;
+      transform: translateY(-2px);
     }
     .hero-cta-group {
       display: flex;
@@ -259,6 +284,25 @@
       background: var(--saffron);
     }
 
+    /* Card Images */
+    .culture-card-img,
+    .heritage-card-img,
+    .tradition-card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1.2rem;
+      background-color: var(--bg-beige-dark);
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .culture-card:hover .culture-card-img,
+    .heritage-card:hover .heritage-card-img,
+    .tradition-card:hover .tradition-card-img {
+      transform: scale(1.02);
+    }
+
     /* Culture Cards — 3 colonnes (Stitch design) */
     .culture-cards {
       display: grid;
@@ -274,7 +318,7 @@
       padding: 2rem 1.8rem;
       text-align: center;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
       border: 1px solid rgba(146, 75, 38, 0.12);
     }
     .culture-card:hover {
@@ -290,11 +334,11 @@
       font-family: var(--font-heading);
       font-size: 1.35rem;
       margin-bottom: 0.8rem;
-      color: var(--charcoal);
+      color: #001626;
     }
     .culture-card p {
       font-size: 0.95rem;
-      color: var(--charcoal-light);
+      color: #3d3d3d;
       line-height: 1.65;
     }
 
@@ -312,11 +356,12 @@
       border: 1px solid rgba(146, 75, 38, 0.12);
       border-radius: 14px;
       overflow: hidden;
-      transition: transform 0.3s ease, border-color 0.3s ease;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
     .heritage-card:hover {
       transform: translateY(-3px);
       border-color: rgba(146, 75, 38, 0.45);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     }
     .heritage-card-visual {
       height: 180px;
@@ -340,12 +385,12 @@
     }
     .heritage-card-body h3 {
       font-family: var(--font-heading);
-      color: var(--charcoal);
+      color: #001626;
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
     }
     .heritage-card-body p {
-      color: var(--charcoal-light);
+      color: #3d3d3d;
       font-size: 0.92rem;
       line-height: 1.6;
     }
@@ -365,10 +410,11 @@
       padding: 2rem 1.6rem;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
       border-left: 4px solid var(--saffron);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .tradition-card:hover {
       transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     }
     .tradition-card .trad-icon {
       font-size: 2.8rem;
@@ -379,17 +425,18 @@
       font-family: var(--font-heading);
       font-size: 1.2rem;
       margin-bottom: 0.6rem;
+      color: #001626;
     }
     .tradition-card p {
       font-size: 0.92rem;
-      color: var(--charcoal-light);
+      color: #3d3d3d;
       line-height: 1.6;
     }
 
-    /* --- FOOTER — Fond BEIGE --- */
+    /* --- FOOTER — Fond BEIGE (#fbfbe2) --- */
     .footer {
       background: #fbfbe2;
-      color: #555555;
+      color: #3d3d3d;
       padding: 3rem 0 1.5rem;
       border-top: 1px solid rgba(0, 0, 0, 0.06);
     }
@@ -400,14 +447,14 @@
       margin-bottom: 1rem;
     }
     .footer a {
-      color: #555555;
+      color: #3d3d3d;
       transition: color 0.2s ease;
     }
     .footer a:hover {
       color: #924b26;
     }
     .footer-brand p {
-      color: #555555;
+      color: #3d3d3d;
       font-size: 0.92rem;
     }
     .footer-bottom {
@@ -419,13 +466,13 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       font-size: 0.85rem;
-      color: #777777;
+      color: #555555;
     }
     .footer-map-reference {
       margin-top: 1.5rem;
       text-align: center;
       font-size: 0.88rem;
-      color: #999999;
+      color: #555555;
     }
     .footer-map-reference span {
       font-size: 1.5rem;
@@ -477,35 +524,33 @@
   <!-- ===== NAVIGATION — HEADER BEIGE ===== -->
   <nav class="navbar" role="navigation">
     <div class="container">
-      <a href="/" class="nav-logo"><span class="flag">🇪🇸</span>CAP SUR VALENCIA</a>
+      <a href="index.html" class="nav-logo"><span class="flag">🇪🇸</span>CAP SUR VALENCIA</a>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
         <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#art-de-vivre">Activités</a></li>
-        <li><a href="#guide">Guide de Voyage</a></li>
-        <li><a href="pages/ressources.html">Blog</a></li>
-        <li><a href="pages/ressources.html">Contact</a></li>
+        <li><a href="#histoire">Notre histoire</a></li>
+        <li><a href="#art-de-vivre">Art de Vivre</a></li>
+        <li><a href="#heritage">Heritage</a></li>
+        <li><a href="#saveurs">Saveurs</a></li>
+        <li><a href="#guide">Guide</a></li>
+        <li><a href="pages/budget.html" class="nav-cta">Budget 2028</a></li>
       </ul>
     </div>
   </nav>
   <div class="nav-overlay"></div>
 
-  <!-- ===== HERO — VALENCIA, Dégradé Rose → Jaune + Photo Overlay ===== -->
+  <!-- ===== HERO — VALENCIA, Dégradé Sunset + Vraie Photo Ciudad de las Artes (US-01, US-03) ===== -->
   <header class="hero-valencia" id="accueil">
     <div class="hero-photo-overlay"></div>
     <div class="hero-inner">
-      <div class="hero-badge">🇪🇸 Art de Vivre & Culture Espagnole</div>
+      <div class="hero-badge">🇪🇸 Expatriation Familiale · Été 2028</div>
       <h1>Valencia</h1>
-      <p class="hero-subtitle">Art de Vivre &amp; Culture Espagnole</p>
+      <p class="hero-subtitle">Journal de bord d'une famille française en route pour l'Espagne</p>
 
       <p class="hero-lead">
-        ☀️ C'est pas un choix rationnel. C'est la lumière, la mer à 15 bornes, les gamins qui jouent sur la place de Benimaclet pendant que tu bois un vermouth. J'y suis passé dix fois pour le boulot, et à chaque fois je repartais avec cette boule au ventre.
-      </p>
-
-      <p class="hero-context">
-        J'm'appelle Florian. 35 ans, logisticien, 12 piges dans le métier. On met <strong style="color:#001626;">40&nbsp;000&nbsp;€</strong> de côté, on apprend l'espagnol, et on vise l'été 2028. Ce site, c'est notre journal de bord. Tout ce que j'apprends, je le pose ici. Si t'as le même projet, sers-toi. 🌊
+        ☀️ On part vivre à Valencia avec nos 3 enfants. Budget réel, écoles, quartiers et démarches : notre retour d'expérience complet sans filtre.
       </p>
 
       <div class="hero-countdown">
@@ -524,6 +569,22 @@
   </header>
 
   <!-- ================================================================ -->
+  <!-- SECTION INTRO — NOTRE HISTOIRE (Fond beige) -->
+  <!-- ================================================================ -->
+  <section class="section section-intro" id="histoire" style="background: var(--bg-beige); padding: 3.5rem 0 2.5rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="badge">📖 Notre Histoire</span>
+      <h2 style="margin-bottom: 1.2rem; font-size: clamp(1.8rem, 4vw, 2.5rem); color: #001626;">Pourquoi Valencia&nbsp;?</h2>
+      <p style="font-size: 1.15rem; line-height: 1.8; color: #1a1a1a; margin-bottom: 1.2rem; font-style: italic; max-width: 720px; margin-left: auto; margin-right: auto;">
+        «&nbsp;C'est pas un choix rationnel. C'est la lumière, la mer à 15 bornes, les gamins qui jouent sur la place de Benimaclet pendant que tu bois un vermouth. J'y suis passé dix fois pour le boulot, et à chaque fois je repartais avec cette boule au ventre.&nbsp;»
+      </p>
+      <p style="font-size: 1.02rem; line-height: 1.8; color: #3d3d3d; max-width: 680px; margin: 0 auto;">
+        J'm'appelle Florian. 35 ans, logisticien, 12 piges dans le métier. On met <strong style="color:#001626;">40&nbsp;000&nbsp;€</strong> de côté, on apprend l'espagnol, et on vise l'été 2028. Ce site, c'est notre journal de bord. Tout ce que j'apprends, je le pose ici. Si t'as le même projet, sers-toi. 🌊
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
   <!-- SECTION 1 — ART DE VIVRE & CULTURE ESPAGNOLE (Fond beige) -->
   <!-- ================================================================ -->
   <section class="section-culture section-cream" id="art-de-vivre">
@@ -534,14 +595,14 @@
     </div>
 
     <div class="container-narrow" style="text-align:center; margin-bottom:2.5rem;">
-      <p style="font-size:1.1rem; color:var(--charcoal-light); max-width:650px; margin:0 auto;">
+      <p style="font-size:1.1rem; color:#3d3d3d; max-width:650px; margin:0 auto;">
         L'Espagne, c'est pas juste un pays. C'est un rythme. Celui des terrasses qui s'animent à 21h, des marchés qui sentent le jasmin et le paprika, des siestes qui sont pas une blague mais un art de vivre. Voilà ce qui nous attire.
       </p>
     </div>
 
     <div class="culture-cards">
       <div class="culture-card fade-in">
-        <span class="card-emoji">🥘</span>
+        <img src="assets/img/saveurs-paella.jpg" alt="Vraie paella valencienne traditionnelle au feu de bois avec riz socarrat et ingrédients locaux" loading="lazy" class="culture-card-img" width="600" height="400">
         <h3>La Paella, un Rituel</h3>
         <p>
           Pas celle du resto à touristes de la Plaza de la Reina. La vraie. Celle du dimanche midi en famille, cuite au feu de bois d'oranger sur la terrasse. Le riz <em>socarrat</em> qui gratte au fond de la poêle, le poulet de corral, les garrofons. Chez nous, la paella c'est sacré — et à Valencia, c'est une religion.
@@ -577,7 +638,7 @@
     </div>
 
     <div class="container-narrow" style="text-align:center; margin-bottom:2.5rem;">
-      <p style="font-size:1.1rem; color:var(--charcoal-light); max-width:650px; margin:0 auto;">
+      <p style="font-size:1.1rem; color:#3d3d3d; max-width:650px; margin:0 auto;">
         Valencia, c'est 2000 ans d'histoire qui cohabitent avec une architecture futuriste. La ville où les remparts romains côtoient Calatrava, où les azulejos racontent des siècles de tradition artisanale.
       </p>
     </div>
@@ -604,7 +665,7 @@
       </div>
 
       <div class="heritage-card fade-in">
-        <div class="heritage-card-visual historico-bg">⛪</div>
+        <img src="assets/img/culture-plaza.jpg" alt="Plaza de la Virgen, fontaine du Turia et architecture historique du centre de Valencia" loading="lazy" class="heritage-card-img" width="600" height="400" style="margin-bottom:0; height:180px;">
         <div class="heritage-card-body">
           <h3>Le Centre Historique</h3>
           <p>
@@ -641,9 +702,9 @@
             Un ancien village avalé par la ville mais qui a jamais perdu son âme. La <em>plaça</em> de Benimaclet, c'est le cœur qui bat : des gamins qui courent partout, des papis qui jouent aux dominos, des terrasses où le vermouth est à 2&nbsp;€. La ligne 3 du métro te pose au centre en 6 minutes.
           </p>
           <div class="quartier-meta">
-            <span>Très familial</span>
-            <span>Métro + tram</span>
-            <span>Bonnes écoles</span>
+            <span class="meta-tag good">Très familial</span>
+            <span class="meta-tag good">Métro + tram</span>
+            <span class="meta-tag">Bonnes écoles</span>
           </div>
         </div>
 
@@ -656,9 +717,9 @@
             Personne connaît Patraix et c'est tant mieux. Des ruelles piétonnes avec des orangers, des bancs à l'ombre, des vieux qui balayent devant leur porte. C'est calme, c'est propre, et t'as la ligne 1 du métro qui te dépose en centre-ville en 10 minutes.
           </p>
           <div class="quartier-meta">
-            <span>Rapport Q/P imbattable</span>
-            <span>Calme</span>
-            <span>Écoles publiques solides</span>
+            <span class="meta-tag good">Rapport Q/P imbattable</span>
+            <span class="meta-tag good">Calme</span>
+            <span class="meta-tag">Écoles publiques solides</span>
           </div>
         </div>
 
@@ -671,9 +732,9 @@
             Plus résidentiel, plus moderne. Des immeubles récents, des rues larges, et l'hôpital La Fe juste à côté — avec trois gamins dont un qui fait de l'asthme, c'est pas un détail. Le Bioparc est à 15 minutes.
           </p>
           <div class="quartier-meta">
-            <span>Moderne</span>
-            <span>Hôpital La Fe</span>
-            <span>Bioparc à proximité</span>
+            <span class="meta-tag good">Moderne</span>
+            <span class="meta-tag good">Hôpital La Fe</span>
+            <span class="meta-tag">Bioparc à proximité</span>
           </div>
         </div>
       </div>
@@ -695,14 +756,14 @@
     </div>
 
     <div class="container-narrow" style="text-align:center; margin-bottom:2.5rem;">
-      <p style="font-size:1.1rem; color:var(--charcoal-light); max-width:650px; margin:0 auto;">
+      <p style="font-size:1.1rem; color:#3d3d3d; max-width:650px; margin:0 auto;">
         La gastronomie espagnole, c'est pas des tapas surgelés. C'est le marché qui donne le tempo, les produits qui ont du goût, et des traditions qui transforment la ville entière en fête.
       </p>
     </div>
 
     <div class="traditions-grid">
       <div class="tradition-card fade-in">
-        <span class="trad-icon">🔥</span>
+        <img src="assets/img/culture-fallas.jpg" alt="Monuments impressionnants et ninots colorés lors des festivités des Fallas à Valencia" loading="lazy" class="tradition-card-img" width="600" height="400">
         <h3>Las Fallas</h3>
         <p>
           Chaque mars, Valencia brûle. Littéralement. Des sculptures géantes en carton-pâte — les <em>ninots</em> — envahissent les rues pendant quatre jours. Puis tout part en fumée dans un feu d'artifice monumental. La <em>mascletà</em> sur la Plaza del Ayuntamiento, c'est pas un feu d'artifice : c'est une expérience physique. Le sol vibre, ta poitrine aussi.
@@ -951,6 +1012,7 @@
         <div class="footer-col">
           <h4>Le projet</h4>
           <ul>
+            <li><a href="#histoire">Notre histoire</a></li>
             <li><a href="#art-de-vivre">Art de Vivre</a></li>
             <li><a href="#heritage">Heritage</a></li>
             <li><a href="#saveurs">Saveurs & Traditions</a></li>
