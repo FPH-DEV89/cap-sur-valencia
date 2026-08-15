@@ -320,7 +320,7 @@ label, .label, .badge {
 }
 
 .section {
-  padding: var(--space-xl) 0;
+  padding: 2.5rem 0;
 }
 
 /* Alternance : fond légèrement contrasté */
@@ -3367,7 +3367,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   }
 
   .section {
-    padding: clamp(2.5rem, 6vw, 3.5rem) 0;
+    padding: 2rem 0;
   }
 
   .grid-2,
@@ -3562,7 +3562,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   background: var(--navy);
   color: var(--bg-beige);
   width: 100%;
-  padding: 5rem 1.5rem;
+  padding: 3.5rem 1.5rem;
   margin: 0;
   position: relative;
   overflow: hidden;
@@ -3814,7 +3814,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 @media (max-width: 768px) {
   .section-magazine-break {
-    padding: 3.5rem 1.25rem;
+    padding: 2.5rem 1.25rem;
   }
   .magazine-break-quote {
     font-size: clamp(1.25rem, 5vw, 1.65rem);
