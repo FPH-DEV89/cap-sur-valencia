@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Budget & Coût de la Vie à Valencia — Cap sur Valencia</title>
+  <title>Budget & Coût de la Vie à Valencia - Cap sur Valencia</title>
   <meta name="description" content="Combien ça coûte VRAIMENT de vivre à Valencia avec une famille de 5 ? Loyers, courses, salaires en logistique, restaurants pas chers. Trois scénarios chiffrés.">
   <meta name="keywords" content="coût de la vie Valencia, budget expatriation Espagne, loyer Valencia famille, salaire logistique Espagne, restaurants pas chers Valencia, économies expatriation">
   <link rel="canonical" href="https://fph-dev89.github.io/cap-sur-valencia/pages/budget.html">
 
   <!-- Open Graph & Social Cards -->
-  <meta property="og:title" content="Budget & Coût de la Vie à Valencia — Cap sur Valencia">
+  <meta property="og:title" content="Budget & Coût de la Vie à Valencia - Cap sur Valencia">
   <meta property="og:description" content="Loyers, courses, salaires, restaurants : le budget complet pour une famille de 5 qui s'expatrie à Valencia. Trois scénarios, des vrais chiffres.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://fph-dev89.github.io/cap-sur-valencia/pages/budget.html">
@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+  <!-- Skip Link (US-07) -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
@@ -35,13 +38,27 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../index.html#guide">Guide complet</a></li>
         <li><a href="scolarite.html">Scolarité</a></li>
-        <li><a href="budget.html">Budget</a></li>
+        <li><a href="budget.html" aria-current="page">Budget</a></li>
         <li><a href="quartiers.html">Quartiers</a></li>
         <li><a href="sante.html">Santé</a></li>
       </ul>
     </div>
   </nav>
   <div class="nav-overlay"></div>
+
+  <!-- ===== STICKY SUBNAV D'ANCRES (US-01) ===== -->
+  <nav class="budget-subnav" aria-label="Sections du budget">
+    <div class="container">
+      <div class="budget-subnav-track">
+        <a href="#loyer" class="budget-subnav-chip active">Loyer</a>
+        <a href="#manger-dehors" class="budget-subnav-chip">Manger dehors</a>
+        <a href="#scenarios" class="budget-subnav-chip">Scénarios</a>
+        <a href="#installation" class="budget-subnav-chip">Installation</a>
+        <a href="#salaires" class="budget-subnav-chip">Salaires</a>
+        <a href="#restos" class="budget-subnav-chip">Restos</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- ===== CONTENT HEADER ===== -->
   <header class="content-header">
@@ -53,7 +70,7 @@
   </header>
 
   <!-- ===== CONTENT BODY ===== -->
-  <section class="section" style="padding-top: 1.5rem;">
+  <main id="main" class="section" style="padding-top: 1.5rem;">
     <div class="container-narrow">
       <div class="content-body">
 
@@ -84,7 +101,7 @@
           </div>
         </div>
 
-        <h2>Le loyer : ce qui te reste dans la poche à la fin du mois</h2>
+        <h2 id="loyer">Le loyer : ce qui te reste dans la poche à la fin du mois</h2>
 
         <p>C'est le plus gros morceau. La bonne nouvelle ? Pour le prix d'un T2 pourri à Paris, t'as un T4 lumineux avec balcon à Valencia. La moins bonne ? Faut apprendre à décoder les annonces espagnoles, et crois-moi, y'a des pièges.</p>
 
@@ -106,9 +123,9 @@
           <p><strong>⚠️ Alerte piège :</strong> en Espagne, « sin muebles » (non meublé) peut vouloir dire SANS cuisine. Pas d'évier, pas de plaques, nada. Vérifie avant de signer. La caution légale c'est un mois, mais les proprios te demandent souvent un ou deux mois de garantie en plus. Prépare-toi à sortir 2-3 mois de loyer d'un coup pour les clés.</p>
         </div>
 
-        <h2>Manger dehors : la claque espagnole</h2>
+        <h2 id="manger-dehors">Manger dehors : la claque espagnole</h2>
 
-        <p>Si tu viens de France, t'es pas prêt. Pas juste parce que c'est bon — parce que c'est DEUX FOIS moins cher. Et souvent meilleur. J'exagère à peine.</p>
+        <p>Si tu viens de France, t'es pas prêt. Pas juste parce que c'est bon - parce que c'est DEUX FOIS moins cher. Et souvent meilleur. J'exagère à peine.</p>
 
         <h3>Le menu del día, ton nouveau meilleur pote</h3>
 
@@ -118,7 +135,7 @@
 
         <p>Pour te donner une idée des prix du quotidien : café con leche (le café au lait local) 1,50-1,80 €. Petit déj classique (café + tostada tomate) 3-5 €. Tapas 2-3 pièces + verre au comptoir 8-12 €. Glace artisanale 2,50-3,50 €. Dîner un peu quali le soir 20-35 € par personne.</p>
 
-        <h2>Ton budget mensuel, scénario par scénario</h2>
+        <h2 id="scenarios">Ton budget mensuel, scénario par scénario</h2>
 
         <p>J'ai fait trois colonnes. Clique sur les boutons pour voir ce que ça donne. T'as le droit de transpirer un peu, puis de te rassurer.</p>
 
@@ -129,19 +146,19 @@
             <button data-scenario="confort" class="active">⭐ Confort</button>
             <button data-scenario="tranquille">👑 Tranquille</button>
           </div>
-          <div class="calc-row"><span class="calc-label">🏠 Loyer T4</span><span class="calc-value" id="calc-loyer">—</span></div>
-          <div class="calc-row"><span class="calc-label">⚡ Électricité, eau, gaz</span><span class="calc-value" id="calc-charges">—</span></div>
-          <div class="calc-row"><span class="calc-label">📶 Internet + Mobiles</span><span class="calc-value" id="calc-internet">—</span></div>
-          <div class="calc-row"><span class="calc-label">🛒 Courses</span><span class="calc-value" id="calc-courses">—</span></div>
-          <div class="calc-row"><span class="calc-label">🚇 Transports</span><span class="calc-value" id="calc-transports">—</span></div>
-          <div class="calc-row"><span class="calc-label">🍽️ Cantine × 3 enfants</span><span class="calc-value" id="calc-cantine">—</span></div>
-          <div class="calc-row"><span class="calc-label">⚽ Activités extrascolaires</span><span class="calc-value" id="calc-activites">—</span></div>
-          <div class="calc-row"><span class="calc-label">🏥 Mutuelle santé</span><span class="calc-value" id="calc-mutuelle">—</span></div>
-          <div class="calc-row"><span class="calc-label">🍷 Restos & sorties</span><span class="calc-value" id="calc-restos">—</span></div>
-          <div class="calc-row"><span class="calc-label">👕 Divers</span><span class="calc-value" id="calc-divers">—</span></div>
+          <div class="calc-row"><span class="calc-label">🏠 Loyer T4</span><span class="calc-value" id="calc-loyer">-</span></div>
+          <div class="calc-row"><span class="calc-label">⚡ Électricité, eau, gaz</span><span class="calc-value" id="calc-charges">-</span></div>
+          <div class="calc-row"><span class="calc-label">📶 Internet + Mobiles</span><span class="calc-value" id="calc-internet">-</span></div>
+          <div class="calc-row"><span class="calc-label">🛒 Courses</span><span class="calc-value" id="calc-courses">-</span></div>
+          <div class="calc-row"><span class="calc-label">🚇 Transports</span><span class="calc-value" id="calc-transports">-</span></div>
+          <div class="calc-row"><span class="calc-label">🍽️ Cantine × 3 enfants</span><span class="calc-value" id="calc-cantine">-</span></div>
+          <div class="calc-row"><span class="calc-label">⚽ Activités extrascolaires</span><span class="calc-value" id="calc-activites">-</span></div>
+          <div class="calc-row"><span class="calc-label">🏥 Mutuelle santé</span><span class="calc-value" id="calc-mutuelle">-</span></div>
+          <div class="calc-row"><span class="calc-label">🍷 Restos & sorties</span><span class="calc-value" id="calc-restos">-</span></div>
+          <div class="calc-row"><span class="calc-label">👕 Divers</span><span class="calc-value" id="calc-divers">-</span></div>
           <div class="calc-row" style="font-size: 1.3rem; color: var(--terracotta); border-bottom: none; font-weight: 700;">
             <span>Total mensuel</span>
-            <span id="calc-total" style="transition: transform 0.15s ease;">—</span>
+            <span id="calc-total" style="transition: transform 0.15s ease;">-</span>
           </div>
         </div>
 
@@ -157,11 +174,11 @@
 
         <p>T'as du budget, tu te fais plaisir. Ruzafa ou Ensanche, restos réguliers, activités à gogo, école concertada (semi-privée). Clique sur <strong>👑 Tranquille</strong> dans le calculateur pour voir le détail.</p>
 
-        <h2>Poser ses valises : le budget installation</h2>
+        <h2 id="installation">Poser ses valises : le budget installation</h2>
 
         <p>Parce que les premiers mois, tout sort d'un coup. Voilà ce qu'il faut prévoir pour entrer dans ton appart :</p>
 
-        <p><strong>Caution légale</strong> (fianza) : 1 mois de loyer, soit 950 à 1 500 €. <strong>Garantie supplémentaire</strong> demandée par le proprio : 1 000 à 3 000 €. <strong>Meubles et électroménager</strong> si t'arrives sans rien : 3 000 à 6 000 € (IKEA Valencia et Livoo sont tes potes). <strong>Frais d'agence</strong> : 0 € depuis la loi 2023 — c'est le proprio qui paie, pas toi.</p>
+        <p><strong>Caution légale</strong> (fianza) : 1 mois de loyer, soit 950 à 1 500 €. <strong>Garantie supplémentaire</strong> demandée par le proprio : 1 000 à 3 000 €. <strong>Meubles et électroménager</strong> si t'arrives sans rien : 3 000 à 6 000 € (IKEA Valencia et Livoo sont tes potes). <strong>Frais d'agence</strong> : 0 € depuis la loi 2023 : c'est le proprio qui paie, pas toi.</p>
 
         <div class="highlight-box">
           <p><strong>Total pose de valises</strong> : entre 5 000 et 10 500 € selon que tu joues la survie ou le confort.</p>
@@ -181,13 +198,13 @@
           <p><strong>Mon conseil de mec qui stresse :</strong> 35 000 €, c'est la barre magique. Si tu trouves du taf vite (et tu vas trouver), tu finis avec 20 000 € de réserve. Royal.</p>
         </div>
 
-        <h2>Les salaires en logistique — ton CV vaut quoi ?</h2>
+        <h2 id="salaires">Les salaires en logistique : ton CV vaut quoi ?</h2>
 
         <p>12 ans d'expérience en logistique. Qu'est-ce que ça pèse à Valencia ? Voilà les fourchettes en net mensuel, sur 14 paies (la norme en Espagne) :</p>
 
-        <p><strong>Opérateur logistique</strong> : 1 200-1 400 € — entrée de gamme, pas pour toi. <strong>Carretillero</strong> (chariot élévateur) : 1 300-1 600 € — ça recrute pas mal. <strong>Coordinateur supply chain</strong> : 1 700-2 100 € — pile ton niveau. <strong>Responsable d'entrepôt</strong> : 2 200-3 000 € — avec un peu de chance et du réseau, ça se tente.</p>
+        <p><strong>Opérateur logistique</strong> : 1 200-1 400 € (entrée de gamme, pas pour toi). <strong>Carretillero</strong> (chariot élévateur) : 1 300-1 600 € (ça recrute pas mal). <strong>Coordinateur supply chain</strong> : 1 700-2 100 € (pile ton niveau). <strong>Responsable d'entrepôt</strong> : 2 200-3 000 € (avec un peu de chance et du réseau, ça se tente).</p>
 
-        <p>Le SMI (salaire minimum) espagnol est à 1 200 €/mois en 2025. Avec ton CV, tu démarres au-dessus, c'est certain. La logistique recrute à Valencia parce que le port est le 5<sup>e</sup> d'Europe et que les entrepôts poussent comme des champignons autour de la ville. Ribarroja, Paterna, Almussafes — c'est le triangle d'or logistique.</p>
+        <p>Le SMI (salaire minimum) espagnol est à 1 200 €/mois en 2025. Avec ton CV, tu démarres au-dessus, c'est certain. La logistique recrute à Valencia parce que le port est le 5<sup>e</sup> d'Europe et que les entrepôts poussent comme des champignons autour de la ville. Ribarroja, Paterna, Almussafes : c'est le triangle d'or logistique.</p>
 
         <!-- Photo Mercado Central (US-06) -->
         <figure class="content-photo fade-in">
@@ -195,41 +212,94 @@
           <figcaption>🍊 Le Mercado Central de Valencia : produits frais locaux, qualité exceptionnelle et courses environ 30% moins chères qu'en France.</figcaption>
         </figure>
 
-        <h2>Mes adresses restos — du vécu, pas du guide touristique</h2>
+        <h2 id="restos">Mes adresses restos : du vécu, pas du guide touristique</h2>
 
         <p>T'as envie de bien bouffer sans te ruiner ? Voilà mes spots. Testés, approuvés, zéro piège à touriste.</p>
 
-        <h3>Bar Ricardo — C/ Doctor Zamenhof, Benimaclet</h3>
-        <p>Le bar de quartier pur jus. Menu del día à 11 € — entrée, plat, dessert, boisson. Le midi, les ouvriers et les mamies se partagent le comptoir. T'entends parler valencien et castillan, pas un mot d'anglais. Si tu veux goûter la vraie Valencia, c'est ici.</p>
+        <!-- Grille de Restos Scannable (US-05) -->
+        <div class="restos-grid">
 
-        <h3>Casa Montaña — C/ José Benlliure, 69, El Cabanyal</h3>
-        <p>Ouvert en 1836. Intérieur en bois patiné, tonneaux alignés. Au comptoir, une plancha de poisson et un verre de vin de la région. Le midi tu t'en sors pour 15 €. Le soir c'est plutôt 25 € mais l'ambiance aux chandelles est magique.</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Bar Ricardo</h3>
+              <span class="resto-price-badge">Menu midi ~11 €</span>
+            </div>
+            <div class="resto-card-address">📍 C/ Doctor Zamenhof, Benimaclet</div>
+            <p class="resto-card-desc">Le bar de quartier pur jus. Menu del día à 11 € avec entrée, plat, dessert et boisson. Ambiance populaire et locale garantie.</p>
+          </div>
 
-        <h3>La Pilareta — C/ Moro Zeit, 6, El Carmen</h3>
-        <p>Le temple des <em>clóchinas</em> (moules locales). Depuis 1917. Tu tapes tes coquilles dans le seau au pied du comptoir comme les habitués. Tapas 3-5 €, verre de vin 2 €. Tu manges pour 12-15 €. Ne rate pas les <em>esgarraet</em> non plus (poivrons grillés + morue).</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Casa Montaña</h3>
+              <span class="resto-price-badge">15 - 25 €</span>
+            </div>
+            <div class="resto-card-address">📍 C/ José Benlliure, 69, El Cabanyal</div>
+            <p class="resto-card-desc">Ouvert en 1836. Intérieur en bois patiné et tonneaux alignés. Plancha de poisson et vins locaux. Midi ~15 €, soirée ~25 €.</p>
+          </div>
 
-        <h3>Rausell — C/ Convento Jerusalén, 2</h3>
-        <p>À deux pas de la gare Joaquín Sorolla. Menu del día à 13,50 € avec de la vraie paella le jeudi, du riz au four, du poisson du jour. Les desserts sont faits par la mamie en cuisine. Si t'arrives par le train, c'est littéralement ton premier resto.</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">La Pilareta</h3>
+              <span class="resto-price-badge">12 - 15 €</span>
+            </div>
+            <div class="resto-card-address">📍 C/ Moro Zeit, 6, El Carmen</div>
+            <p class="resto-card-desc">Le temple des <em>clóchinas</em> (moules locales) depuis 1917. Tapas à 3-5 €, verre de vin à 2 €. Teste aussi l'<em>esgarraet</em>.</p>
+          </div>
 
-        <h3>Central Bar — Mercado Central, puesto 5-6</h3>
-        <p>Ricardo Camarena, le chef étoilé de Valencia, en mode accessible. Produits ULTRA frais — le poissonnier est à 10 mètres. Menu del día 15-20 € le midi. Ambiance marché, bruyante, les couteaux claquent. Inoubliable.</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Rausell</h3>
+              <span class="resto-price-badge">Menu midi ~13,50 €</span>
+            </div>
+            <div class="resto-card-address">📍 C/ Convento Jerusalén, 2 (Gare)</div>
+            <p class="resto-card-desc">À deux pas de la gare Joaquín Sorolla. Menu del día à 13,50 € avec vraie paella le jeudi, riz au four et poisson frais.</p>
+          </div>
 
-        <h3>Canalla Bistro — C/ Maestro Gozalbo, 22, Ruzafa</h3>
-        <p>Encore Ricardo Camarena, en mode bistrot créatif. Croquettes coulantes, tacos fusion. 25-35 € le soir. Parfait pour un date ou une occasion spéciale.</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Central Bar</h3>
+              <span class="resto-price-badge">Menu midi 15 - 20 €</span>
+            </div>
+            <div class="resto-card-address">📍 Mercado Central, puesto 5-6</div>
+            <p class="resto-card-desc">Ricardo Camarena (chef étoilé) en version accessible. Produits ultra frais du marché à 10 mètres du poissonnier.</p>
+          </div>
 
-        <h3>Horchatería Santa Catalina — Plaça de Santa Catalina, 6</h3>
-        <p>L'institution depuis 1836. Horchata glacée + fartons pour 4-5 €. La salle est carrelée de faïences bleues. Touristique ? Un peu. Mais mérité.</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Canalla Bistro</h3>
+              <span class="resto-price-badge">Soir 25 - 35 €</span>
+            </div>
+            <div class="resto-card-address">📍 C/ Maestro Gozalbo, 22, Ruzafa</div>
+            <p class="resto-card-desc">Bistrot créatif par Ricardo Camarena : croquettes coulantes et tapas fusion. Idéal pour une soirée en amoureux.</p>
+          </div>
 
-        <h3>Bar La Carrasca — Av. de Burjassot, 110, Benimaclet</h3>
-        <p>Menu del día à 10 €. Simple, bon, familial. Les enfants sont chouchoutés, le serveur connaît tout le monde. Si t'habites Benimaclet, ce sera ton QG.</p>
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Horchatería Santa Catalina</h3>
+              <span class="resto-price-badge">Goûter 4 - 5 €</span>
+            </div>
+            <div class="resto-card-address">📍 Plaça de Santa Catalina, 6</div>
+            <p class="resto-card-desc">L'institution depuis 1836 aux faïences bleues. Horchata glacée artisanale et fartons tout juste sortis du four.</p>
+          </div>
+
+          <div class="resto-card fade-in">
+            <div class="resto-card-top">
+              <h3 class="resto-card-title">Bar La Carrasca</h3>
+              <span class="resto-price-badge">Menu midi ~10 €</span>
+            </div>
+            <div class="resto-card-address">📍 Av. de Burjassot, 110, Benimaclet</div>
+            <p class="resto-card-desc">Menu del día à 10 € simple, bon et familial. Les enfants sont chouchoutés. Le QG de quartier par excellence.</p>
+          </div>
+
+        </div>
 
         <p style="text-align: center; margin-top: var(--space-xl);">
-          <a href="scolarite.html" class="btn btn-outline">🏫 Voir le guide scolarité →</a>
+          <a href="quartiers.html" class="btn btn-outline">🏘️ Voir le guide quartiers →</a>
         </p>
 
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -239,7 +309,7 @@
           <h4>Cap sur Valencia</h4>
           <p style="font-size: 0.85rem; line-height: 1.6;">
             Journal de bord d'une famille française qui s'expatrie à Valencia.
-            Budget, écoles, quartiers, démarches — tout ce qu'on apprend, on le partage.
+            Budget, écoles, quartiers, démarches : tout ce qu'on apprend, on le partage.
           </p>
         </div>
         <div>
@@ -264,7 +334,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia — Fait avec ❤️ et beaucoup de cafés</span>
+        <span>© 2026 Cap sur Valencia - Fait avec ❤️ et beaucoup de cafés</span>
         <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>

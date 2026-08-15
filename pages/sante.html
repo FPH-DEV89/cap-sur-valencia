@@ -10,10 +10,14 @@
   <meta property="og:title" content="Santé & Sécurité Sociale en Espagne | Cap sur Valencia">
   <meta property="og:description" content="Comment se faire soigner à Valencia : Sécu espagnole, carte SIP, CEAM, mutuelles. Le guide complet.">
   <meta property="og:type" content="article">
+  <meta property="og:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/sante-hopital.jpg">
   <meta property="og:locale" content="fr_FR">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+  <!-- Skip Link (US-07) -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
@@ -30,7 +34,7 @@
         <li><a href="scolarite.html">Scolarité</a></li>
         <li><a href="budget.html">Budget</a></li>
         <li><a href="quartiers.html">Quartiers</a></li>
-        <li><a href="sante.html">Santé</a></li>
+        <li><a href="sante.html" aria-current="page">Santé</a></li>
       </ul>
     </div>
   </nav>
@@ -48,55 +52,61 @@
   </header>
 
   <!-- ===== MAIN CONTENT ===== -->
-  <main class="section content-body">
+  <main id="main" class="section content-body">
     <div class="container">
+
+      <!-- Photo Hôpital Clínico (US-04) -->
+      <figure class="content-photo fade-in">
+        <img src="../assets/img/sante-hopital.jpg" alt="Façade de l'Hôpital Clinique Universitaire de Valencia sur l'avenue Blasco Ibáñez" loading="lazy" width="1200" height="800">
+        <figcaption>🏥 L'Hôpital Clinique Universitaire de Valencia : un centre hospitalier de référence au cœur de la ville.</figcaption>
+      </figure>
 
       <!-- ==================== PARTIE 1 : SÉCURITÉ SOCIALE ==================== -->
       <section id="securite-sociale">
-        <h2>Partie 1 — La Sécu espagnole, décryptée</h2>
+        <h2>Partie 1 : La Sécu espagnole, décryptée</h2>
 
         <h3>C'est quoi la Seguridad Social ?</h3>
-        <p>Le système public qui couvre la santé (médecin, hôpital, médocs), la retraite, le chômage, les accidents du taf. L'organisme qui gère les affiliations s'appelle la <strong>Tesorería General de la Seguridad Social</strong> (TGSS). C'est eux qui te filent un <em>número de afiliación</em> — sans lequel t'as pas de carte santé.</p>
+        <p>Le système public qui couvre la santé (médecin, hôpital, médocs), la retraite, le chômage, les accidents du taf. L'organisme qui gère les affiliations s'appelle la <strong>Tesorería General de la Seguridad Social</strong> (TGSS). C'est eux qui te filent un <em>número de afiliación</em>, sans lequel t'as pas de carte santé.</p>
         <p>Et c'est là que ça coince quand t'arrives sans emploi : l'affiliation tombe pas du ciel. Faut la demander. T'as trois chemins possibles.</p>
 
         <h3>Trois voies pour avoir ton numéro de Sécu</h3>
 
         <div class="highlight-box">
-          <p style="margin-bottom:0.5rem;"><strong>✅ Voie 1 — T'as un contrat de travail</strong></p>
+          <p style="margin-bottom:0.5rem;"><strong>✅ Voie 1 : T'as un contrat de travail</strong></p>
           <p style="margin-bottom:0;">Le parcours royal. Ton employeur t'affilie en quelques jours, tu reçois ton numéro, tu fonces au centre de santé du quartier pour la carte SIP. Propre, rapide, efficace.</p>
         </div>
 
         <div class="highlight-box" style="border-left-color: var(--golden); background: #faf6f0; margin-top:1rem;">
-          <p style="margin-bottom:0.5rem;"><strong>🔄 Voie 2 — Demandeur d'emploi via LABORA</strong></p>
-          <p style="margin-bottom:0;">Inscris-toi au LABORA — le Pôle Emploi valencien. Sous conditions (résidence en Espagne, ressources suffisantes, ou cotisations dans un pays de l'UE), t'as droit à la couverture santé. Tes cotisations françaises comptent, merci la convention bilatérale. Délai : un à trois mois. Pas fulgurant, mais ça marche.</p>
+          <p style="margin-bottom:0.5rem;"><strong>🔄 Voie 2 : Demandeur d'emploi via LABORA</strong></p>
+          <p style="margin-bottom:0;">Inscris-toi au LABORA, le Pôle Emploi valencien. Sous conditions (résidence en Espagne, ressources suffisantes, ou cotisations dans un pays de l'UE), t'as droit à la couverture santé. Tes cotisations françaises comptent, merci la convention bilatérale. Délai : un à trois mois. Pas fulgurant, mais ça marche.</p>
         </div>
 
         <div class="highlight-box" style="border-left-color: var(--terracotta); background: var(--terracotta-light); margin-top:1rem;">
-          <p style="margin-bottom:0.5rem;"><strong>💶 Voie 3 — Convenio Especial (cotisation volontaire)</strong></p>
-          <p style="margin-bottom:0;">Ni emploi, ni LABORA ? Il te reste le Convenio Especial. Tu paies une cotisation mensuelle — 60 à 157 € selon ta situation — et t'es couvert comme un affilié normal. Parfait pour la transition : tu t'en sers le temps de trouver un taf, puis l'employeur prend le relais.</p>
+          <p style="margin-bottom:0.5rem;"><strong>💶 Voie 3 : Convenio Especial (cotisation volontaire)</strong></p>
+          <p style="margin-bottom:0;">Ni emploi, ni LABORA ? Il te reste le Convenio Especial. Tu paies une cotisation mensuelle (60 à 157 € selon ta situation) et t'es couvert comme un affilié normal. Parfait pour la transition : tu t'en sers le temps de trouver un taf, puis l'employeur prend le relais.</p>
         </div>
 
         <h3>Notre plan à nous (sans contrat à l'arrivée)</h3>
         <ol>
-          <li>Obtenir le <strong>NIE</strong> pour toute la famille — la base de tout, vraiment.</li>
+          <li>Obtenir le <strong>NIE</strong> pour toute la famille : la base de tout, vraiment.</li>
           <li>S'inscrire au <strong>LABORA</strong> comme demandeur d'emploi. Ça déclenche la possibilité d'affiliation.</li>
           <li>Si le LABORA traîne, on active le <strong>Convenio Especial</strong> (~100 €/mois) pour être couverts rapidement.</li>
           <li>En parallèle, on demande la <strong>Carte Européenne d'Assurance Maladie</strong> avant de quitter la France.</li>
         </ol>
 
         <h3>La CEAM : ton filet de sécurité français</h3>
-        <p>La CEAM, c'est la carte qui prouve que t'es couvert par la Sécu française. Elle te donne droit aux soins <strong>médicalement nécessaires</strong> en Espagne — urgences, soins imprévus. Valable jusqu'à 2 ans. Gratuite, se fait en ligne sur Ameli.</p>
-        <p>Mais attention : la CEAM, c'est <strong>PAS une carte Vitale espagnole</strong>. Elle couvre pas le suivi régulier — pas de pédiatre pour les enfants, pas de médecin traitant, pas de spécialistes. Pour ça, il te faut ABSOLUMENT la carte SIP.</p>
+        <p>La CEAM, c'est la carte qui prouve que t'es couvert par la Sécu française. Elle te donne droit aux soins <strong>médicalement nécessaires</strong> en Espagne : urgences, soins imprévus. Valable jusqu'à 2 ans. Gratuite, se fait en ligne sur Ameli.</p>
+        <p>Mais attention : la CEAM, c'est <strong>PAS une carte Vitale espagnole</strong>. Elle couvre pas le suivi régulier : pas de pédiatre pour les enfants, pas de médecin traitant, pas de spécialistes. Pour ça, il te faut ABSOLUMENT la carte SIP.</p>
         <blockquote>
           <strong>💡 Mon conseil :</strong> demande la CEAM pour toute la famille avant le départ. Si ton gamin fait une otite le premier mois, t'es couvert. Une fois la carte SIP en poche, tu bascules sur le système espagnol.
         </blockquote>
 
         <h3>La convention France-Espagne, la bonne surprise</h3>
-        <p>Y'a une convention bilatérale bien fichue : tes périodes de cotisation en France et en Espagne <strong>se cumulent</strong>. Tes 10 ans de taf en France comptent pour tes droits espagnols. Les soins sont remboursés au tarif espagnol (40 à 60% selon le médicament). Et la CEAM couvre toute la famille.</p>
+        <p>Il y a une convention bilatérale bien fichue : tes périodes de cotisation en France et en Espagne <strong>se cumulent</strong>. Tes 10 ans de taf en France comptent pour tes droits espagnols. Les soins sont remboursés au tarif espagnol (40 à 60% selon le médicament). Et la CEAM couvre toute la famille.</p>
         <p>Bref, t'es pas un extraterrestre. T'as des droits. La France les a négociés pour toi.</p>
 
         <h3>Et la mutuelle privée ?</h3>
-        <p>Beaucoup d'expats en prennent une en arrivant, le temps que le public se mette en place. On va faire pareil. Les trois gros : <strong>Sanitas</strong> (le leader), <strong>Adeslas</strong> (bonne couverture), <strong>Asisa</strong> (souvent moins cher). Pour une famille de 5, compte <strong>150 à 250 € par mois</strong>. C'est temporaire — tu résilies quand t'as la carte SIP.</p>
+        <p>Beaucoup d'expats en prennent une en arrivant, le temps que le public se mette en place. On va faire pareil. Les trois gros : <strong>Sanitas</strong> (le leader), <strong>Adeslas</strong> (bonne couverture), <strong>Asisa</strong> (souvent moins cher). Pour une famille de 5, compte <strong>150 à 250 € par mois</strong>. C'est temporaire : tu résilies quand t'as la carte SIP.</p>
         <blockquote>
           <strong>⚠️ Vérifie bien :</strong> que ta mutuelle couvre les enfants ET la pédiatrie. Certaines formules de base sont limitées là-dessus.
         </blockquote>
@@ -106,34 +116,34 @@
 
       <!-- ==================== PARTIE 2 : CARTE SIP ==================== -->
       <section id="carte-sip">
-        <h2>Partie 2 — La carte SIP : le graal des premières semaines</h2>
+        <h2>Partie 2 : La carte SIP - le graal des premières semaines</h2>
 
         <p>La <em>Tarjeta Sanitaria Individual</em>, c'est ta carte Vitale espagnole. Sans elle, t'as pas de médecin, pas de pédiatre, pas de spécialiste. Avec elle, tout s'ouvre. Voilà comment on va l'obtenir.</p>
 
         <h3>C'est quoi, concrètement ?</h3>
-        <p>Une carte plastifiée avec puce. Chaque membre de la famille a la sienne — oui, même les bébés. Avec elle : médecin généraliste assigné à ton centre de santé de quartier, pédiatre dédié pour chaque enfant, hôpital public, médicaments remboursés (40-60%), spécialistes sur prescription, campagnes de vaccination.</p>
+        <p>Une carte plastifiée avec puce. Chaque membre de la famille a la sienne, même les bébés. Avec elle : médecin généraliste assigné à ton centre de santé de quartier, pédiatre dédié pour chaque enfant, hôpital public, médicaments remboursés (40-60%), spécialistes sur prescription, campagnes de vaccination.</p>
 
         <h3>Comment on l'obtient</h3>
 
         <div class="highlight-box">
-          <p style="margin-bottom:0.5rem;"><strong>Étape 1 — Le prérequis : un numéro de Sécu espagnole</strong></p>
+          <p style="margin-bottom:0.5rem;"><strong>Étape 1 : Le prérequis - un numéro de Sécu espagnole</strong></p>
           <p style="margin-bottom:0;">Sans affiliation à la Seguridad Social, pas de carte SIP. T'as pas encore ton numéro ? Retourne lire <a href="#securite-sociale">la partie 1</a>.</p>
         </div>
 
-        <p style="margin-top:1rem;"><strong>Étape 2 — Le Centro de Salud.</strong> Une fois ton numéro SSN en poche, direction le centre de santé de ton quartier. Sectorisé — ton adresse d'empadronamiento détermine lequel. Pas le choix.</p>
+        <p style="margin-top:1rem;"><strong>Étape 2 : Le Centro de Salud.</strong> Une fois ton numéro SSN en poche, direction le centre de santé de ton quartier. Sectorisé : ton adresse d'empadronamiento détermine lequel. Pas le choix.</p>
 
-        <p><strong>Étape 3 — Les papiers :</strong> ton NIE (ou passeport si t'as pas encore le NIE, mais sérieux fais le NIE), ton numéro d'affiliation SSN, l'empadronamiento.</p>
+        <p><strong>Étape 3 : Les papiers :</strong> ton NIE (ou passeport si t'as pas encore le NIE, mais sérieux fais le NIE), ton numéro d'affiliation SSN, l'empadronamiento.</p>
 
         <div class="highlight-box" style="border-left-color: var(--olive); background: var(--olive-light);">
-          <p style="margin-bottom:0.5rem;"><strong>Étape 4 — Ce que tu obtiens</strong></p>
-          <p style="margin-bottom:0;">Sur place, on te file un <em>justificante provisional</em> — un papier temporaire qui fait office de carte SIP. La vraie carte arrive par courrier sous <strong>deux à quatre semaines</strong>.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Étape 4 : Ce que tu obtiens</strong></p>
+          <p style="margin-bottom:0;">Sur place, on te file un <em>justificante provisional</em>, un papier temporaire qui fait office de carte SIP. La vraie carte arrive par courrier sous <strong>deux à quatre semaines</strong>.</p>
         </div>
 
         <p style="margin-top:1rem;">Et voilà. T'es dans le système. Ton généraliste et ton pédiatre sont assignés, tu reçois leurs coordonnées, tu peux prendre rendez-vous.</p>
 
         <h3>Les pièges à éviter</h3>
         <p><strong>🔴 Piège n°1 : le Centro de Salud est sectorisé.</strong> Ton adresse d'empadronamiento détermine tout. Si tu déménages, faut refaire la démarche. C'est pas compliqué mais faut y penser.</p>
-        <p><strong>🔴 Piège n°2 : sans emploi, l'affiliation est pas automatique.</strong> LABORA, Convenio Especial, mutuelle privée — t'as des options mais faut les activer.</p>
+        <p><strong>🔴 Piège n°2 : sans emploi, l'affiliation est pas automatique.</strong> LABORA, Convenio Especial, mutuelle privée : t'as des options mais faut les activer.</p>
         <p><strong>🔴 Piège n°3 : les délais varient.</strong> Août c'est mort. Vas-y en personne, tôt le matin, papiers en triple. Un sourire en espagnol, même approximatif, ça débloque des trucs.</p>
         <p><strong>🔴 Piège n°4 : la carte SIP est régionale.</strong> Émise par la Communauté Valencienne mais valable dans toute l'Espagne. Si tu bouges dans une autre région plus tard, faudra la transférer.</p>
       </section>
@@ -143,7 +153,7 @@
       <!-- ==================== STRATÉGIE ==================== -->
       <section id="strategie">
         <h2>Notre stratégie, chrono</h2>
-        <p>Pour nous — sans emploi à l'arrivée — voilà le plan :</p>
+        <p>Pour nous, sans emploi à l'arrivée, voilà le plan :</p>
 
         <div class="highlight-box" style="border-left-color: var(--med-blue);">
           <ol style="margin-bottom:0;">
@@ -158,7 +168,7 @@
         </div>
 
         <blockquote>
-          C'est un marathon administratif. Mais une fois la carte SIP en poche, c'est réglé pour des années. Et franchement, vu la qualité des soins en Espagne — surtout en pédiatrie — ça vaut chaque minute de paperasse.
+          C'est un marathon administratif. Mais une fois la carte SIP en poche, c'est réglé pour des années. Et franchement, vu la qualité des soins en Espagne, surtout en pédiatrie, ça vaut chaque minute de paperasse.
         </blockquote>
 
         <p style="text-align:center;margin-top:2rem;">
@@ -177,7 +187,7 @@
           <h4>Cap sur Valencia</h4>
           <p style="font-size: 0.85rem; line-height: 1.6;">
             Journal de bord d'une famille française qui s'expatrie à Valencia. 
-            Budget, écoles, quartiers, démarches — tout ce qu'on apprend, on le partage.
+            Budget, écoles, quartiers, démarches : tout ce qu'on apprend, on le partage.
           </p>
         </div>
         <div>
@@ -202,7 +212,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia — Fait avec ❤️ et beaucoup de cafés</span>
+        <span>© 2026 Cap sur Valencia - Fait avec ❤️ et beaucoup de cafés</span>
         <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>

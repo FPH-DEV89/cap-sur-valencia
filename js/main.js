@@ -141,17 +141,17 @@ function initBudgetCalculator() {
     sobre: {
       loyer: 950, charges: 155, internet: 45, courses: 600,
       transports: 90, cantine: 270, activites: 150, mutuelle: 0,
-      restos: 100, divers: 100
+      restos: 100, divers: 120
     },
     confort: {
       loyer: 1200, charges: 215, internet: 55, courses: 700,
       transports: 100, cantine: 360, activites: 220, mutuelle: 200,
-      restos: 200, divers: 150
+      restos: 200, divers: 175
     },
     tranquille: {
       loyer: 1500, charges: 275, internet: 65, courses: 800,
       transports: 110, cantine: 450, activites: 300, mutuelle: 250,
-      restos: 400, divers: 250
+      restos: 400, divers: 285
     }
   };
 
@@ -236,10 +236,41 @@ function initQuartierFilter() {
   });
 }
 
+// --- Budget Sticky Subnav Spy (US-01) ---
+function initBudgetSubnavSpy() {
+  const chips = document.querySelectorAll('.budget-subnav-chip');
+  if (!chips.length) return;
+
+  const sectionIds = ['loyer', 'manger-dehors', 'scenarios', 'installation', 'salaires', 'restos'];
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+  if (!sections.length) return;
+
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        chips.forEach(chip => {
+          if (chip.getAttribute('href') === '#' + id) {
+            chip.classList.add('active');
+          } else {
+            chip.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, {
+    rootMargin: '-80px 0px -55% 0px',
+    threshold: 0.1
+  });
+
+  sections.forEach(sec => spyObserver.observe(sec));
+}
+
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
   initBudgetCalculator();
   initQuartierFilter();
+  initBudgetSubnavSpy();
 
   // Add fade-in class to sections
   document.querySelectorAll('.section > *, .card, .quartier-card').forEach(el => {

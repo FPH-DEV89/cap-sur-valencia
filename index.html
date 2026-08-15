@@ -521,6 +521,9 @@
 </head>
 <body>
 
+  <!-- Skip Link (US-07) -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
   <!-- ===== NAVIGATION — HEADER BEIGE ===== -->
   <nav class="navbar" role="navigation">
     <div class="container">
@@ -529,7 +532,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#accueil" aria-current="page">Accueil</a></li>
         <li><a href="#histoire">Notre histoire</a></li>
         <li><a href="#art-de-vivre">Art de Vivre</a></li>
         <li><a href="#heritage">Heritage</a></li>
@@ -555,9 +558,9 @@
 
       <div class="hero-countdown">
         <span class="countdown-label">Départ dans</span>
-        <span class="countdown-value months" data-target="22">—</span>
+        <span class="countdown-value months" data-target="22">-</span>
         <span class="countdown-label">mois et</span>
-        <span class="countdown-value days-remaining">—</span>
+        <span class="countdown-value days-remaining">-</span>
         <span class="countdown-label">jours</span>
       </div>
 
@@ -568,6 +571,7 @@
     </div>
   </header>
 
+  <main id="main">
   <!-- ================================================================ -->
   <!-- SECTION INTRO — NOTRE HISTOIRE (Fond beige) -->
   <!-- ================================================================ -->
@@ -600,20 +604,22 @@
       </p>
     </div>
 
-    <div class="culture-cards">
-      <div class="culture-card fade-in">
+    <div class="culture-grid-asym">
+      <div class="culture-card-featured fade-in">
         <img src="assets/img/saveurs-paella.jpg" alt="Vraie paella valencienne traditionnelle au feu de bois avec riz socarrat et ingrédients locaux" loading="lazy" class="culture-card-img" width="600" height="400">
-        <h3>La Paella, un Rituel</h3>
-        <p>
-          Pas celle du resto à touristes de la Plaza de la Reina. La vraie. Celle du dimanche midi en famille, cuite au feu de bois d'oranger sur la terrasse. Le riz <em>socarrat</em> qui gratte au fond de la poêle, le poulet de corral, les garrofons. Chez nous, la paella c'est sacré — et à Valencia, c'est une religion.
-        </p>
+        <div class="culture-card-featured-body">
+          <h3>La Paella, un Rituel</h3>
+          <p>
+            Pas celle du resto à touristes de la Plaza de la Reina. La vraie. Celle du dimanche midi en famille, cuite au feu de bois d'oranger sur la terrasse. Le riz <em>socarrat</em> qui gratte au fond de la poêle, le poulet de corral, les garrofons. Chez nous, la paella c'est sacré, et à Valencia, c'est une religion.
+          </p>
+        </div>
       </div>
 
       <div class="culture-card fade-in">
         <span class="card-emoji">🍊</span>
         <h3>Le Parfum des Orangers</h3>
         <p>
-          En mars, toute la ville sent la fleur d'oranger. Les rues de Ruzafa, les patios de Patraix, les allées du Turia — partout ce parfum sucré qui te rappelle que t'es pas à Lille. Les Valenciens cueillent les oranges directement dans la rue. Essaie de faire ça dans le Nord.
+          En mars, toute la ville sent la fleur d'oranger. Les rues de Ruzafa, les patios de Patraix, les allées du Turia : partout ce parfum sucré qui te rappelle que t'es pas à Lille. Les Valenciens cueillent les oranges directement dans la rue. Essaie de faire ça dans le Nord.
         </p>
       </div>
 
@@ -621,7 +627,7 @@
         <span class="card-emoji">🏖️</span>
         <h3>La Méditerranée au Quotidien</h3>
         <p>
-          La Malvarrosa à 15 minutes en bus. La Patacona pour les dimanches farniente. L'Albufera à 20 bornes — un coucher de soleil sur la lagune, des flamants roses, et ce silence que tu trouves nulle part ailleurs. La mer, c'est pas un « plus » à Valencia : c'est le décor permanent.
+          La Malvarrosa à 15 minutes en bus. La Patacona pour les dimanches farniente. L'Albufera à 20 bornes : un coucher de soleil sur la lagune, des flamants roses, et ce silence que tu trouves nulle part ailleurs. La mer, c'est pas un « plus » à Valencia : c'est le décor permanent.
         </p>
       </div>
     </div>
@@ -643,7 +649,17 @@
       </p>
     </div>
 
-    <div class="heritage-gallery">
+    <div class="heritage-grid-asym">
+      <div class="heritage-featured-banner fade-in">
+        <img src="assets/img/culture-plaza.jpg" alt="Plaza de la Virgen, fontaine du Turia et architecture historique du centre de Valencia" loading="lazy" class="heritage-card-img" width="600" height="400">
+        <div class="heritage-featured-body">
+          <h3>Le Centre Historique</h3>
+          <p>
+            La Cathédrale qui abrite (soi-disant) le Saint Graal. La Lonja de la Seda, ce bijou gothique classé UNESCO, où les marchands de soie pesaient leurs cargaisons au XVᵉ siècle. Le Mercado Central, cathédrale moderniste du jambon et du fromage. Se perdre dans les ruelles du Carmen, c'est gratuit, et c'est le meilleur musée de la ville.
+          </p>
+        </div>
+      </div>
+
       <div class="heritage-card fade-in">
         <div class="heritage-card-visual ciudad-bg">🐋</div>
         <div class="heritage-card-body">
@@ -660,16 +676,6 @@
           <h3>L'Art des Azulejos</h3>
           <p>
             Les carreaux de faïence aux motifs géométriques et floraux, c'est l'ADN visuel de Valencia. La gare du Nord (Estación del Norte) en est le joyau : des panneaux entiers de mosaïques qui racontent la huerta, les oranges, la mer. Un musée gratuit où tu passes sans t'en rendre compte.
-          </p>
-        </div>
-      </div>
-
-      <div class="heritage-card fade-in">
-        <img src="assets/img/culture-plaza.jpg" alt="Plaza de la Virgen, fontaine du Turia et architecture historique du centre de Valencia" loading="lazy" class="heritage-card-img" width="600" height="400" style="margin-bottom:0; height:180px;">
-        <div class="heritage-card-body">
-          <h3>Le Centre Historique</h3>
-          <p>
-            La Cathédrale qui abrite (soi-disant) le Saint Graal. La Lonja de la Seda, ce bijou gothique classé UNESCO, où les marchands de soie pesaient leurs cargaisons au XVᵉ siècle. Le Mercado Central, cathédrale moderniste du jambon et du fromage. Se perdre dans les ruelles du Carmen, c'est gratuit, et c'est le meilleur musée de la ville.
           </p>
         </div>
       </div>
@@ -761,13 +767,15 @@
       </p>
     </div>
 
-    <div class="traditions-grid">
-      <div class="tradition-card fade-in">
+    <div class="traditions-featured-grid">
+      <div class="tradition-card-hero fade-in">
         <img src="assets/img/culture-fallas.jpg" alt="Monuments impressionnants et ninots colorés lors des festivités des Fallas à Valencia" loading="lazy" class="tradition-card-img" width="600" height="400">
-        <h3>Las Fallas</h3>
-        <p>
-          Chaque mars, Valencia brûle. Littéralement. Des sculptures géantes en carton-pâte — les <em>ninots</em> — envahissent les rues pendant quatre jours. Puis tout part en fumée dans un feu d'artifice monumental. La <em>mascletà</em> sur la Plaza del Ayuntamiento, c'est pas un feu d'artifice : c'est une expérience physique. Le sol vibre, ta poitrine aussi.
-        </p>
+        <div>
+          <h3>Las Fallas</h3>
+          <p>
+            Chaque mars, Valencia brûle. Littéralement. Des sculptures géantes en carton-pâte (les <em>ninots</em>) envahissent les rues pendant quatre jours. Puis tout part en fumée dans un feu d'artifice monumental. La <em>mascletà</em> sur la Plaza del Ayuntamiento, c'est pas un feu d'artifice : c'est une expérience physique. Le sol vibre, ta poitrine aussi.
+          </p>
+        </div>
       </div>
 
       <div class="tradition-card fade-in">
@@ -782,7 +790,7 @@
         <span class="trad-icon">🥤</span>
         <h3>L'Horchata &amp; les Fartons</h3>
         <p>
-          La <em>horchata de chufa</em>, c'est la boisson valencienne par excellence. Un lait végétal de souchet, servi glacé, avec des <em>fartons</em> — ces brioches allongées saupoudrées de sucre glace. Le combo parfait un samedi matin à 11h, assis en terrasse, pendant que la ville s'éveille doucement. Dire que certains boivent du café...
+          La <em>horchata de chufa</em>, c'est la boisson valencienne par excellence. Un lait végétal de souchet, servi glacé, avec des <em>fartons</em> : ces brioches allongées saupoudrées de sucre glace. Le combo parfait un samedi matin à 11h, assis en terrasse, pendant que la ville s'éveille doucement. Dire que certains boivent du café...
         </p>
       </div>
 
@@ -790,7 +798,7 @@
         <span class="trad-icon">🎭</span>
         <h3>Les Fêtes de Quartier</h3>
         <p>
-          Oublie les festivals bondés. Ici, chaque <em>barrio</em> a sa propre fête. À Benimaclet, les <em>fiestas patronales</em> en septembre — des bals populaires, des concours de paella entre voisins, des gamins qui courent jusqu'à minuit. C'est cette vie de quartier qu'on vient chercher : pas le Valencia des guides touristiques, le Valencia de ceux qui y vivent.
+          Oublie les festivals bondés. Ici, chaque <em>barrio</em> a sa propre fête. À Benimaclet, les <em>fiestas patronales</em> en septembre : des bals populaires, des concours de paella entre voisins, des gamins qui courent jusqu'à minuit. C'est cette vie de quartier qu'on vient chercher : pas le Valencia des guides touristiques, le Valencia de ceux qui y vivent.
         </p>
       </div>
     </div>
@@ -980,6 +988,8 @@
       <a href="pages/ressources.html" class="btn btn-primary">Accéder aux contacts & ressources</a>
     </div>
   </section>
+
+  </main>
 
   <!-- ===== FOOTER — Fond BEIGE ===== -->
   <footer class="footer">
