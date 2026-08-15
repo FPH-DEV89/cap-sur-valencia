@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cap sur Valencia</title>
+    <link>https://fph-dev89.github.io/cap-sur-valencia/</link>
+    <description>Journal de bord d'une famille française qui s'expatrie à Valencia : budget, écoles, quartiers, démarches et coulisses de notre départ en 2028.</description>
+    <language>fr</language>
+    <lastBuildDate>Sun, 16 Aug 2026 08:00:00 +0200</lastBuildDate>
+    <atom:link href="https://fph-dev89.github.io/cap-sur-valencia/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bienvenue sur le journal de bord</title>
+      <link>https://fph-dev89.github.io/cap-sur-valencia/blog/2026-08-16-bienvenue.html</link>
+      <guid isPermaLink="true">https://fph-dev89.github.io/cap-sur-valencia/blog/2026-08-16-bienvenue.html</guid>
+      <pubDate>Sun, 16 Aug 2026 08:00:00 +0200</pubDate>
+      <description>Lancement officiel de notre carnet de bord : pourquoi ce blog, notre projet d'expatriation familiale à 5 pour 2028, et le programme de nos publications hebdomadaires.</description>
+    </item>
+  </channel>
+</rss>

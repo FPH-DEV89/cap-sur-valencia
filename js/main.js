@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.hero-stat-value[data-target]').forEach(el => counterObserver.observe(el));
 
   // Add fade-in class and observe
-  document.querySelectorAll('.section > *, .card, .quartier-card, .pull-quote, .section-pause-editorial').forEach(el => {
+  document.querySelectorAll('.section > *, .card, .quartier-card, .blog-card, .pull-quote, .section-pause-editorial').forEach(el => {
     if (!el.classList.contains('fade-in')) {
       el.classList.add('fade-in');
     }
