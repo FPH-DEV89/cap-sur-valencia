@@ -266,11 +266,53 @@ function initBudgetSubnavSpy() {
   sections.forEach(sec => spyObserver.observe(sec));
 }
 
+// --- Checklists LocalStorage Persistence (US-05) ---
+function initChecklists() {
+  const checkboxes = document.querySelectorAll('.checklist-checkbox');
+  if (!checkboxes.length) return;
+
+  const storageKey = 'cap_valencia_checklists';
+  let savedState = {};
+  try {
+    const raw = localStorage.getItem(storageKey);
+    if (raw) savedState = JSON.parse(raw);
+  } catch (e) {
+    console.error('LocalStorage unavailable for checklists', e);
+  }
+
+  checkboxes.forEach((chk, index) => {
+    const id = chk.id || `chk_${index}`;
+    if (!chk.id) chk.id = id;
+
+    // Restore state
+    if (savedState[id]) {
+      chk.checked = true;
+      const parent = chk.closest('.checklist-item');
+      if (parent) parent.classList.add('checked');
+    }
+
+    chk.addEventListener('change', () => {
+      savedState[id] = chk.checked;
+      const parent = chk.closest('.checklist-item');
+      if (parent) {
+        if (chk.checked) parent.classList.add('checked');
+        else parent.classList.remove('checked');
+      }
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(savedState));
+      } catch (e) {
+        console.error('Failed to save checklist state', e);
+      }
+    });
+  });
+}
+
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
   initBudgetCalculator();
   initQuartierFilter();
   initBudgetSubnavSpy();
+  initChecklists();
 
   // Add fade-in class to sections
   document.querySelectorAll('.section > *, .card, .quartier-card').forEach(el => {
