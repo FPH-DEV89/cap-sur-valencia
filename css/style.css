@@ -2222,13 +2222,13 @@ section:not(.section-alt) .btn-outline:hover {
 /* =============================================
    ANIMATIONS — ease-out-quart only
    ============================================= */
-.fade-in {
+.js .fade-in {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
 }
 
-.fade-in.visible {
+.js .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -2246,7 +2246,7 @@ section:not(.section-alt) .btn-outline:hover {
     scroll-behavior: auto !important;
   }
 
-  .fade-in {
+  .js .fade-in {
     opacity: 1;
     transform: none;
     transition: none;
