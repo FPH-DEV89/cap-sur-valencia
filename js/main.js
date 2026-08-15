@@ -7,8 +7,8 @@
 // --- Scroll Animations (IntersectionObserver) ---
 const observerOptions = {
   root: null,
-  rootMargin: '0px 0px -40px 0px',
-  threshold: 0.08
+  rootMargin: '0px 0px -24px 0px',
+  threshold: 0
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -385,11 +385,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.hero-stat-value[data-target]').forEach(el => counterObserver.observe(el));
 
-  // Add fade-in class and observe
+  // Add fade-in class and observe all fade-in elements
+  const observedElements = new Set();
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observedElements.add(el);
+    observer.observe(el);
+  });
+
   document.querySelectorAll('.section > *, .card, .quartier-card, .blog-card, .pull-quote, .section-pause-editorial').forEach(el => {
     if (!el.classList.contains('fade-in')) {
       el.classList.add('fade-in');
     }
-    observer.observe(el);
+    if (!observedElements.has(el)) {
+      observedElements.add(el);
+      observer.observe(el);
+    }
   });
 });
