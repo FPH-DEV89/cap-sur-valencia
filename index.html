@@ -23,6 +23,9 @@
   <meta name="twitter:description" content="On part vivre à Valencia avec nos 3 enfants. Budget, écoles, quartiers, démarches — le guide complet.">
   <meta name="twitter:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/hero-ciudad-arte.jpg">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -522,10 +525,16 @@
 </head>
 <body>
 
-  <!-- Skip Link (US-07) -->
+  <!-- Skip Link -->
   <a class="skip-link" href="#main">Aller au contenu</a>
 
-  <!-- ===== NAVIGATION — HEADER BEIGE ===== -->
+  <!-- Top Sentinel for IntersectionObserver (Navbar & Back-to-top) -->
+  <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
     <div class="container">
       <a href="index.html" class="nav-logo"><span class="flag">🇪🇸</span>CAP SUR VALENCIA</a>
@@ -545,27 +554,27 @@
   </nav>
   <div class="nav-overlay"></div>
 
-  <!-- ===== HERO — VALENCIA, Dégradé Sunset + Vraie Photo Ciudad de las Artes (US-01, US-03) ===== -->
+  <!-- ===== HERO - VALENCIA (US-01, US-02, US-03) ===== -->
   <header class="hero-valencia" id="accueil">
     <div class="hero-photo-overlay"></div>
     <div class="hero-inner">
-      <div class="hero-badge">🇪🇸 Expatriation Familiale · Été 2028</div>
-      <h1>Valencia</h1>
-      <p class="hero-subtitle">Journal de bord d'une famille française en route pour l'Espagne</p>
+      <div class="hero-badge hero-reveal-1">🇪🇸 Expatriation Familiale · Été 2028</div>
+      <h1 class="hero-reveal-2">Cap sur <span class="hero-emphasis">Valencia</span></h1>
+      <p class="hero-subtitle hero-reveal-3">Journal de bord d'une famille française en route pour l'Espagne</p>
 
-      <p class="hero-lead">
+      <p class="hero-lead hero-reveal-4">
         ☀️ On part vivre à Valencia avec nos 3 enfants. Budget réel, écoles, quartiers et démarches : notre retour d'expérience complet sans filtre.
       </p>
 
-      <div class="hero-countdown">
+      <div class="hero-countdown hero-reveal-5">
         <span class="countdown-label">Départ dans</span>
-        <span class="countdown-value months" data-target="22">-</span>
+        <span class="countdown-value months tabular-nums" data-target="22">-</span>
         <span class="countdown-label">mois et</span>
-        <span class="countdown-value days-remaining">-</span>
+        <span class="countdown-value days-remaining tabular-nums">-</span>
         <span class="countdown-label">jours</span>
       </div>
 
-      <div class="hero-cta-group">
+      <div class="hero-cta-group hero-reveal-6">
         <a href="#art-de-vivre" class="btn btn-primary">Découvrir la culture</a>
         <a href="#guide" class="btn-outline-white">Voir le guide complet</a>
       </div>
@@ -1038,11 +1047,18 @@
       </div>
 
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia — Fait avec ❤️ et beaucoup de cafés — ¡Hasta pronto!</span>
+        <span>© 2026 Cap sur Valencia · Fait avec ❤️ et beaucoup de cafés · ¡Hasta pronto!</span>
         <span>Valencia · Été 2028 ☀️</span>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perdus dans Valencia ? · Page non trouvée | Cap sur Valencia</title>
+  <meta name="description" content="Oups, cette page n'existe pas ou a été déplacée. Retrouvez votre chemin vers notre guide pour vivre à Valencia.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Top Sentinel for IntersectionObserver (Navbar & Back-to-top) -->
+  <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span class="flag">🇪🇸</span>CAP SUR VALENCIA</a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#histoire">Notre histoire</a></li>
+        <li><a href="index.html#art-de-vivre">Art de Vivre</a></li>
+        <li><a href="index.html#heritage">Heritage</a></li>
+        <li><a href="index.html#saveurs">Saveurs</a></li>
+        <li><a href="index.html#guide">Guide</a></li>
+        <li><a href="pages/budget.html" class="nav-cta">Budget 2028</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+
+  <!-- ===== MAIN CONTENT 404 ===== -->
+  <main id="main" class="section section-404" style="min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 7rem 1.5rem 4rem;">
+    <div class="container-narrow fade-in">
+      <div style="font-size: 3.5rem; margin-bottom: 1rem;">🧭</div>
+      <span class="badge" style="margin-bottom: 1rem;">Erreur 404</span>
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 3.8rem); margin-bottom: 1.2rem; color: var(--navy);">Perdus dans Valencia ?</h1>
+      <p style="font-size: 1.15rem; color: var(--text-light); max-width: 600px; margin: 0 auto 2rem; line-height: 1.8;">
+        Pas d'inquiétude : se perdre dans les ruelles du Carmen ou le long du Turia fait partie du voyage. Cette page n'existe pas ou a déménagé, mais l'aventure continue.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+        <a href="pages/budget.html" class="btn btn-outline">Explorer le budget</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>🇪🇸 CAP SUR VALENCIA</h4>
+          <p>
+            Journal de bord d'une famille française qui s'expatrie à Valencia. Budget, écoles, quartiers, démarches : tout ce qu'on apprend, on le partage. 🥘🍊🏖️
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="pages/scolarite.html">Scolarité</a></li>
+            <li><a href="pages/budget.html">Budget</a></li>
+            <li><a href="pages/quartiers.html">Quartiers</a></li>
+            <li><a href="pages/sante.html">Santé</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pratique</h4>
+          <ul>
+            <li><a href="pages/administration.html">Administration</a></li>
+            <li><a href="pages/emploi.html">Emploi</a></li>
+            <li><a href="pages/checklists.html">Checklists</a></li>
+            <li><a href="pages/ressources.html">Ressources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Le projet</h4>
+          <ul>
+            <li><a href="index.html#histoire">Notre histoire</a></li>
+            <li><a href="index.html#art-de-vivre">Art de Vivre</a></li>
+            <li><a href="index.html#heritage">Heritage</a></li>
+            <li><a href="index.html#saveurs">Saveurs &amp; Traditions</a></li>
+            <li><a href="index.html#timeline">Le planning</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-map-reference">
+        <span>🗺️</span> Valencia, España · 39°28′N 0°22′W · Costa del Azahar, Mer Méditerranée
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Cap sur Valencia · Fait avec ❤️ et beaucoup de cafés · ¡Hasta pronto!</span>
+        <span>Valencia · Été 2028 ☀️</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

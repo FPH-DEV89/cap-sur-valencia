@@ -13,12 +13,19 @@
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/sante-hopital.jpg">
   <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   <!-- Skip Link (US-07) -->
   <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Top Sentinel for IntersectionObserver (Navbar & Back-to-top) -->
+  <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
@@ -125,6 +132,11 @@
         <h2>Partie 2 : La carte SIP - le graal des premières semaines</h2>
 
         <p>La <em>Tarjeta Sanitaria Individual</em>, c'est ta carte Vitale espagnole. Sans elle, t'as pas de médecin, pas de pédiatre, pas de spécialiste. Avec elle, tout s'ouvre. Voilà comment on va l'obtenir.</p>
+
+        <div class="pull-quote fade-in">
+          <p>« La Tarjeta Sanitaria Individual, c'est ta carte Vitale espagnole. Sans elle, t'as pas de médecin, pas de pédiatre, pas de spécialiste. Avec elle, tout s'ouvre. »</p>
+          <cite>Florian · Guide Santé</cite>
+        </div>
 
         <h3>C'est quoi, concrètement ?</h3>
         <p>Une carte plastifiée avec puce. Chaque membre de la famille a la sienne, même les bébés. Avec elle : médecin généraliste assigné à ton centre de santé de quartier, pédiatre dédié pour chaque enfant, hôpital public, médicaments remboursés (40-60%), spécialistes sur prescription, campagnes de vaccination.</p>
@@ -249,11 +261,18 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia - Fait avec ❤️ et beaucoup de cafés</span>
+        <span>© 2026 Cap sur Valencia · Fait avec ❤️ et beaucoup de cafés</span>
         <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="../js/main.js"></script>
 </body>

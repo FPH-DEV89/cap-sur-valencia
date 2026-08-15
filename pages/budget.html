@@ -19,12 +19,19 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/budget-mercado.jpg">
 
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   <!-- Skip Link (US-07) -->
   <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Top Sentinel for IntersectionObserver (Navbar & Back-to-top) -->
+  <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
@@ -122,6 +129,11 @@
 
         <div class="highlight-box">
           <p><strong>⚠️ Alerte piège :</strong> en Espagne, « sin muebles » (non meublé) peut vouloir dire SANS cuisine. Pas d'évier, pas de plaques, nada. Vérifie avant de signer. La caution légale c'est un mois, mais les proprios te demandent souvent un ou deux mois de garantie en plus. Prépare-toi à sortir 2-3 mois de loyer d'un coup pour les clés.</p>
+        </div>
+
+        <div class="pull-quote fade-in">
+          <p>« Pour le prix d'un T2 pourri à Paris, t'as un T4 lumineux avec balcon à Valencia. La bonne nouvelle c'est que manger dehors coûte deux fois moins cher. »</p>
+          <cite>Florian · Journal de bord</cite>
         </div>
 
         <h2 id="manger-dehors">Manger dehors : la claque espagnole</h2>
@@ -335,11 +347,18 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia - Fait avec ❤️ et beaucoup de cafés</span>
+        <span>© 2026 Cap sur Valencia · Fait avec ❤️ et beaucoup de cafés</span>
         <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="../js/main.js"></script>
 </body>

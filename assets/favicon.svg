@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="16" fill="#fbfbe2"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#001626" stroke-width="2" stroke-opacity="0.12"/>
+  <!-- C in Deep Navy -->
+  <path d="M28 17 C17.5 17 11 23.5 11 32 C11 40.5 17.5 47 28 47 C33 47 36.5 44.5 38.5 42 L33.5 38 C32 39.5 30.2 40.5 28 40.5 C21.5 40.5 18 36.5 18 32 C18 27.5 21.5 23.5 28 23.5 C30.2 23.5 32 24.5 33.5 26 L38.5 22 C36.5 19.5 33 17 28 17 Z" fill="#001626"/>
+  <!-- V in Warm Terracotta -->
+  <path d="M34 20 L44 47 L50 47 L60 20 L52.5 20 L47 38 L41.5 20 Z" fill="#924b26"/>
+</svg>

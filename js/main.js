@@ -1,12 +1,14 @@
 /* =============================================
-   MAXPATRIE — JavaScript Principal
+   CAP SUR VALENCIA - JavaScript Principal
+   Design v4 Senior / Awwwards
+   Progressive Enhancement & IntersectionObserver
    ============================================= */
 
-// --- Scroll Animations ---
+// --- Scroll Animations (IntersectionObserver) ---
 const observerOptions = {
   root: null,
-  rootMargin: '0px 0px -60px 0px',
-  threshold: 0.1
+  rootMargin: '0px 0px -40px 0px',
+  threshold: 0.08
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -17,22 +19,58 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+// --- Top Sentinel Observer (Navbar Scrolled + Back To Top) ---
+// Rule 3: Zero window.addEventListener('scroll') - IntersectionObserver only!
+function initTopObserver() {
+  const navbar = document.querySelector('.navbar');
+  const backToTopBtn = document.getElementById('back-to-top') || document.querySelector('.back-to-top');
 
-// --- Navbar Scroll Effect ---
-const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > 60) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  let topSentinel = document.getElementById('top-sentinel');
+  if (!topSentinel) {
+    topSentinel = document.createElement('div');
+    topSentinel.id = 'top-sentinel';
+    topSentinel.setAttribute('aria-hidden', 'true');
+    topSentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:60px;pointer-events:none;';
+    document.body.prepend(topSentinel);
   }
-  lastScroll = currentScroll;
-});
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (navbar) {
+        if (!entry.isIntersecting) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      }
+      if (backToTopBtn) {
+        if (!entry.isIntersecting) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      }
+    });
+  }, {
+    rootMargin: '0px 0px 0px 0px',
+    threshold: 0
+  });
+
+  navObserver.observe(topSentinel);
+}
+
+// --- Back to Top Click Handler ---
+function initBackToTop() {
+  const backToTopBtn = document.getElementById('back-to-top') || document.querySelector('.back-to-top');
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+}
 
 // --- Mobile Navigation ---
 const navToggle = document.querySelector('.nav-toggle');
@@ -96,7 +134,7 @@ const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const el = entry.target;
-      const target = parseInt(el.dataset.target);
+      const target = parseInt(el.dataset.target, 10);
       if (target) {
         animateCounter(el, target);
         counterObserver.unobserve(el);
@@ -105,8 +143,6 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-document.querySelectorAll('.hero-stat-value[data-target]').forEach(el => counterObserver.observe(el));
-
 // --- Countdown Timer ---
 function updateCountdown() {
   const targetDate = new Date('2028-06-01T00:00:00+02:00');
@@ -114,7 +150,7 @@ function updateCountdown() {
   const diff = targetDate - now;
 
   if (diff <= 0) {
-    document.querySelectorAll('.countdown-value.days').forEach(el => el.textContent = '0');
+    document.querySelectorAll('.countdown-value.days').forEach(el => { el.textContent = '0'; });
     return;
   }
 
@@ -125,12 +161,9 @@ function updateCountdown() {
   const monthEls = document.querySelectorAll('.countdown-value.months');
   const dayEls = document.querySelectorAll('.countdown-value.days-remaining');
 
-  monthEls.forEach(el => el.textContent = months);
-  dayEls.forEach(el => el.textContent = remainingDays);
+  monthEls.forEach(el => { el.textContent = months; });
+  dayEls.forEach(el => { el.textContent = remainingDays; });
 }
-
-updateCountdown();
-setInterval(updateCountdown, 1000 * 60 * 60); // Every hour
 
 // --- Budget Calculator ---
 function initBudgetCalculator() {
@@ -184,8 +217,8 @@ function initBudgetCalculator() {
     if (totalEl) {
       totalEl.textContent = total.toLocaleString() + ' €';
       // Animate
-      totalEl.style.transform = 'scale(1.1)';
-      setTimeout(() => totalEl.style.transform = 'scale(1)', 150);
+      totalEl.style.transform = 'scale(1.08)';
+      setTimeout(() => { totalEl.style.transform = 'scale(1)'; }, 150);
     }
   }
 
@@ -236,7 +269,7 @@ function initQuartierFilter() {
   });
 }
 
-// --- Budget Sticky Subnav Spy (US-01) ---
+// --- Budget Sticky Subnav Spy ---
 function initBudgetSubnavSpy() {
   const chips = document.querySelectorAll('.budget-subnav-chip');
   if (!chips.length) return;
@@ -266,7 +299,7 @@ function initBudgetSubnavSpy() {
   sections.forEach(sec => spyObserver.observe(sec));
 }
 
-// --- Checklists LocalStorage Persistence (US-05) ---
+// --- Checklists LocalStorage Persistence ---
 function initChecklists() {
   const checkboxes = document.querySelectorAll('.checklist-checkbox');
   if (!checkboxes.length) return;
@@ -307,18 +340,56 @@ function initChecklists() {
   });
 }
 
+// --- Reading Progress Fallback for Browsers without CSS scroll-timeline ---
+function initReadingProgressFallback() {
+  const progressBar = document.querySelector('.reading-progress');
+  if (!progressBar) return;
+
+  // If CSS animation-timeline is supported, CSS handles it directly
+  if (CSS.supports && CSS.supports('animation-timeline', 'scroll()')) {
+    return;
+  }
+
+  // Fallback: observe document sections to step progress
+  const allSections = document.querySelectorAll('section, main, header, footer');
+  if (!allSections.length) return;
+
+  const total = allSections.length;
+  let seen = new Set();
+
+  const progressObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        seen.add(entry.target);
+        const ratio = seen.size / total;
+        progressBar.style.transform = `scaleX(${Math.min(ratio, 1)})`;
+      }
+    });
+  }, { threshold: 0.1 });
+
+  allSections.forEach(sec => progressObserver.observe(sec));
+}
+
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
+  initTopObserver();
+  initBackToTop();
   initBudgetCalculator();
   initQuartierFilter();
   initBudgetSubnavSpy();
   initChecklists();
+  initReadingProgressFallback();
 
-  // Add fade-in class to sections
-  document.querySelectorAll('.section > *, .card, .quartier-card').forEach(el => {
+  updateCountdown();
+  setInterval(updateCountdown, 1000 * 60 * 60); // Every hour
+
+  document.querySelectorAll('.hero-stat-value[data-target]').forEach(el => counterObserver.observe(el));
+
+  // Add fade-in class and observe
+  document.querySelectorAll('.section > *, .card, .quartier-card, .pull-quote, .section-pause-editorial').forEach(el => {
     if (!el.classList.contains('fade-in')) {
       el.classList.add('fade-in');
-      observer.observe(el);
     }
+    observer.observe(el);
   });
 });

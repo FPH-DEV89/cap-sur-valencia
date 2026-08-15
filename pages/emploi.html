@@ -15,6 +15,7 @@
   <meta property="og:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/emploi-port.jpg">
   <meta property="og:locale" content="fr_FR">
 
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../css/style.css">
 
   <script type="application/ld+json">
@@ -32,6 +33,12 @@
 
   <!-- Skip Link (US-07) -->
   <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Top Sentinel for IntersectionObserver (Navbar & Back-to-top) -->
+  <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
@@ -86,6 +93,11 @@
         <h2>Phase 1 : La logistique - poser le pied, sécuriser le revenu</h2>
 
         <p>Valencia, c'est pas juste joli. C'est une <strong>machine logistique</strong> qui tourne à fond.</p>
+
+        <div class="pull-quote fade-in">
+          <p>« Valencia, c'est pas juste joli. C'est une machine logistique qui tourne à fond. »</p>
+          <cite>Florian · Analyse marché emploi</cite>
+        </div>
 
         <p>Le port : premier de Méditerranée, cinquième d'Europe. La <strong>ZAL</strong> (Zone d'Activités Logistiques) : 80 hectares dédiés au transport, à dix minutes des quais. <strong>Mercadona</strong> : le leader espagnol de la grande distrib, siège social ici, 1 600 magasins à alimenter dans tout le pays. T'imagines la supply chain derrière ?</p>
 
@@ -307,11 +319,18 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia - Fait avec ❤️ et beaucoup de cafés</span>
+        <span>© 2026 Cap sur Valencia · Fait avec ❤️ et beaucoup de cafés</span>
         <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="../js/main.js"></script>
 </body>

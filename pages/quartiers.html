@@ -18,12 +18,19 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://fph-dev89.github.io/cap-sur-valencia/assets/img/quartiers-plage.jpg">
 
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   <!-- Skip Link (US-07) -->
   <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Top Sentinel for IntersectionObserver (Navbar & Back-to-top) -->
+  <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation">
@@ -74,6 +81,11 @@
       <!-- 🥇 Top 3 famille -->
       <h2 style="margin-top:0;">Le top 3 famille — ceux qui nous font de l'œil</h2>
       <p>Si t'as des enfants et que tu veux pas te prendre la tête, tu regardes ces trois-là. Moi c'est ce que j'ai fait.</p>
+
+      <div class="pull-quote fade-in">
+        <p>« Un ancien village qui s'est fait bouffer par la ville mais qui a refusé de perdre son âme. Les gamins jouent au foot pendant que les parents prennent un vermouth en terrasse. »</p>
+        <cite>Florian · Focus quartier Benimaclet</cite>
+      </div>
 
       <div class="grid-3" id="quartiers-grid" style="margin-bottom:3rem;">
 
@@ -564,11 +576,18 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Cap sur Valencia — Fait avec ❤️ et beaucoup de cafés</span>
+        <span>© 2026 Cap sur Valencia · Fait avec ❤️ et beaucoup de cafés</span>
         <span><a href="../index.html">← Retour à l'accueil</a></span>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="../js/main.js"></script>
   <script>
