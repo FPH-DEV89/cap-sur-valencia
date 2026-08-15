@@ -877,61 +877,243 @@ section:not(.section-alt) .btn-outline:hover {
   font-size: 0.8rem;
 }
 
-/* --- Hero Valencia (US-01, US-02, US-03) --- */
+/* =============================================
+   HERO VALENCIA - Split Éditorial (COR-01)
+   ============================================= */
 .hero-valencia {
   position: relative;
-  min-height: 88vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 6.5rem 1.5rem 4.5rem;
+  background: var(--bg-beige);
+  color: var(--text);
+  padding: 6.5rem 0 3.5rem;
   overflow: hidden;
-  background: linear-gradient(145deg, #1b0918 0%, #4a1928 25%, #883226 50%, #c05828 72%, #d88235 88%, #e8a850 100%);
 }
 
-.hero-photo-overlay {
-  position: absolute;
-  inset: 0;
-  background: url('../assets/img/hero-ciudad-arte.jpg') center 35%/cover no-repeat;
-  mix-blend-mode: overlay;
-  opacity: 0.54;
-  filter: contrast(1.18) saturate(1.25);
-  pointer-events: none;
-  transform-origin: center center;
-  animation: heroCinematicZoom 5.5s cubic-bezier(0.2, 0.8, 0.25, 1) forwards;
-}
-
-@keyframes heroCinematicZoom {
-  0% {
-    transform: scale(1.06);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 820px;
+.hero-split-wrapper {
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 580px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 2;
+}
+
+.hero-valencia .hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(146, 75, 38, 0.08);
+  border: 1px solid rgba(146, 75, 38, 0.18);
+  color: var(--terracotta);
+  padding: 0.35rem 1.1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
 }
 
 .hero-valencia h1 {
-  font-size: clamp(2.8rem, 8vw, 5.2rem);
-  letter-spacing: -0.03em;
-  color: #ffffff;
-  margin-bottom: var(--space-sm);
-  text-shadow: 0 2px 12px rgba(0, 22, 38, 0.35);
+  font-size: clamp(2.8rem, 5.2vw, 4.6rem);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.08;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 .hero-emphasis {
   font-family: var(--font-heading);
   font-style: italic;
   font-weight: 700;
-  color: var(--bg-beige);
-  text-shadow: 0 2px 14px rgba(0, 22, 38, 0.45);
+  color: var(--terracotta);
+}
+
+.hero-valencia .hero-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--navy);
+  font-weight: 400;
+  margin-bottom: 1.1rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.hero-valencia .hero-lead {
+  font-size: 1.02rem;
+  color: var(--text-light);
+  max-width: 580px;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.hero-valencia .hero-countdown {
+  margin-bottom: 1.8rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  background: rgba(0, 22, 38, 0.04);
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  font-size: 0.88rem;
+}
+
+.hero-valencia .countdown-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.hero-valencia .countdown-value {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--terracotta);
+  font-variant-numeric: tabular-nums;
+  margin: 0 0.15rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-valencia .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--terracotta);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(146, 75, 38, 0.25);
+}
+
+.hero-valencia .btn-primary:hover {
+  background: var(--terracotta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(146, 75, 38, 0.35);
+  color: #ffffff;
+}
+
+.hero-link-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.hero-link-secondary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--terracotta);
+  transform: scaleX(0.4);
+  transform-origin: left;
+  transition: transform 0.25s ease, background-color 0.2s ease;
+}
+
+.hero-link-secondary:hover {
+  color: var(--terracotta);
+}
+
+.hero-link-secondary:hover::after {
+  transform: scaleX(1);
+}
+
+.hero-media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  max-height: 620px;
+  border-radius: 16px 0 0 16px;
+  overflow: hidden;
+  box-shadow: -8px 12px 32px rgba(0, 22, 38, 0.10);
+}
+
+.hero-split-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.04);
+  transform-origin: center center;
+  animation: heroPhotoZoom 5s cubic-bezier(0.2, 0.8, 0.25, 1) forwards;
+}
+
+@keyframes heroPhotoZoom {
+  0% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-split-photo {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Secondary Editorial Links (COR-03) */
+.link-editorial {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--terracotta);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color var(--transition-fast);
+}
+
+.link-editorial::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--terracotta);
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.link-editorial:hover {
+  color: var(--terracotta-dark);
+}
+
+.link-editorial:hover::after {
+  transform: scaleX(1.05);
+  background: var(--terracotta-dark);
 }
 
 /* Hero Stagger Cascade (US-02.1 - Gated by .js class) */
@@ -1083,20 +1265,20 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 }
 
 /* =============================================
-   CARDS — Fond blanc, bordure fine, ombre légère
+   CARDS - Fond blanc, bordure fine, ombre teintée (COR-03)
    ============================================= */
 .card {
   background: var(--bg-card);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
   transition: transform var(--transition-fast), box-shadow var(--transition-base);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 22, 38, 0.06);
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.10);
 }
 
 /* Variation par position dans grid-3 */
@@ -1105,7 +1287,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 }
 
 .grid-3 > .card:nth-child(3n+2) {
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .grid-3 > .card:nth-child(3n) {
@@ -1321,14 +1503,15 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
    ============================================= */
 .calculator {
   background: var(--bg-white);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-xl);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
 }
 
 .section-alt .calculator {
   background: var(--bg-white);
-  border-color: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 22, 38, 0.08);
   color: var(--text);
 }
 
@@ -1425,9 +1608,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .epargne-card {
   background: var(--bg-white);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-xl);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
   text-align: center;
 }
 
@@ -1480,10 +1664,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .kpi-card {
   background: var(--bg-white);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
   text-align: center;
   position: relative;
   transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
@@ -1491,13 +1675,13 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .kpi-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
   background: var(--bg-beige-light);
 }
 
 .kpi-card.featured {
   border: 2px solid var(--terracotta);
-  box-shadow: 0 4px 16px rgba(146, 75, 38, 0.12);
+  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.14);
 }
 
 .kpi-card-badge {
@@ -1554,11 +1738,11 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
    ============================================= */
 .content-photo {
   margin: var(--space-xl) 0;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.06);
   background: var(--bg-beige-dark);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 22, 38, 0.06);
 }
 
 .content-photo img {
@@ -1593,38 +1777,40 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   background: var(--bg-white);
   border-radius: 12px;
   padding: var(--space-lg);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
   transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base), border-color var(--transition-base);
 }
 
 .quartier-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
   background: var(--bg-beige-light);
 }
 
 .quartier-card.featured {
   border: 2px solid var(--terracotta);
   background: #fdfdf5;
-  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.16);
+  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.14);
   position: relative;
 }
 
 .section-alt .quartier-card {
   background: var(--bg-white);
-  border-color: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 22, 38, 0.08);
   color: var(--text);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
 }
 
 .section-alt .quartier-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
   background: var(--bg-beige-light);
 }
 
 .section-alt .quartier-card.featured {
   border: 2px solid var(--terracotta);
   background: #fdfdf5;
-  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.16);
+  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.14);
 }
 
 .quartier-card h3 {
@@ -2140,19 +2326,19 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-card {
   background: var(--bg-white);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-xl) var(--space-lg);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 22, 38, 0.08);
   transition: all var(--transition-base);
   display: block;
   color: var(--text);
   text-decoration: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.04);
 }
 
 .guide-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
   border-color: var(--terracotta);
   color: var(--text);
 }
@@ -2184,8 +2370,9 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 /* Guide list */
 .guide-list {
   background: var(--bg-white);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 22, 38, 0.04);
   overflow: hidden;
 }
 
@@ -2422,18 +2609,19 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   padding: var(--space-md) var(--space-lg);
   margin: var(--space-lg) 0;
   background: var(--terracotta-ghost);
-  border-radius: 8px;
+  border-radius: 12px;
   font-style: italic;
 }
 
 .content-body .highlight-box,
 .highlight-box {
   background: var(--bg-white);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
   border: 1px solid rgba(0, 22, 38, 0.12);
   border-left: 4px solid var(--navy);
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
   color: var(--text);
 }
 
@@ -2442,9 +2630,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   background: #fdf2ed;
   border: 1px solid rgba(146, 75, 38, 0.25);
   border-left: 4px solid var(--terracotta);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
+  box-shadow: 0 2px 10px rgba(146, 75, 38, 0.05);
   color: var(--text);
 }
 
@@ -2453,20 +2642,22 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   background: #edf3f8;
   border: 1px solid rgba(0, 22, 38, 0.2);
   border-left: 4px solid var(--navy);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.05);
   color: var(--text);
 }
 
 .highlight-box-info,
 .highlight-box--info {
   background: var(--bg-white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 22, 38, 0.1);
   border-left: 4px solid var(--terracotta);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
   color: var(--text);
 }
 
@@ -2475,9 +2666,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   background: #edf6ee;
   border: 1px solid rgba(46, 125, 50, 0.2);
   border-left: 4px solid #2e7d32;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
+  box-shadow: 0 2px 10px rgba(46, 125, 50, 0.05);
   color: var(--text);
 }
 
@@ -2675,10 +2867,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-phase-card {
   background: var(--bg-white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  border-radius: 12px;
   padding: 1.25rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -2687,7 +2879,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-phase-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 22px rgba(146, 75, 38, 0.12);
   border-color: var(--terracotta);
 }
 
@@ -2728,20 +2920,20 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-job-card {
   background: var(--bg-white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  border-radius: 12px;
   padding: 1.25rem;
   text-decoration: none;
   color: var(--text);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 22, 38, 0.04);
 }
 
 .guide-job-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(146, 75, 38, 0.12);
   border-color: var(--terracotta);
   color: var(--text);
 }
@@ -2794,10 +2986,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-path-card {
   background: var(--bg-white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -2806,13 +2998,13 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-path-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
 }
 
 .guide-path-card.recommended {
   border: 2px solid var(--terracotta);
   background: #fffcf9;
-  box-shadow: 0 4px 18px rgba(146, 75, 38, 0.12);
+  box-shadow: 0 4px 18px rgba(146, 75, 38, 0.14);
 }
 
 .guide-path-badge {
@@ -2855,10 +3047,10 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-resource-card {
   background: var(--bg-white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 22, 38, 0.08);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
@@ -2866,7 +3058,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .guide-resource-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
   border-color: rgba(146, 75, 38, 0.3);
 }
 
@@ -2976,11 +3168,11 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
    ============================================= */
 .checklist-group {
   background: var(--bg-white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  border-radius: 12px;
   padding: 1.25rem;
   margin: var(--space-lg) 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 10px rgba(0, 22, 38, 0.04);
 }
 
 .checklist-group h3,
@@ -3364,7 +3556,59 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 }
 
 /* =============================================
-   HOME LAYOUT VARIATIONS & RHYTHM (US-06)
+   BANDEAU MOMENT MAGAZINE NAVY FULL-BLEED (COR-02)
+   ============================================= */
+.section-magazine-break {
+  background: var(--navy);
+  color: var(--bg-beige);
+  width: 100%;
+  padding: 5rem 1.5rem;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.magazine-break-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.magazine-break-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--terracotta-light);
+  margin-bottom: 1.5rem;
+}
+
+.magazine-break-quote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.45rem, 3.2vw, 2.35rem);
+  line-height: 1.45;
+  color: var(--bg-beige);
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.magazine-break-author {
+  display: block;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: rgba(251, 251, 226, 0.80);
+  letter-spacing: 0.04em;
+}
+
+/* =============================================
+   HOME LAYOUT VARIATIONS & RHYTHM (US-06 / COR-03)
    ============================================= */
 .culture-grid-asym {
   display: grid;
@@ -3382,16 +3626,16 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   gap: 2rem;
   align-items: center;
   background: var(--bg-white);
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 1.8rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.08);
   border: 1px solid rgba(146, 75, 38, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .culture-card-featured:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(146, 75, 38, 0.12);
+  box-shadow: 0 10px 30px rgba(146, 75, 38, 0.14);
 }
 
 .culture-card-featured .culture-card-img {
@@ -3431,16 +3675,16 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   gap: 2rem;
   align-items: center;
   background: var(--stitch-warm-cream);
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 1.8rem;
   border: 1px solid rgba(146, 75, 38, 0.18);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 22, 38, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .heritage-featured-banner:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(146, 75, 38, 0.12);
 }
 
 .heritage-featured-banner .heritage-card-img {
@@ -3477,9 +3721,9 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 .tradition-card-hero {
   grid-row: span 2;
   background: #ffffff;
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 1.8rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(146, 75, 38, 0.08);
   border-left: 5px solid var(--terracotta);
   border-top: 1px solid rgba(146, 75, 38, 0.10);
   border-right: 1px solid rgba(146, 75, 38, 0.10);
@@ -3492,7 +3736,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .tradition-card-hero:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(146, 75, 38, 0.12);
+  box-shadow: 0 10px 30px rgba(146, 75, 38, 0.14);
 }
 
 .tradition-card-hero .tradition-card-img {
@@ -3528,23 +3772,75 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 }
 
 /* =============================================
-   MOBILE HERO POLISH (US-09)
+   MOBILE HERO POLISH (COR-01 / US-09)
    ============================================= */
+@media (max-width: 991px) {
+  .hero-valencia {
+    padding: 5rem 0 3rem;
+  }
+  .hero-split-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    min-height: auto;
+    padding: 0 1.25rem;
+  }
+  .hero-media-wrapper {
+    order: -1;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 22, 38, 0.08);
+  }
+  .hero-content {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-cta-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+  .hero-valencia .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-link-secondary {
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-magazine-break {
+    padding: 3.5rem 1.25rem;
+  }
+  .magazine-break-quote {
+    font-size: clamp(1.25rem, 5vw, 1.65rem);
+    line-height: 1.45;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-valencia {
-    min-height: auto;
-    padding: 5rem 1rem 3rem;
+    padding: 4.5rem 0 2.5rem;
+  }
+
+  .hero-media-wrapper {
+    height: 240px;
+    min-height: 240px;
   }
 
   .hero-valencia .hero-badge {
     font-size: 0.78rem;
-    padding: 0.35rem 1rem;
+    padding: 0.35rem 0.9rem;
     margin-bottom: 0.8rem;
   }
 
   .hero-valencia h1 {
-    font-size: clamp(2.4rem, 11vw, 3.4rem);
-    margin-bottom: 0.2rem;
+    font-size: clamp(2.3rem, 10vw, 3.2rem);
+    margin-bottom: 0.4rem;
   }
 
   .hero-valencia .hero-subtitle {
@@ -3561,7 +3857,8 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
   .hero-valencia .hero-countdown {
     margin-bottom: 1.4rem;
-    padding: 0.3rem 0.9rem;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.82rem;
   }
 
   .hero-valencia .countdown-label {
@@ -3569,22 +3866,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   }
 
   .hero-valencia .countdown-value {
-    font-size: 1.4rem;
-  }
-
-  .hero-valencia .hero-cta-group {
-    flex-direction: column;
-    gap: 0.6rem;
-    width: 100%;
-  }
-
-  .hero-valencia .btn-primary,
-  .hero-valencia .btn-outline-white {
-    width: 100%;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.92rem;
-    text-align: center;
-    justify-content: center;
+    font-size: 1.3rem;
   }
 
   .ecoles-grid,

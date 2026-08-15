@@ -29,7 +29,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Stitch Design Overrides — Header Beige + Hero Rose→Jaune + Sections Culturelles -->
+  <!-- Stitch Design Overrides - Split Éditorial + Moment Magazine + Rayons & Ombres Unifiés (COR-01, COR-02, COR-03) -->
   <style>
     /* === STITCH DESIGN SYSTEM === */
     :root {
@@ -81,121 +81,105 @@
       background: #001626;
     }
 
-    /* --- HERO VALENCIA — Dégradé sunset + vraie photo Ciudad de las Artes (US-01) --- */
+    /* --- HERO VALENCIA - Split Éditorial (COR-01) --- */
     .hero-valencia {
       position: relative;
-      min-height: 92vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      background: #fbfbe2;
+      color: var(--text);
+      padding: 6.5rem 0 3.5rem;
       overflow: hidden;
-      padding: 5.5rem 1.5rem 3.5rem;
-      background: linear-gradient(165deg, #e8b4b8 0%, #e8a098 20%, #e09860 42%, #e8a850 60%, #f0c060 78%, #fdf0c8 100%);
     }
-    /* Photo overlay réelle — Ciudad de las Artes y las Ciencias */
-    .hero-valencia .hero-photo-overlay {
-      position: absolute;
-      inset: 0;
-      background: url('assets/img/hero-ciudad-arte.jpg') center 35%/cover no-repeat;
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.55;
-      mix-blend-mode: normal;
-      filter: contrast(1.06) saturate(1.08);
+    .hero-split-wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+      min-height: 580px;
     }
-    .hero-valencia::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 80% 85%, rgba(255, 255, 255, 0.40) 0%, transparent 65%),
-        radial-gradient(ellipse 50% 50% at 20% 30%, rgba(255, 255, 255, 0.30) 0%, transparent 55%),
-        linear-gradient(180deg, rgba(251, 251, 226, 0.15) 0%, rgba(255, 255, 255, 0.20) 50%, rgba(251, 251, 226, 0.50) 100%);
-      pointer-events: none;
-      z-index: 0;
-    }
-    /* Azulejos pattern overlay subtil */
-    .hero-valencia::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      opacity: 0.02;
-      pointer-events: none;
-      z-index: 0;
-      background: repeating-linear-gradient(45deg, #924b26 0px, #924b26 1px, transparent 1px, transparent 20px),
-                  repeating-linear-gradient(-45deg, #924b26 0px, #924b26 1px, transparent 1px, transparent 20px);
-    }
-    .hero-valencia .hero-inner {
-      position: relative;
-      z-index: 1;
-      max-width: 820px;
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      z-index: 2;
     }
     .hero-valencia .hero-badge {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(0, 22, 38, 0.12);
-      color: #001626;
-      padding: 0.4rem 1.4rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(146, 75, 38, 0.08);
+      border: 1px solid rgba(146, 75, 38, 0.18);
+      color: #924b26;
+      padding: 0.35rem 1.1rem;
       border-radius: 50px;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       font-weight: 600;
       margin-bottom: 1.2rem;
-      letter-spacing: 0.03em;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      letter-spacing: 0.02em;
     }
     .hero-valencia h1 {
-      font-size: clamp(3.2rem, 8.5vw, 6.5rem);
+      font-size: clamp(2.8rem, 5.2vw, 4.6rem);
       font-family: var(--font-heading);
       font-weight: 700;
       color: #001626;
-      line-height: 1.05;
-      margin-bottom: 0.3rem;
-      text-shadow: 0 2px 18px rgba(255, 255, 255, 0.60);
-      letter-spacing: -0.02em;
+      line-height: 1.08;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+    .hero-valencia .hero-emphasis {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-weight: 700;
+      color: #924b26;
     }
     .hero-valencia .hero-subtitle {
-      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
       color: #001626;
       font-weight: 400;
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
       font-style: italic;
-      text-shadow: 0 1px 12px rgba(255, 255, 255, 0.55);
+      line-height: 1.45;
     }
     .hero-valencia .hero-lead {
-      font-size: 1.08rem;
-      color: #1a1a1a;
-      max-width: 680px;
-      margin: 0 auto 1.5rem;
+      font-size: 1.02rem;
+      color: #2d2d2d;
+      max-width: 580px;
+      margin-bottom: 1.5rem;
       line-height: 1.7;
       font-weight: 400;
-      text-shadow: 0 1px 12px rgba(255, 255, 255, 0.55);
     }
     .hero-valencia .hero-countdown {
       margin-bottom: 1.8rem;
       display: inline-flex;
       align-items: baseline;
-      justify-content: center;
-      gap: 0.4rem;
-      background: rgba(255, 255, 255, 0.65);
-      backdrop-filter: blur(6px);
-      padding: 0.4rem 1.2rem;
-      border-radius: 50px;
+      gap: 0.35rem;
+      background: rgba(0, 22, 38, 0.04);
       border: 1px solid rgba(0, 22, 38, 0.08);
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.88rem;
     }
     .hero-valencia .countdown-label {
-      color: #001626;
-      font-size: 0.92rem;
-      font-weight: 600;
+      color: #4a4a4a;
+      font-weight: 500;
     }
     .hero-valencia .countdown-value {
       font-family: var(--font-heading);
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       font-weight: 700;
       color: #924b26;
-      margin: 0 0.15rem;
       font-variant-numeric: tabular-nums;
+      margin: 0 0.15rem;
+    }
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
     .hero-valencia .btn-primary {
       display: inline-flex;
@@ -204,48 +188,159 @@
       background: #924b26;
       color: #ffffff;
       font-weight: 700;
-      font-size: 1rem;
-      padding: 0.85rem 2.4rem;
+      font-size: 0.95rem;
+      padding: 0.8rem 2rem;
       border-radius: 50px;
       text-decoration: none;
       transition: all 0.25s ease;
-      box-shadow: 0 4px 16px rgba(146, 75, 38, 0.30);
+      box-shadow: 0 4px 14px rgba(146, 75, 38, 0.25);
     }
     .hero-valencia .btn-primary:hover {
       background: #6e381c;
       transform: translateY(-2px);
-      box-shadow: 0 6px 22px rgba(146, 75, 38, 0.40);
+      box-shadow: 0 6px 20px rgba(146, 75, 38, 0.35);
       color: #ffffff;
     }
-    .hero-valencia .btn-outline-white {
+    .hero-link-secondary {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.50);
-      backdrop-filter: blur(4px);
+      gap: 0.35rem;
       color: #001626;
       font-weight: 600;
-      font-size: 1rem;
-      padding: 0.85rem 2.4rem;
-      border-radius: 50px;
+      font-size: 0.95rem;
       text-decoration: none;
-      border: 2px solid #001626;
-      transition: all 0.25s ease;
+      position: relative;
+      padding-bottom: 2px;
+      transition: color 0.2s ease;
     }
-    .hero-valencia .btn-outline-white:hover {
-      border-color: #001626;
-      background: #001626;
-      color: #ffffff;
-      transform: translateY(-2px);
+    .hero-link-secondary::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: #924b26;
+      transform: scaleX(0.4);
+      transform-origin: left;
+      transition: transform 0.25s ease, background-color 0.2s ease;
     }
-    .hero-cta-group {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
+    .hero-link-secondary:hover {
+      color: #924b26;
+    }
+    .hero-link-secondary:hover::after {
+      transform: scaleX(1);
+    }
+    .hero-media-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+      max-height: 620px;
+      border-radius: 16px 0 0 16px;
+      overflow: hidden;
+      box-shadow: -8px 12px 32px rgba(0, 22, 38, 0.10);
+    }
+    .hero-split-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.04);
+      transform-origin: center center;
+      animation: heroPhotoZoom 5s cubic-bezier(0.2, 0.8, 0.25, 1) forwards;
+    }
+    @keyframes heroPhotoZoom {
+      0% { transform: scale(1.04); }
+      100% { transform: scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-split-photo {
+        animation: none !important;
+        transform: none !important;
+      }
     }
 
-    /* --- CULTURAL SECTIONS --- */
+    /* --- LIENS ÉDITORIAUX SECONDAIRES (COR-03) --- */
+    .link-editorial {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #924b26;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 2px;
+      transition: color 0.2s ease;
+    }
+    .link-editorial::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: #924b26;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+    .link-editorial:hover {
+      color: #6e381c;
+    }
+    .link-editorial:hover::after {
+      transform: scaleX(1.05);
+      background: #6e381c;
+    }
+
+    /* --- BANDEAU MOMENT MAGAZINE NAVY FULL-BLEED (COR-02) --- */
+    .section-magazine-break {
+      background: #001626;
+      color: #fbfbe2;
+      width: 100%;
+      padding: 5rem 1.5rem;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    .magazine-break-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .magazine-break-label {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #f5e1d8;
+      margin-bottom: 1.5rem;
+    }
+    .magazine-break-quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1.45rem, 3.2vw, 2.35rem);
+      line-height: 1.45;
+      color: #fbfbe2;
+      margin: 0 0 1.5rem 0;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+    }
+    .magazine-break-author {
+      display: block;
+      font-family: var(--font-body);
+      font-style: normal;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: rgba(251, 251, 226, 0.80);
+      letter-spacing: 0.04em;
+    }
+
+    /* --- CULTURAL SECTIONS & CARDS (COR-03: 12px & Ombres Teintées) --- */
     .section-culture {
       padding: var(--space-2xl) 0;
     }
@@ -307,7 +402,7 @@
       transform: scale(1.02);
     }
 
-    /* Culture Cards — 3 colonnes (Stitch design) */
+    /* Culture Cards - 3 colonnes (Stitch design / COR-03) */
     .culture-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -318,16 +413,16 @@
     }
     .culture-card {
       background: #ffffff;
-      border-radius: 14px;
+      border-radius: 12px;
       padding: 2rem 1.8rem;
       text-align: center;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
       border: 1px solid rgba(146, 75, 38, 0.12);
     }
     .culture-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+      box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
     }
     .culture-card .card-emoji {
       font-size: 3.5rem;
@@ -358,14 +453,15 @@
     .heritage-card {
       background: var(--stitch-warm-cream);
       border: 1px solid rgba(146, 75, 38, 0.12);
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 22, 38, 0.05);
       transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
     .heritage-card:hover {
       transform: translateY(-3px);
       border-color: rgba(146, 75, 38, 0.45);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 24px rgba(146, 75, 38, 0.12);
     }
     .heritage-card-visual {
       height: 180px;
@@ -410,15 +506,15 @@
     }
     .tradition-card {
       background: #ffffff;
-      border-radius: 14px;
+      border-radius: 12px;
       padding: 2rem 1.6rem;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 2px 12px rgba(0, 22, 38, 0.04);
       border-left: 4px solid var(--saffron);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .tradition-card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(146, 75, 38, 0.10);
     }
     .tradition-card .trad-icon {
       font-size: 2.8rem;
@@ -470,13 +566,13 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       font-size: 0.85rem;
-      color: #555555;
+      color: #4a4a4a;
     }
     .footer-map-reference {
       margin-top: 1.5rem;
       text-align: center;
       font-size: 0.88rem;
-      color: #555555;
+      color: #4a4a4a;
     }
     .footer-map-reference span {
       font-size: 1.5rem;
@@ -485,23 +581,92 @@
     }
 
     /* Responsive */
-    @media (max-width: 900px) {
+    @media (max-width: 991px) {
+      .hero-valencia {
+        padding: 5rem 0 3rem;
+      }
+      .hero-split-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        min-height: auto;
+        padding: 0 1.25rem;
+      }
+      .hero-media-wrapper {
+        order: -1;
+        height: 320px;
+        min-height: 320px;
+        max-height: 320px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 22, 38, 0.08);
+      }
+      .hero-content {
+        align-items: flex-start;
+        text-align: left;
+      }
+      .hero-cta-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+      }
+      .hero-valencia .btn-primary {
+        width: 100%;
+        text-align: center;
+      }
+      .hero-link-secondary {
+        justify-content: center;
+        padding: 0.5rem 0;
+      }
       .culture-cards {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 768px) {
-      .hero-valencia h1 {
-        font-size: 2.8rem;
+      .section-magazine-break {
+        padding: 3.5rem 1.25rem;
       }
-      .hero-cta-group {
-        flex-direction: column;
-        align-items: center;
+      .magazine-break-quote {
+        font-size: clamp(1.25rem, 5vw, 1.65rem);
+        line-height: 1.45;
       }
       .culture-cards,
       .heritage-gallery,
       .traditions-grid {
         grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-valencia {
+        padding: 4.5rem 0 2.5rem;
+      }
+      .hero-media-wrapper {
+        height: 240px;
+        min-height: 240px;
+      }
+      .hero-valencia h1 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+        margin-bottom: 0.4rem;
+      }
+      .hero-valencia .hero-subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+      }
+      .hero-valencia .hero-lead {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .hero-valencia .hero-countdown {
+        margin-bottom: 1.4rem;
+        padding: 0.3rem 0.85rem;
+        font-size: 0.82rem;
+      }
+      .hero-valencia .countdown-label {
+        font-size: 0.8rem;
+      }
+      .hero-valencia .countdown-value {
+        font-size: 1.3rem;
       }
     }
   </style>
@@ -554,29 +719,34 @@
   </nav>
   <div class="nav-overlay"></div>
 
-  <!-- ===== HERO - VALENCIA (US-01, US-02, US-03) ===== -->
+  <!-- ===== HERO - VALENCIA (COR-01 Split Éditorial) ===== -->
   <header class="hero-valencia" id="accueil">
-    <div class="hero-photo-overlay"></div>
-    <div class="hero-inner">
-      <div class="hero-badge hero-reveal-1">🇪🇸 Expatriation Familiale · Été 2028</div>
-      <h1 class="hero-reveal-2">Cap sur <span class="hero-emphasis">Valencia</span></h1>
-      <p class="hero-subtitle hero-reveal-3">Journal de bord d'une famille française en route pour l'Espagne</p>
+    <div class="hero-split-wrapper">
+      <div class="hero-content">
+        <div class="hero-badge hero-reveal-1">🇪🇸 Expatriation Familiale · Été 2028</div>
+        <h1 class="hero-reveal-2">Cap sur <span class="hero-emphasis">Valencia</span></h1>
+        <p class="hero-subtitle hero-reveal-3">Journal de bord d'une famille française en route pour l'Espagne</p>
 
-      <p class="hero-lead hero-reveal-4">
-        ☀️ On part vivre à Valencia avec nos 3 enfants. Budget réel, écoles, quartiers et démarches : notre retour d'expérience complet sans filtre.
-      </p>
+        <p class="hero-lead hero-reveal-4">
+          ☀️ On part vivre à Valencia avec nos 3 enfants. Budget réel, écoles, quartiers et démarches : notre retour d'expérience complet sans filtre.
+        </p>
 
-      <div class="hero-countdown hero-reveal-5">
-        <span class="countdown-label">Départ dans</span>
-        <span class="countdown-value months tabular-nums" data-target="22">-</span>
-        <span class="countdown-label">mois et</span>
-        <span class="countdown-value days-remaining tabular-nums">-</span>
-        <span class="countdown-label">jours</span>
+        <div class="hero-countdown hero-reveal-5">
+          <span class="countdown-label">Départ dans</span>
+          <span class="countdown-value months tabular-nums" data-target="22">-</span>
+          <span class="countdown-label">mois et</span>
+          <span class="countdown-value days-remaining tabular-nums">-</span>
+          <span class="countdown-label">jours</span>
+        </div>
+
+        <div class="hero-cta-group hero-reveal-6">
+          <a href="#art-de-vivre" class="btn btn-primary">Découvrir la culture</a>
+          <a href="#guide" class="hero-link-secondary">Voir le guide complet <span aria-hidden="true">→</span></a>
+        </div>
       </div>
 
-      <div class="hero-cta-group hero-reveal-6">
-        <a href="#art-de-vivre" class="btn btn-primary">Découvrir la culture</a>
-        <a href="#guide" class="btn-outline-white">Voir le guide complet</a>
+      <div class="hero-media-wrapper hero-reveal-3">
+        <img src="assets/img/hero-ciudad-arte.jpg" alt="Ciudad de las Artes y las Ciencias sous le soleil de Valencia" class="hero-split-photo" width="1600" height="1066">
       </div>
     </div>
   </header>
@@ -691,8 +861,26 @@
       </div>
     </div>
 
-    <!-- ===== QUARTIERS — EMBEDDED IN HERITAGE ===== -->
-    <div class="container" style="margin-top: 4rem;">
+  </section>
+
+  <!-- ================================================================ -->
+  <!-- BANDEAU MOMENT MAGAZINE - NAVY FULL-BLEED (COR-02) -->
+  <!-- ================================================================ -->
+  <section class="section-magazine-break fade-in" aria-label="Citation du projet">
+    <div class="magazine-break-inner">
+      <span class="magazine-break-label">LE PROJET</span>
+      <blockquote class="magazine-break-quote">
+        «&nbsp;C'est pas un choix rationnel&nbsp;: c'est la lumière, la mer à 15 bornes, les gamins qui jouent sur la place de Benimaclet pendant que tu bois un vermouth.&nbsp;»
+      </blockquote>
+      <cite class="magazine-break-author">Florian · Journal de bord, 2026</cite>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
+  <!-- SECTION QUARTIERS (Fond beige / COR-03) -->
+  <!-- ================================================================ -->
+  <section class="section section-quartiers" id="quartiers" style="background: var(--bg-beige); padding: 4.5rem 0 3.5rem;">
+    <div class="container">
       <div class="editorial-intro">
         <h2>Trouver le bon quartier, c'est 80% du taf</h2>
         <p>
@@ -755,8 +943,8 @@
         </div>
       </div>
 
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="pages/quartiers.html" class="btn btn-outline">Voir tous les quartiers en détail →</a>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="pages/quartiers.html" class="link-editorial">Voir tous les quartiers en détail <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -853,7 +1041,7 @@
           </div>
 
           <p class="budget-note">
-            Le scénario <strong>Confort</strong> (~3&nbsp;400&nbsp;€/mois), c'est celui qu'on vise. Avec un poste de coordinateur supply chain — ça paye entre 1&nbsp;700 et 2&nbsp;300&nbsp;€ net par mois à Valencia — on complète avec l'épargne les premiers temps, puis on équilibre. <a href="pages/budget.html">J'ai détaillé tout ça ici →</a>
+            Le scénario <strong>Confort</strong> (~3&nbsp;400&nbsp;€/mois), c'est celui qu'on vise. Avec un poste de coordinateur supply chain, ça paye entre 1&nbsp;700 et 2&nbsp;300&nbsp;€ net par mois à Valencia ; on complète avec l'épargne les premiers temps, puis on équilibre. <a href="pages/budget.html" class="link-editorial">J'ai détaillé tout ça ici <span aria-hidden="true">→</span></a>
           </p>
         </div>
       </div>
