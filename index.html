@@ -26,6 +26,34 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://fph-dev89.github.io/cap-sur-valencia/#website",
+        "url": "https://fph-dev89.github.io/cap-sur-valencia/",
+        "name": "Cap sur Valencia",
+        "description": "Journal de bord d'une famille française qui s'expatrie à Valencia : budget, écoles, quartiers, démarches et tout ce qu'on apprend en chemin.",
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://fph-dev89.github.io/cap-sur-valencia/#organization",
+        "name": "Cap sur Valencia",
+        "url": "https://fph-dev89.github.io/cap-sur-valencia/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fph-dev89.github.io/cap-sur-valencia/assets/favicon.svg"
+        },
+        "description": "Guide pratique et journal de bord d'expatriation familiale à Valencia en Espagne."
+      }
+    ]
+  }
+  </script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -342,7 +370,7 @@
 
     /* --- CULTURAL SECTIONS & CARDS (COR-03: 12px & Ombres Teintées) --- */
     .section-culture {
-      padding: var(--space-2xl) 0;
+      padding: var(--space-xl) 0;
     }
     .culture-header {
       text-align: center;
@@ -670,23 +698,6 @@
       }
     }
   </style>
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Cap sur Valencia",
-    "description": "Journal de bord d'une famille française qui s'expatrie à Valencia",
-    "url": "https://fph-dev89.github.io/cap-sur-valencia",
-    "inLanguage": "fr",
-    "author": {
-      "@type": "Person",
-      "name": "Florian",
-      "description": "Père de famille, logisticien, futur expatrié à Valencia"
-    }
-  }
-  </script>
 </head>
 <body>
 
@@ -755,7 +766,7 @@
   <!-- ================================================================ -->
   <!-- SECTION INTRO — NOTRE HISTOIRE (Fond beige) -->
   <!-- ================================================================ -->
-  <section class="section section-intro" id="histoire" style="background: var(--bg-beige); padding: 3.5rem 0 2.5rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
+  <section class="section section-intro" id="histoire" style="background: var(--bg-beige); padding: 2.5rem 0 2rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
     <div class="container-narrow" style="text-align: center;">
       <span class="badge">📖 Notre Histoire</span>
       <h2 style="margin-bottom: 1.2rem; font-size: clamp(1.8rem, 4vw, 2.5rem); color: #001626;">Pourquoi Valencia&nbsp;?</h2>

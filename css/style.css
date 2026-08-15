@@ -320,7 +320,7 @@ label, .label, .badge {
 }
 
 .section {
-  padding: var(--space-2xl) 0;
+  padding: var(--space-xl) 0;
 }
 
 /* Alternance : fond légèrement contrasté */
@@ -884,7 +884,7 @@ section:not(.section-alt) .btn-outline:hover {
   position: relative;
   background: var(--bg-beige);
   color: var(--text);
-  padding: 6.5rem 0 3.5rem;
+  padding: 4.5rem 0 2.5rem;
   overflow: hidden;
 }
 
@@ -2450,7 +2450,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   background: var(--bg-beige-dark);
   color: var(--text);
   text-align: center;
-  padding: var(--space-2xl) 0;
+  padding: var(--space-xl) 0;
 }
 
 .section-cta h2 {
@@ -2481,7 +2481,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 .footer {
   background-color: var(--bg-beige);
   color: var(--text-light);
-  padding: var(--space-2xl) 0 var(--space-lg);
+  padding: var(--space-xl) 0 var(--space-lg);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -2557,7 +2557,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
 
 .content-header {
   background: var(--bg-beige-dark);
-  padding: var(--space-2xl) 0 var(--space-xl);
+  padding: var(--space-xl) 0 var(--space-lg);
   margin-bottom: var(--space-xl);
   color: var(--text);
 }
@@ -3367,7 +3367,7 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   }
 
   .section {
-    padding: var(--space-xl) 0;
+    padding: clamp(2.5rem, 6vw, 3.5rem) 0;
   }
 
   .grid-2,
