@@ -14,5 +14,37 @@
       <pubDate>Sun, 16 Aug 2026 08:00:00 +0200</pubDate>
       <description>Lancement officiel de notre carnet de bord : pourquoi ce blog, notre projet d'expatriation familiale à 5 pour 2028, et le programme de nos publications hebdomadaires.</description>
     </item>
+    <item>
+      <title>Bioparc Valencia : l'Afrique à 15 minutes de chez nous</title>
+      <link>https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-16-bioparc-valencia.html</link>
+      <guid isPermaLink="true">https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-16-bioparc-valencia.html</guid>
+      <category>Actualités</category>
+      <pubDate>Sun, 16 Aug 2026 09:00:00 +0200</pubDate>
+      <description>Un concept unique de zoo-immersion sans barrière visible où girafes, lions, gorilles et hippopotames évoluent dans des paysages africains fidèlement reconstitués.</description>
+    </item>
+    <item>
+      <title>L'Oceanogràfic : le plus grand aquarium d'Europe, en plein cœur de la Cité des Arts</title>
+      <link>https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-17-oceanografic.html</link>
+      <guid isPermaLink="true">https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-17-oceanografic.html</guid>
+      <category>Actualités</category>
+      <pubDate>Mon, 17 Aug 2026 08:00:00 +0200</pubDate>
+      <description>Plus de 45 000 animaux marins, un tunnel immersif au milieu des requins, des bélougas majestueux et des réductions substantielles pour les familles nombreuses.</description>
+    </item>
+    <item>
+      <title>Le Mercado Central : 300 étals sous une coupole de fer et de verre</title>
+      <link>https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-18-mercado-central.html</link>
+      <guid isPermaLink="true">https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-18-mercado-central.html</guid>
+      <category>Actualités</category>
+      <pubDate>Tue, 18 Aug 2026 08:00:00 +0200</pubDate>
+      <description>Le temple gourmand de Valencia sous une cathédrale moderniste de 1928 : produits frais du terroir, jambon ibérique découpé minute et tapas du chef Ricard Camarena.</description>
+    </item>
+    <item>
+      <title>L'Albufera : balade en barque dans les rizières au coucher du soleil</title>
+      <link>https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-19-albufera-el-palmar.html</link>
+      <guid isPermaLink="true">https://fph-dev89.github.io/cap-sur-valencia/actualites/2026-08-19-albufera-el-palmar.html</guid>
+      <category>Actualités</category>
+      <pubDate>Wed, 19 Aug 2026 08:00:00 +0200</pubDate>
+      <description>Une croisière paisible en barque électrique au milieu des rizières et des oiseaux du parc naturel, à conclure par une authentique paella dans le village d'El Palmar.</description>
+    </item>
   </channel>
 </rss>

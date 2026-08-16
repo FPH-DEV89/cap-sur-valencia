@@ -4231,3 +4231,417 @@ html.js .hero-reveal-6 { animation: heroCascadeIn 0.80s var(--ease-out) 0.50s bo
   }
 }
 
+/* =============================================
+   ACTUALITÉS & SORTIES (Design Stitch)
+   ============================================= */
+
+/* --- Badges Catégories Sorties --- */
+.actu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
+
+.actu-badge--nature {
+  background: #2d6a4f;
+  color: #ffffff;
+}
+
+.actu-badge--culture {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.actu-badge--gastro {
+  background: var(--terracotta);
+  color: #ffffff;
+}
+
+.actu-badge--famille {
+  background: #1d4e89;
+  color: #ffffff;
+}
+
+/* --- Grille Page Actualités --- */
+.actu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+.actu-card {
+  background: var(--bg-white);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 22, 38, 0.04);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.actu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(146, 75, 38, 0.12);
+}
+
+.actu-card-media {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-beige-dark);
+  min-height: 280px;
+}
+
+.actu-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 500ms var(--ease-out);
+}
+
+.actu-card:hover .actu-card-img {
+  transform: scale(1.03);
+}
+
+.actu-card-body {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actu-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.actu-meta-item {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.actu-card-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 0.85rem;
+}
+
+.actu-card-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.actu-card-title a:hover {
+  color: var(--terracotta);
+}
+
+.actu-card-excerpt {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.65;
+  margin-bottom: 1.15rem;
+}
+
+/* Mini-ligne infos pratiques sur la card */
+.actu-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.55rem 0.85rem;
+  background: var(--bg-beige);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--navy);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(0, 22, 38, 0.06);
+}
+
+.actu-meta-info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.actu-card-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.actu-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--terracotta);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: gap var(--transition-fast), color var(--transition-fast);
+}
+
+.actu-card-link:hover {
+  color: var(--terracotta-dark);
+  gap: 0.65rem;
+}
+
+/* --- Section Teaser Actualités (Page d'accueil) --- */
+.actu-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: var(--space-xl);
+  margin-bottom: 2rem;
+}
+
+.actu-teaser-card {
+  background: var(--bg-white);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 22, 38, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 22, 38, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.actu-teaser-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(146, 75, 38, 0.12);
+}
+
+.actu-teaser-media {
+  position: relative;
+  height: 170px;
+  overflow: hidden;
+  background: var(--bg-beige-dark);
+}
+
+.actu-teaser-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 500ms var(--ease-out);
+}
+
+.actu-teaser-card:hover .actu-teaser-img {
+  transform: scale(1.05);
+}
+
+.actu-teaser-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.actu-teaser-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.actu-teaser-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+  transition: color var(--transition-fast);
+}
+
+.actu-teaser-card:hover .actu-teaser-title {
+  color: var(--terracotta);
+}
+
+.actu-teaser-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 22, 38, 0.06);
+  margin-top: auto;
+  font-weight: 500;
+}
+
+/* --- Photos Cards Quartiers (Page d'accueil) --- */
+.quartier-card-media {
+  margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
+  overflow: hidden;
+  height: 160px;
+  border-radius: 10px 10px 0 0;
+  background: var(--bg-beige-dark);
+}
+
+.quartier-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 500ms var(--ease-out);
+}
+
+.quartier-card:hover .quartier-card-img {
+  transform: scale(1.05);
+}
+
+/* --- Bloc Infos Pratiques (Fiches d'activités) --- */
+.info-pratiques {
+  background: var(--bg-white);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  margin: var(--space-xl) 0;
+  border: 1px solid rgba(0, 22, 38, 0.12);
+  border-left: 4px solid var(--terracotta);
+  box-shadow: 0 4px 16px rgba(0, 22, 38, 0.04);
+}
+
+.info-pratiques-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-pratiques-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-pratiques-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(0, 22, 38, 0.06);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.info-pratiques-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-pratiques-label {
+  font-weight: 700;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.info-pratiques-value {
+  color: var(--text);
+}
+
+.info-pratiques-value a {
+  color: var(--terracotta);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.info-pratiques-value a:hover {
+  color: var(--terracotta-dark);
+}
+
+/* --- Banner Photo & Figcaption Crédit Photo --- */
+.banner-photo {
+  margin: var(--space-lg) 0 var(--space-xl);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-beige-dark);
+  box-shadow: 0 4px 20px rgba(0, 22, 38, 0.08);
+}
+
+.banner-photo img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-photo figcaption,
+.credit-photo {
+  padding: 0.6rem 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: var(--bg-white);
+  border-top: 1px solid rgba(0, 22, 38, 0.06);
+  font-style: italic;
+}
+
+/* --- Responsive Actualités & Teaser --- */
+@media (max-width: 992px) {
+  .actu-teaser-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .actu-card {
+    grid-template-columns: 1fr;
+  }
+  .actu-card-media {
+    min-height: 220px;
+    max-height: 260px;
+  }
+  .actu-card-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .actu-teaser-grid {
+    grid-template-columns: 1fr;
+  }
+  .info-pratiques-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
