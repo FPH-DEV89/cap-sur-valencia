@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://fph-dev89.github.io/cap-sur-valencia/sitemap.xml
+Sitemap: https://capsurvalencia.fr/sitemap.xml
