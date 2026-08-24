@@ -5,7 +5,23 @@
     <link>https://capsurvalencia.fr/</link>
     <description>Journal de bord d'une famille française qui s'expatrie à Valencia : budget, écoles, quartiers, démarches et coulisses de notre départ en 2028.</description>
     <language>fr</language>
-    <lastBuildDate>Fri, 21 Aug 2026 10:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 10:00:00 +0200</lastBuildDate>
+    <atom:link href="https://capsurvalencia.fr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le Parc Gulliver à Valencia : escalader un géant de 70 mètres au cœur du Turia</title>
+      <link>https://capsurvalencia.fr/actualites/2026-08-24-parc-gulliver-valencia</link>
+      <guid isPermaLink="true">https://capsurvalencia.fr/actualites/2026-08-24-parc-gulliver-valencia.html</guid>
+      <category>Actualités</category>
+      <pubDate>Mon, 24 Aug 2026 10:00:00 +0200</pubDate>
+      <description>Un terrain de jeu monumental unique au monde : toboggans géants sculptés dans les plis du manteau, cordages d'escalade et passages secrets, 100 % gratuit dans les jardins du Turia.</description>
+    </item>
+    <item>
+      <title>Calendrier scolaire 2026-2027 : l'année de nos enfants à Valencia</title>
+      <link>https://capsurvalencia.fr/blog/2026-08-19-calendrier-scolaire-valencia</link>
+      <guid isPermaLink="true">https://capsurvalencia.fr/blog/2026-08-19-calendrier-scolaire-valencia.html</guid>
+      <pubDate>Wed, 19 Aug 2026 12:00:00 +0200</pubDate>
+      <description>Dates clés, vacances, jours fériés, flexibilité municipale, cantine, extra-scolaires, et processus d'inscription : tout ce qu'il faut savoir sur l'année scolaire 2026-2027 à Valencia pour préparer sereinement la rentrée.</description>
+    </item>
     <atom:link href="https://capsurvalencia.fr/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Le centre historique en famille : Cathédrale, Saint-Graal et tours médiévales</title>

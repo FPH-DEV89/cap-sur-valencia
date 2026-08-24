@@ -1,72 +1,417 @@
 {
   "js/main.js": {
-    "mtime": 1785333412.7721124,
-    "ast_hash": "0a1f21737c9684e793be042de2825a19",
-    "semantic_hash": "0a1f21737c9684e793be042de2825a19"
-  },
-  "js/quartier-filter.js": {
-    "mtime": 1785573549.4822462,
-    "ast_hash": "ce62c5beba670a9da29bb5cd69c420c0",
-    "semantic_hash": "ce62c5beba670a9da29bb5cd69c420c0"
+    "mtime": 1786813649.42067,
+    "ast_hash": "e3325fe9af2eed3300cd32119e857ffc",
+    "semantic_hash": ""
   },
   "DESIGN_BRIEF.md": {
-    "mtime": 1785344823.7586787,
-    "ast_hash": "ddf220d952a69eee473302c7a55c631a",
-    "semantic_hash": "ddf220d952a69eee473302c7a55c631a"
+    "mtime": 1786619579.3703063,
+    "ast_hash": "dabbcb28042c04a05a635f644f1800d5",
+    "semantic_hash": ""
   },
   "MEGA_PROMPT.md": {
-    "mtime": 1785349924.2186947,
-    "ast_hash": "f20362f22a82d92582fc3fbc2f56acff",
-    "semantic_hash": "f20362f22a82d92582fc3fbc2f56acff"
+    "mtime": 1786619579.3673062,
+    "ast_hash": "d5c1282a55c1e48eb47199e09be3bd1f",
+    "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1785572110.5430703,
-    "ast_hash": "94e462d9378e928c11eda47f99e1d1fd",
-    "semantic_hash": "94e462d9378e928c11eda47f99e1d1fd"
+    "mtime": 1787021631.6145756,
+    "ast_hash": "80637fa54eb525fd9d75b94ebb016134",
+    "semantic_hash": ""
   },
   "pages/administration.html": {
-    "mtime": 1785572117.4140177,
-    "ast_hash": "a2933f10112a368978e55fa6f7aacdbd",
-    "semantic_hash": "a2933f10112a368978e55fa6f7aacdbd"
+    "mtime": 1787021686.6232245,
+    "ast_hash": "7444e8d6c91f295eb8f357ab033d68d2",
+    "semantic_hash": ""
   },
   "pages/budget.html": {
-    "mtime": 1785572117.2910185,
-    "ast_hash": "638a01253c0973ab1aba0fe0522d8943",
-    "semantic_hash": "638a01253c0973ab1aba0fe0522d8943"
+    "mtime": 1787021700.7891333,
+    "ast_hash": "59cef25828ece3bb53f731cedad2d58d",
+    "semantic_hash": ""
   },
   "pages/checklists.html": {
-    "mtime": 1785572117.4730172,
-    "ast_hash": "e0357ea0cfa7d5275f158f6616300efc",
-    "semantic_hash": "e0357ea0cfa7d5275f158f6616300efc"
+    "mtime": 1787021686.6252246,
+    "ast_hash": "4290d9ef95b0627e49944fe819ee8ae7",
+    "semantic_hash": ""
   },
   "pages/ecoles.html": {
-    "mtime": 1785572117.5330167,
-    "ast_hash": "256d4e150e5864ea0485bea5212288aa",
-    "semantic_hash": "256d4e150e5864ea0485bea5212288aa"
+    "mtime": 1787021686.6252246,
+    "ast_hash": "b68c0eb6e445b1c2f9840cd4c12de6d6",
+    "semantic_hash": ""
   },
   "pages/emploi.html": {
-    "mtime": 1785572117.503017,
-    "ast_hash": "eedfb60bc0cd1863a4324b6ec8595669",
-    "semantic_hash": "eedfb60bc0cd1863a4324b6ec8595669"
+    "mtime": 1787021686.6252246,
+    "ast_hash": "fe952fef1814ddd84a6688655317aa55",
+    "semantic_hash": ""
   },
   "pages/quartiers.html": {
-    "mtime": 1785573595.4839613,
-    "ast_hash": "c9f0452a725f433966534c5d9640ad9d",
-    "semantic_hash": "c9f0452a725f433966534c5d9640ad9d"
+    "mtime": 1787021686.6262245,
+    "ast_hash": "056d59b322b925800359b99c1805e336",
+    "semantic_hash": ""
   },
   "pages/ressources.html": {
-    "mtime": 1785572117.4440174,
-    "ast_hash": "b266e86345b8593ceb5946b8f0ae61f3",
-    "semantic_hash": "b266e86345b8593ceb5946b8f0ae61f3"
+    "mtime": 1787053274.2603953,
+    "ast_hash": "e3e96de8f2e295838bfefce17e2d6e06",
+    "semantic_hash": ""
   },
   "pages/sante.html": {
-    "mtime": 1785572117.384018,
-    "ast_hash": "746dbcf4d438e2fe9a961824c47bb979",
-    "semantic_hash": "746dbcf4d438e2fe9a961824c47bb979"
+    "mtime": 1787021686.6272244,
+    "ast_hash": "7081149663d292cd2e2c790cbdd5eb7f",
+    "semantic_hash": ""
   },
   "pages/scolarite.html": {
-    "mtime": 1785572117.3210182,
-    "ast_hash": "38146868b610e54a0d37b0d5bff71832",
-    "semantic_hash": "38146868b610e54a0d37b0d5bff71832"
+    "mtime": 1787021686.6272244,
+    "ast_hash": "f6d1da0707e24534fdc6c0c84fa3c941",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-actualites-cine-en-las-playas-spec2.md": {
+    "mtime": 1786962407.996334,
+    "ast_hash": "8c4f692f0060c2bbec55bf927df45675",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-actualites-cine-en-las-playas.md": {
+    "mtime": 1786962055.0186777,
+    "ast_hash": "93f18622cd0f6878f7ce1368586548e3",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-actualites-v2.md": {
+    "mtime": 1786862799.9206767,
+    "ast_hash": "bee691d9b5202272e352b1f309bd6ab4",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-actualites-v3.md": {
+    "mtime": 1786863862.536233,
+    "ast_hash": "b5492b3910c3787a62c25183c09a3d78",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-actualites.md": {
+    "mtime": 1786862284.1656973,
+    "ast_hash": "63ed0abb3f3ba3c05b416d1cc4e27343",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-article-calendrier-scolaire.md": {
+    "mtime": 1787133673.20238,
+    "ast_hash": "915f82c95ef153e9cd81503abdc73f5d",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-article-kit-demenagement.md": {
+    "mtime": 1787052400.6718967,
+    "ast_hash": "57edf5b5cb110f2ea4f9a5fccadc9be0",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-fiche-paella.md": {
+    "mtime": 1787046761.0274174,
+    "ast_hash": "e23647998441ad017013f4cb3e325af4",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-fiche-visite-centre.md": {
+    "mtime": 1787050077.5912414,
+    "ast_hash": "4c3cbde8e61b45f7c78c420601156971",
+    "semantic_hash": ""
+  },
+  ".hermes/consignes-guides-affiliation.md": {
+    "mtime": 1787021297.125562,
+    "ast_hash": "9f5dff07dff8db419debf23a1bb097a3",
+    "semantic_hash": ""
+  },
+  ".hermes/veille-2026-08-16.md": {
+    "mtime": 1786897897.1663744,
+    "ast_hash": "e331e82a0fe3dbec433040b2b9ec9d67",
+    "semantic_hash": ""
+  },
+  ".hermes/veille-2026-08-17.md": {
+    "mtime": 1786984264.9167998,
+    "ast_hash": "528ce80ebd7ce56d8ed8e57b72b28f79",
+    "semantic_hash": ""
+  },
+  ".hermes/veille-2026-08-18.md": {
+    "mtime": 1787070700.6533332,
+    "ast_hash": "150ffc72b8ffce14d054866af0aa7cb8",
+    "semantic_hash": ""
+  },
+  ".hermes/veille-2026-08-19.md": {
+    "mtime": 1787157053.46147,
+    "ast_hash": "130199df7a0e55ceafaa3996a62b9bed",
+    "semantic_hash": ""
+  },
+  ".hermes/veille-2026-08-20.md": {
+    "mtime": 1787243428.0814428,
+    "ast_hash": "130199df7a0e55ceafaa3996a62b9bed",
+    "semantic_hash": ""
+  },
+  "404.html": {
+    "mtime": 1787021631.6105757,
+    "ast_hash": "c36d0f37c9a111790bf502136f2ae3c7",
+    "semantic_hash": ""
+  },
+  "8a2ac62a7f226a4a4857187b8e97a365.txt": {
+    "mtime": 1786620556.4274437,
+    "ast_hash": "78c7c8fcc30095f0266287873ab9c38e",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-16-bioparc-valencia.html": {
+    "mtime": 1787046475.7205577,
+    "ast_hash": "fd292f46792825978cc6885826a715b6",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-17-cine-en-las-playas.html": {
+    "mtime": 1787021686.6212244,
+    "ast_hash": "a27cc21b7f91dbbcb1d7d7663e36f7a8",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-17-oceanografic.html": {
+    "mtime": 1787046910.6852858,
+    "ast_hash": "5c1deb7a268fe7cac33c3faee9a474c0",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-18-mercado-central.html": {
+    "mtime": 1787071650.3575366,
+    "ast_hash": "5b9a6e0760abb39ff7bbfa0e15c21954",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-19-albufera-el-palmar.html": {
+    "mtime": 1787046475.7325578,
+    "ast_hash": "8e12799d7074b3a3f5478700318f0721",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-20-cours-de-paella.html": {
+    "mtime": 1787047627.1668532,
+    "ast_hash": "ff05eadf1ee24f285412cbdd5b906193",
+    "semantic_hash": ""
+  },
+  "actualites/2026-08-21-visite-centre-historique.html": {
+    "mtime": 1787050851.6523294,
+    "ast_hash": "cd810a2fc5e4c86f91da7e018e90c36d",
+    "semantic_hash": ""
+  },
+  "blog/2026-08-16-bienvenue.html": {
+    "mtime": 1787021686.6222246,
+    "ast_hash": "ec6e03be14cd9f3270e2f3f50b002694",
+    "semantic_hash": ""
+  },
+  "blog/2026-08-19-calendrier-scolaire-valencia.html": {
+    "mtime": 1787133815.8098524,
+    "ast_hash": "1696522407fff2a47a7665c8ba140e78",
+    "semantic_hash": ""
+  },
+  "pages/actualites.html": {
+    "mtime": 1787052866.3064446,
+    "ast_hash": "61c783427f16740424825f2c071fe855",
+    "semantic_hash": ""
+  },
+  "pages/assurance.html": {
+    "mtime": 1787040884.9362388,
+    "ast_hash": "ec758bf87b93c440f09fe45b4af1f5f8",
+    "semantic_hash": ""
+  },
+  "pages/banque.html": {
+    "mtime": 1787045986.870127,
+    "ast_hash": "5bc794c4f37d50d6c7efa56468ae8f6e",
+    "semantic_hash": ""
+  },
+  "pages/blog.html": {
+    "mtime": 1787133966.0863402,
+    "ast_hash": "0a1e191f5bcb447a9b6ddb5c58d31dee",
+    "semantic_hash": ""
+  },
+  "pages/kit-demenagement-avion.html": {
+    "mtime": 1787053796.4729493,
+    "ast_hash": "44cf4c64f8d7e0c96e67818e90e9c39e",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1786957991.4110012,
+    "ast_hash": "297241139f318472b0a131d34ffa2ee6",
+    "semantic_hash": ""
+  },
+  "social/scripts-kit-voyage.md": {
+    "mtime": 1787057309.4159963,
+    "ast_hash": "86565992642c558dab802493a44d2659",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v1/spec.md": {
+    "mtime": 1786713499.700182,
+    "ast_hash": "c4de1de629c6209df22603d1b153890a",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v2/spec.md": {
+    "mtime": 1786798030.8053694,
+    "ast_hash": "f7bbedc659115b424979e8a274500721",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v2/spec2.md": {
+    "mtime": 1786798629.0195382,
+    "ast_hash": "042a1bdb9df398b5645af98a2b3b01ab",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v3/spec.md": {
+    "mtime": 1786802433.093965,
+    "ast_hash": "7fc0a423bd159d48fe1f5cccfa5eaa1d",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v4/spec.md": {
+    "mtime": 1786807636.0354865,
+    "ast_hash": "b48c7b3800ad44449138fd4b39f8c1e8",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v4/spec2.md": {
+    "mtime": 1786808677.961959,
+    "ast_hash": "fc9ae0d9314d163d2313b934c041fa4a",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v5/spec.md": {
+    "mtime": 1786809044.45022,
+    "ast_hash": "64e3ecd7c975c8f372d83bd8a89e186e",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v6/spec2.md": {
+    "mtime": 1786810011.9748805,
+    "ast_hash": "b26946122b06b0670078e0c9c8a8f420",
+    "semantic_hash": ""
+  },
+  "specs/amelioration-v7/spec.md": {
+    "mtime": 1786810565.3367054,
+    "ast_hash": "e834b213eae9425f52f77637130bffda",
+    "semantic_hash": ""
+  },
+  "assets/favicon.svg": {
+    "mtime": 1786808677.957959,
+    "ast_hash": "756d0ef76dda95eb8876f81974487f68",
+    "semantic_hash": ""
+  },
+  "assets/img/activites-albufera.jpg": {
+    "mtime": 1786862242.2860222,
+    "ast_hash": "4f875223f8d87b6e5f7e7b5171aedbe5",
+    "semantic_hash": ""
+  },
+  "assets/img/activites-bioparc.jpg": {
+    "mtime": 1786862105.1310833,
+    "ast_hash": "b7aab9e0fdf1b7974e129ae994b34b32",
+    "semantic_hash": ""
+  },
+  "assets/img/activites-mercado-central.jpg": {
+    "mtime": 1786862120.6809633,
+    "ast_hash": "bbee41325d73e288f73f485f3c8a2201",
+    "semantic_hash": ""
+  },
+  "assets/img/activites-oceanografic.jpg": {
+    "mtime": 1786862109.3260508,
+    "ast_hash": "ad00c53a1ecc630273406fc18b6e6912",
+    "semantic_hash": ""
+  },
+  "assets/img/admin-ayuntamiento.jpg": {
+    "mtime": 1786797959.2121632,
+    "ast_hash": "130c454ea4b6cfbf13c0310de007f722",
+    "semantic_hash": ""
+  },
+  "assets/img/benimaclet-rue.jpg": {
+    "mtime": 1786862179.3315098,
+    "ast_hash": "6f8102f4c51389fd5b3d9c7e7fa624e8",
+    "semantic_hash": ""
+  },
+  "assets/img/budget-mercado-interieur.jpg": {
+    "mtime": 1786809016.3934314,
+    "ast_hash": "bbee41325d73e288f73f485f3c8a2201",
+    "semantic_hash": ""
+  },
+  "assets/img/budget-mercado.jpg": {
+    "mtime": 1786713378.5771854,
+    "ast_hash": "bbee41325d73e288f73f485f3c8a2201",
+    "semantic_hash": ""
+  },
+  "assets/img/campanar-vue.jpg": {
+    "mtime": 1786862113.0030224,
+    "ast_hash": "508bd2cddc96644e8b888f6fed64752d",
+    "semantic_hash": ""
+  },
+  "assets/img/checklists-oranger.jpg": {
+    "mtime": 1786809020.5084004,
+    "ast_hash": "b4721b5fd3e948cd11ef3fbf0e701d15",
+    "semantic_hash": ""
+  },
+  "assets/img/checklists-parc.jpg": {
+    "mtime": 1786797961.451138,
+    "ast_hash": "b02ea1a3c2c2b93c7f1f2a1943021bde",
+    "semantic_hash": ""
+  },
+  "assets/img/culture-fallas.jpg": {
+    "mtime": 1786713427.2057822,
+    "ast_hash": "4d5fe39996cf181bfe2b9d1b5dc96143",
+    "semantic_hash": ""
+  },
+  "assets/img/culture-plaza.jpg": {
+    "mtime": 1786713417.3208642,
+    "ast_hash": "da5a9baf6a1729de6a81869206c3432b",
+    "semantic_hash": ""
+  },
+  "assets/img/ecoles-mural-ceip.jpg": {
+    "mtime": 1786797959.411161,
+    "ast_hash": "cf28eed8e72ac6f027651ba96abea244",
+    "semantic_hash": ""
+  },
+  "assets/img/emploi-port.jpg": {
+    "mtime": 1786797962.7341235,
+    "ast_hash": "35dc87576e9e3d85bfa3b3c92b475c59",
+    "semantic_hash": ""
+  },
+  "assets/img/hero-ciudad-arte.jpg": {
+    "mtime": 1786713377.8721912,
+    "ast_hash": "d01e7377f41b1b3c1d71321615fd3608",
+    "semantic_hash": ""
+  },
+  "assets/img/hero-malvarrosa.jpg": {
+    "mtime": 1786862172.9945588,
+    "ast_hash": "b3d553aba1de803bbffb96333cc145e1",
+    "semantic_hash": ""
+  },
+  "assets/img/patraix-ruelle.jpg": {
+    "mtime": 1786862171.1195734,
+    "ast_hash": "e0428f1826e4cbfa4cc3f4d8b8be38fb",
+    "semantic_hash": ""
+  },
+  "assets/img/quartiers-plage.jpg": {
+    "mtime": 1786713398.3370216,
+    "ast_hash": "a30f468fd204a6932ef86f5481b251e8",
+    "semantic_hash": ""
+  },
+  "assets/img/quartiers-rue.jpg": {
+    "mtime": 1786809016.8784277,
+    "ast_hash": "d1eaf9acb3b7b43f4507eef8dcbe88b9",
+    "semantic_hash": ""
+  },
+  "assets/img/ressources-gare-nord.jpg": {
+    "mtime": 1786809019.8724053,
+    "ast_hash": "a0cf70b92b79227a82db51a7ca6f890c",
+    "semantic_hash": ""
+  },
+  "assets/img/ressources-tram.jpg": {
+    "mtime": 1786797959.063165,
+    "ast_hash": "d9145f9f624d06bbaadbd45a201f9b8d",
+    "semantic_hash": ""
+  },
+  "assets/img/sante-hopital.jpg": {
+    "mtime": 1786797959.4371607,
+    "ast_hash": "90a9a625d632513cf5c2380e5d328fa3",
+    "semantic_hash": ""
+  },
+  "assets/img/sante-pharmacie.jpg": {
+    "mtime": 1786809016.4174314,
+    "ast_hash": "5ce0f7cc2aa1599b9a402df4c6847ec1",
+    "semantic_hash": ""
+  },
+  "assets/img/saveurs-paella.jpg": {
+    "mtime": 1786713407.8439426,
+    "ast_hash": "c431db8647a4bb27ab4ebcce42c32f2c",
+    "semantic_hash": ""
+  },
+  "assets/img/scolarite-calendrier-ceip.jpg": {
+    "mtime": 1787133777.4352534,
+    "ast_hash": "5b39cc8d636b923d615adbd19c3289e3",
+    "semantic_hash": ""
+  },
+  "assets/img/scolarite-ceip.jpg": {
+    "mtime": 1786797961.6491358,
+    "ast_hash": "204de173dd98d53536523d3224c4912c",
+    "semantic_hash": ""
   }
 }
