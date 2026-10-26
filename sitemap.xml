@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://capsurvalencia.fr/pages/actualites</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -135,6 +135,12 @@
   <url>
     <loc>https://capsurvalencia.fr/blog/2026-08-19-calendrier-scolaire-valencia</loc>
     <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://capsurvalencia.fr/actualites/2026-10-26-espanta-la-por-valencia</loc>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
